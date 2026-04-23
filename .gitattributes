@@ -1,0 +1,2 @@
+# Track the large xac_thuc file with Git LFS
+xac_thuc_theo_dinh_nghia_v_xac_thuc_luy_ke_20260421.txt filter=lfs diff=lfs merge=lfs -text
