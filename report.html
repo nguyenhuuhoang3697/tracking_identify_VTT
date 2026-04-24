@@ -408,9 +408,10 @@
     <div class="topbar-inner">
       <div class="topbar-title">
         B&aacute;o c&aacute;o &#273;i&#7873;u h&agrave;nh t&#7881;nh x&aacute;c th&#7921;c nh&eacute;
-        <span>Ch&#7889;t CSDL giao GBOC ng&#224;y 18/04/2026 &nbsp;&#183;&nbsp; C&#7853;p nh&#7853;t l&#361;y k&#7871; 24h00 ng&#224;y 23/04/2026</span>
+        <span id="topbar-sub-line1">Ch&#7889;t CSDL giao GBOC ng&#224;y 18/04/2026</span>
+        <span id="topbar-sub-line2">Lũy k&#7871; 24h ng&#224;y <span id="topbar-report-date">23/04/2026</span></span>
       </div>
-      <div class="topbar-badge">&#128467; 23/04/2026 &#183; 24:00</div>
+      <div class="topbar-badge" id="topbar-badge">&#128467; 23/04/2026 &#183; 24:00</div>
     </div>
   </div>
 
@@ -427,11 +428,11 @@
         <div class="card-label">C&#7847;n x&#225;c th&#7921;c</div>
         <div class="card-note">(Loại bỏ 4.3tr TB Not 3K3D)</div>
         <div class="card-rightnote">
-          <div>Đầu kỳ: <span class="rightmid">30.3tr</span></div>
-          <div class="card-subnote">TH từ 1/4-18/4: <strong>-1.5tr</strong></div>
-          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 19/4: <strong>-977K</strong></div>
+          <div>Đầu kỳ: <span class="rightmid" id="total-card-dau-ky">30.3tr</span></div>
+          <div class="card-subnote">TH từ 1/4-18/4: <strong id="total-card-th-18">-1.5tr</strong></div>
+          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 19/4: <strong id="total-card-th-19">-977K</strong></div>
           <div>Còn phải TH:</div>
-          <div><span class="rightbig">27.8tr</span></div>
+          <div><span class="rightbig" id="total-card-con-phai-th">27.8tr</span></div>
         </div>
         <div class="card-bar"><div class="card-bar-fill" style="width:43%"></div></div>
       </div>
@@ -440,11 +441,11 @@
         <div class="card-label">Giao k&#234;nh OFFLINE</div>
         <div class="card-note">(CMT 9 s&#7889; + CCCD Y&#7871;u th&#7871;)</div>
         <div class="card-rightnote">
-          <div>Đầu kỳ: <span class="rightmid">20.4tr</span></div>
-          <div class="card-subnote">TH từ 1/4-18/4: <strong>-1.5tr</strong></div>
-          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 19/4: <strong>-765K</strong></div>
+          <div>Đầu kỳ: <span class="rightmid" id="offline-card-dau-ky">20.4tr</span></div>
+          <div class="card-subnote">TH từ 1/4-18/4: <strong id="offline-card-th-18">-1.5tr</strong></div>
+          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 19/4: <strong id="offline-card-th-19">-765K</strong></div>
           <div>Còn phải TH:</div>
-          <div><span class="rightbig">18.1tr</span></div>
+          <div><span class="rightbig" id="offline-card-con-phai-th">18.1tr</span></div>
         </div>
         <div class="card-bar"><div class="card-bar-fill" style="width:30%"></div></div>
         <div class="offline-subcards">
@@ -453,9 +454,9 @@
                 <div class="child-label">TB CMT 9 SỐ</div>
               </div>
               <div class="child-right">
-                <div class="child-sub">Đầu kỳ: <strong>12.5tr</strong></div>
-                <div class="child-sub">TH Lũy kế: <strong>-2.12tr</strong></div>
-                <div class="child-value child-value-small">Còn phải TH: </strong>10.4tr</strong></div>
+                <div class="child-sub">Đầu kỳ: <strong id="offline-cmt-dau-ky">12.5tr</strong></div>
+                <div class="child-sub">TH Lũy kế: <strong id="offline-cmt-th-luy-ke">-2.12tr</strong></div>
+                <div class="child-value child-value-small">Còn phải TH: <strong id="offline-cmt-con-phai-th">10.4tr</strong></div>
               </div>
             </div>
             <div class="offline-child-card">
@@ -463,9 +464,9 @@
                 <div class="child-label">TB CCCD YẾU THẾ</div>
               </div>
               <div class="child-right">
-                <div class="child-sub">Đầu kỳ: <strong>7.9tr</strong></div>
-                <div class="child-sub">TH Lũy kế: <strong>-20k</strong></div>
-                <div class="child-value child-value-small">Còn phải TH: 7.7tr</div>
+                <div class="child-sub">Đầu kỳ: <strong id="offline-yeu-the-dau-ky">7.9tr</strong></div>
+                <div class="child-sub">TH Lũy kế: <strong id="offline-yeu-the-th-luy-ke">-20k</strong></div>
+                <div class="child-value child-value-small">Còn phải TH: <strong id="offline-yeu-the-con-phai-th">7.7tr</strong></div>
               </div>
             </div>
         </div>
@@ -479,7 +480,7 @@
         <div class="table-header">
           <div>
             <div class="table-title">C&#7842;NH B&#193;O T&#7880;NH T&#7888;T K&#201;M</div>
-            <div class="table-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
+            <div class="table-sub" id="t1-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
           </div>
           <div class="toggle-bar">
             <button class="toggle-btn active" id="btn1" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO 30.3tr</button>
@@ -523,7 +524,7 @@
         <div class="table-header">
           <div>
             <div class="table-title">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO K&#202;NH OFFLINE <span style="color:#f97316">20.4tr</span></div>
-            <div class="table-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
+            <div class="table-sub" id="t2-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
           </div>
           <div class="toggle-bar">
             <button class="toggle-btn" id="btn1" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO 30.3tr</button>
@@ -752,8 +753,82 @@ function renderTrend(data) {
 function fmtNum(n) {
   return Math.round(n).toLocaleString('en-US');
 }
+function fmtCompact(n) {
+  var abs = Math.abs(Number(n) || 0);
+  var sign = (Number(n) || 0) < 0 ? '-' : '';
+  if (abs >= 1000000) {
+    return sign + (abs / 1000000).toFixed(1).replace(/\.0$/, '') + 'tr';
+  }
+  if (abs >= 1000) {
+    return sign + Math.round(abs / 1000) + 'K';
+  }
+  return sign + Math.round(abs);
+}
 function fmtPct(p) {
   return (p * 100).toFixed(1) + '%';
+}
+function renderSummary(data) {
+  // Update all date placeholders from pipeline report_date
+  var rd = data.report_date || '';
+  var els = ['topbar-report-date', 't1-sub', 't2-sub'];
+  els.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      if (id === 't1-sub' || id === 't2-sub') {
+        el.textContent = 'Lũy kế đến 24h00 ngày ' + rd;
+      } else {
+        el.textContent = rd;
+      }
+    }
+  });
+  var badge = document.getElementById('topbar-badge');
+  if (badge) badge.textContent = '\uD83D\uDCC5 ' + rd + ' \u00B7 24:00';
+
+  var totalCard = data.summary && data.summary.total_card;
+  if (totalCard) {
+    var dauKy = document.getElementById('total-card-dau-ky');
+    var th18 = document.getElementById('total-card-th-18');
+    var th19 = document.getElementById('total-card-th-19');
+    var conPhaiTh = document.getElementById('total-card-con-phai-th');
+
+    if (dauKy) dauKy.textContent = fmtCompact(totalCard.dau_ky);
+    if (th18) th18.textContent = '-' + fmtCompact(totalCard.th_1_4_18_4);
+    if (th19) th19.textContent = '-' + fmtCompact(totalCard.th_luy_ke_tu_19_4);
+    if (conPhaiTh) conPhaiTh.textContent = fmtCompact(totalCard.con_phai_th);
+  }
+
+  var offlineCard = data.summary && data.summary.offline_card;
+  if (!offlineCard) return;
+
+  var offlineDauKy = document.getElementById('offline-card-dau-ky');
+  var offlineTh18 = document.getElementById('offline-card-th-18');
+  var offlineTh19 = document.getElementById('offline-card-th-19');
+  var offlineConPhaiTh = document.getElementById('offline-card-con-phai-th');
+
+  if (offlineDauKy) offlineDauKy.textContent = fmtCompact(offlineCard.dau_ky);
+  if (offlineTh18) offlineTh18.textContent = '-' + fmtCompact(offlineCard.th_1_4_18_4);
+  if (offlineTh19) offlineTh19.textContent = '-' + fmtCompact(offlineCard.th_luy_ke_tu_19_4);
+  if (offlineConPhaiTh) offlineConPhaiTh.textContent = fmtCompact(offlineCard.con_phai_th);
+
+  var cmt9 = offlineCard.children && offlineCard.children.cmt9;
+  if (cmt9) {
+    var cmtDauKy = document.getElementById('offline-cmt-dau-ky');
+    var cmtThLuyKe = document.getElementById('offline-cmt-th-luy-ke');
+    var cmtConPhaiTh = document.getElementById('offline-cmt-con-phai-th');
+    if (cmtDauKy) cmtDauKy.textContent = fmtCompact(cmt9.dau_ky);
+    if (cmtThLuyKe) cmtThLuyKe.textContent = '-' + fmtCompact(cmt9.th_luy_ke);
+    if (cmtConPhaiTh) cmtConPhaiTh.textContent = fmtCompact(cmt9.con_phai_th);
+  }
+
+  var yeuThe = offlineCard.children && offlineCard.children.yeu_the;
+  if (yeuThe) {
+    var yeuTheDauKy = document.getElementById('offline-yeu-the-dau-ky');
+    var yeuTheThLuyKe = document.getElementById('offline-yeu-the-th-luy-ke');
+    var yeuTheConPhaiTh = document.getElementById('offline-yeu-the-con-phai-th');
+    if (yeuTheDauKy) yeuTheDauKy.textContent = fmtCompact(yeuThe.dau_ky);
+    if (yeuTheThLuyKe) yeuTheThLuyKe.textContent = '-' + fmtCompact(yeuThe.th_luy_ke);
+    if (yeuTheConPhaiTh) yeuTheConPhaiTh.textContent = fmtCompact(yeuThe.con_phai_th);
+  }
 }
 function fmtKhThang4(n) {
   return n < 0 ? '(' + fmtNum(-n) + ')' : fmtNum(n);
@@ -850,7 +925,7 @@ function buildT2Row(r, pctClass) {
 (function loadData() {
   fetch('data.json')
     .then(function(res) { return res.json(); })
-    .then(function(data) { renderT1(data); renderT2(data); renderTrend(data); renderT4(data); })
+    .then(function(data) { renderSummary(data); renderT1(data); renderT2(data); renderTrend(data); renderT4(data); })
     .catch(function(err) {
       var tbody = document.getElementById('t1-tbody');
       if (tbody) tbody.innerHTML = '<tr><td colspan="11" style="text-align:center;padding:18px;color:#dc2626">Không tải được data.json: ' + err.message + '</td></tr>';
