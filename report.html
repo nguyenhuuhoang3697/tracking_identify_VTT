@@ -702,6 +702,29 @@ function findProvinceRow(arr, code) {
   return null;
 }
 
+function fmtK(v) {
+  return v < 10000 ? (v / 1000).toFixed(1) + 'k' : Math.round(v / 1000) + 'k';
+}
+
+function fmtGrowthPct(curr, prev) {
+  var c = Number(curr) || 0;
+  var p = Number(prev) || 0;
+  if (p === 0) return '(N/A)';
+  var pct = ((c - p) / p) * 100;
+  var sign = pct > 0 ? '+' : '';
+  return '(' + sign + pct.toFixed(1) + '%)';
+}
+
+function fmtTotalLabelWithGrowth(ctx) {
+  var series = (ctx && ctx.dataset && ctx.dataset.data) ? ctx.dataset.data : [];
+  var idx = ctx && typeof ctx.dataIndex === 'number' ? ctx.dataIndex : -1;
+  if (idx < 0 || idx >= series.length) return '';
+
+  var current = series[idx];
+  var growthText = idx === 0 ? '(-)' : fmtGrowthPct(current, series[idx - 1]);
+  return [fmtK(current), growthText];
+}
+
 function updateSummaryByProvince(code) {
   var data = window._rawData;
   if (!data) return;
@@ -777,7 +800,7 @@ function makeChart(id, data, labels) {
             align: 'center',
             color: '#fff',
             font: { size: 8, family: 'Inter', weight: '700' },
-            formatter: function(v) { return v < 10000 ? (v/1000).toFixed(1)+'k' : Math.round(v/1000)+'k'; },
+            formatter: function(v) { return fmtK(v); },
             offset: 0,
             padding: 0
           }
@@ -800,7 +823,7 @@ function makeChart(id, data, labels) {
             align: 'top',
             color: '#111827',
             font: { size: 8, family: 'Inter', weight: '600' },
-            formatter: function(v) { return v < 10000 ? (v/1000).toFixed(1)+'k' : Math.round(v/1000)+'k'; },
+            formatter: function(v, ctx) { return fmtTotalLabelWithGrowth(ctx); },
             offset: 3,
             padding: 0
           }
@@ -811,7 +834,7 @@ function makeChart(id, data, labels) {
       responsive: true,
       maintainAspectRatio: true,
       interaction: { mode: 'index', intersect: false },
-      layout: { padding: { top: 18 } },
+      layout: { padding: { top: 30 } },
       plugins: {
         legend: { labels: { font: { size: 10, family: 'Inter' }, boxWidth: 12 } },
         tooltip: {
@@ -819,7 +842,7 @@ function makeChart(id, data, labels) {
           callbacks: {
             label: function(ctx) {
               var v = ctx.parsed.y;
-              return ctx.dataset.label + ': ' + (v < 10000 ? (v/1000).toFixed(1)+'k' : Math.round(v/1000)+'k');
+              return ctx.dataset.label + ': ' + fmtK(v);
             }
           }
         },
@@ -831,7 +854,7 @@ function makeChart(id, data, labels) {
           position: 'left',
           ticks: {
             font: { size: 9 },
-            callback: function(v) { return v < 10000 ? (v/1000).toFixed(1)+'k' : Math.round(v/1000)+'k'; }
+            callback: function(v) { return fmtK(v); }
           },
           grid: { color: 'rgba(0,0,0,.05)' }
         }
@@ -1157,8 +1180,6 @@ function renderT4Province(code) {
     + '<div class="t4-card-pct">' + (p.pct_th * 100).toFixed(1) + '%</div>'
     + '</div><canvas id="chart-t4-main" height="120"></canvas></div>';
 
-  var fmtK = function(v) { return v < 10000 ? (v/1000).toFixed(1)+'k' : Math.round(v/1000)+'k'; };
-
   _t4ChartInstance = new Chart(document.getElementById('chart-t4-main'), {
     data: {
       labels: trend.labels,
@@ -1177,14 +1198,14 @@ function renderT4Province(code) {
           tension: 0.35, fill: false, order: 1, yAxisID: 'y',
           datalabels: { anchor: 'end', align: 'top', color: '#111827',
             font: { size: 10, family: 'Inter', weight: '600' },
-            formatter: fmtK, offset: 4, padding: 0 }
+            formatter: function(v, ctx) { return fmtTotalLabelWithGrowth(ctx); }, offset: 4, padding: 0 }
         }
       ]
     },
     options: {
       responsive: true, maintainAspectRatio: true,
       interaction: { mode: 'index', intersect: false },
-      layout: { padding: { top: 22 } },
+      layout: { padding: { top: 34 } },
       plugins: {
         legend: { labels: { font: { size: 11, family: 'Inter' }, boxWidth: 14 } },
         tooltip: {

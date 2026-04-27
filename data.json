@@ -1,29 +1,29 @@
 {
-  "report_date": "25/04/2026",
+  "report_date": "26/04/2026",
   "from_date": "19/04/2026",
-  "days_from_start": 7,
+  "days_from_start": 8,
   "summary": {
     "total_card": {
       "dau_ky": 30327206,
       "th_1_4_18_4": 1499745,
-      "th_luy_ke_tu_19_4": 1442833,
-      "con_phai_th": 27384628
+      "th_luy_ke_tu_19_4": 1670989,
+      "con_phai_th": 27156472
     },
     "offline_card": {
       "dau_ky": 20425542,
       "th_1_4_18_4": 1499745,
-      "th_luy_ke_tu_19_4": 1128387,
-      "con_phai_th": 17797410,
+      "th_luy_ke_tu_19_4": 1297431,
+      "con_phai_th": 17628366,
       "children": {
         "cmt9": {
           "dau_ky": 12620543,
-          "th_luy_ke": 2398456,
-          "con_phai_th": 10222087
+          "th_luy_ke": 2524909,
+          "con_phai_th": 10095634
         },
         "yeu_the": {
           "dau_ky": 7804999,
-          "th_luy_ke": 256474,
-          "con_phai_th": 7548525
+          "th_luy_ke": 299065,
+          "con_phai_th": 7505934
         }
       }
     },
@@ -32,24 +32,24 @@
         "total_card": {
           "dau_ky": 1079493,
           "th_1_4_18_4": 33269,
-          "th_luy_ke_tu_19_4": 42350,
-          "con_phai_th": 1003874
+          "th_luy_ke_tu_19_4": 48992,
+          "con_phai_th": 997232
         },
         "offline_card": {
           "dau_ky": 777063,
           "th_1_4_18_4": 33269,
-          "th_luy_ke_tu_19_4": 34235,
-          "con_phai_th": 709559,
+          "th_luy_ke_tu_19_4": 39307,
+          "con_phai_th": 704487,
           "children": {
             "cmt9": {
               "dau_ky": 463874,
-              "th_luy_ke": 58925,
-              "con_phai_th": 404949
+              "th_luy_ke": 62479,
+              "con_phai_th": 401395
             },
             "yeu_the": {
               "dau_ky": 313189,
-              "th_luy_ke": 9467,
-              "con_phai_th": 303722
+              "th_luy_ke": 10985,
+              "con_phai_th": 302204
             }
           }
         }
@@ -58,24 +58,24 @@
         "total_card": {
           "dau_ky": 1285128,
           "th_1_4_18_4": 86085,
-          "th_luy_ke_tu_19_4": 70260,
-          "con_phai_th": 1128783
+          "th_luy_ke_tu_19_4": 81591,
+          "con_phai_th": 1117452
         },
         "offline_card": {
           "dau_ky": 855156,
           "th_1_4_18_4": 86085,
-          "th_luy_ke_tu_19_4": 54545,
-          "con_phai_th": 714526,
+          "th_luy_ke_tu_19_4": 62713,
+          "con_phai_th": 706358,
           "children": {
             "cmt9": {
               "dau_ky": 625314,
-              "th_luy_ke": 133761,
-              "con_phai_th": 491553
+              "th_luy_ke": 140682,
+              "con_phai_th": 484632
             },
             "yeu_the": {
               "dau_ky": 229842,
-              "th_luy_ke": 7717,
-              "con_phai_th": 222125
+              "th_luy_ke": 8964,
+              "con_phai_th": 220878
             }
           }
         }
@@ -84,24 +84,24 @@
         "total_card": {
           "dau_ky": 183942,
           "th_1_4_18_4": 14085,
-          "th_luy_ke_tu_19_4": 12792,
-          "con_phai_th": 157065
+          "th_luy_ke_tu_19_4": 14746,
+          "con_phai_th": 155111
         },
         "offline_card": {
           "dau_ky": 153708,
           "th_1_4_18_4": 14085,
-          "th_luy_ke_tu_19_4": 11910,
-          "con_phai_th": 127713,
+          "th_luy_ke_tu_19_4": 13683,
+          "con_phai_th": 125940,
           "children": {
             "cmt9": {
               "dau_ky": 84115,
-              "th_luy_ke": 23508,
-              "con_phai_th": 60607
+              "th_luy_ke": 24732,
+              "con_phai_th": 59383
             },
             "yeu_the": {
               "dau_ky": 69593,
-              "th_luy_ke": 2893,
-              "con_phai_th": 66700
+              "th_luy_ke": 3442,
+              "con_phai_th": 66151
             }
           }
         }
@@ -110,24 +110,24 @@
         "total_card": {
           "dau_ky": 294606,
           "th_1_4_18_4": 9460,
-          "th_luy_ke_tu_19_4": 16345,
-          "con_phai_th": 268801
+          "th_luy_ke_tu_19_4": 18534,
+          "con_phai_th": 266612
         },
         "offline_card": {
           "dau_ky": 216463,
           "th_1_4_18_4": 9460,
-          "th_luy_ke_tu_19_4": 13002,
-          "con_phai_th": 194001,
+          "th_luy_ke_tu_19_4": 14649,
+          "con_phai_th": 192354,
           "children": {
             "cmt9": {
               "dau_ky": 101189,
-              "th_luy_ke": 18164,
-              "con_phai_th": 83025
+              "th_luy_ke": 19101,
+              "con_phai_th": 82088
             },
             "yeu_the": {
               "dau_ky": 115274,
-              "th_luy_ke": 4468,
-              "con_phai_th": 110806
+              "th_luy_ke": 5178,
+              "con_phai_th": 110096
             }
           }
         }
@@ -136,24 +136,24 @@
         "total_card": {
           "dau_ky": 853784,
           "th_1_4_18_4": 26774,
-          "th_luy_ke_tu_19_4": 46160,
-          "con_phai_th": 780850
+          "th_luy_ke_tu_19_4": 52495,
+          "con_phai_th": 774515
         },
         "offline_card": {
           "dau_ky": 590772,
           "th_1_4_18_4": 26774,
-          "th_luy_ke_tu_19_4": 36929,
-          "con_phai_th": 527069,
+          "th_luy_ke_tu_19_4": 41630,
+          "con_phai_th": 522368,
           "children": {
             "cmt9": {
               "dau_ky": 337445,
-              "th_luy_ke": 54380,
-              "con_phai_th": 283065
+              "th_luy_ke": 57496,
+              "con_phai_th": 279949
             },
             "yeu_the": {
               "dau_ky": 253327,
-              "th_luy_ke": 9818,
-              "con_phai_th": 243509
+              "th_luy_ke": 11403,
+              "con_phai_th": 241924
             }
           }
         }
@@ -162,24 +162,24 @@
         "total_card": {
           "dau_ky": 145885,
           "th_1_4_18_4": 6199,
-          "th_luy_ke_tu_19_4": 6328,
-          "con_phai_th": 133358
+          "th_luy_ke_tu_19_4": 7502,
+          "con_phai_th": 132184
         },
         "offline_card": {
           "dau_ky": 103347,
           "th_1_4_18_4": 6199,
-          "th_luy_ke_tu_19_4": 5329,
-          "con_phai_th": 91819,
+          "th_luy_ke_tu_19_4": 6291,
+          "con_phai_th": 90857,
           "children": {
             "cmt9": {
               "dau_ky": 46238,
-              "th_luy_ke": 9828,
-              "con_phai_th": 36410
+              "th_luy_ke": 10392,
+              "con_phai_th": 35846
             },
             "yeu_the": {
               "dau_ky": 57109,
-              "th_luy_ke": 1824,
-              "con_phai_th": 55285
+              "th_luy_ke": 2222,
+              "con_phai_th": 54887
             }
           }
         }
@@ -188,24 +188,24 @@
         "total_card": {
           "dau_ky": 865857,
           "th_1_4_18_4": 60289,
-          "th_luy_ke_tu_19_4": 44892,
-          "con_phai_th": 760676
+          "th_luy_ke_tu_19_4": 50439,
+          "con_phai_th": 755129
         },
         "offline_card": {
           "dau_ky": 675934,
           "th_1_4_18_4": 60289,
-          "th_luy_ke_tu_19_4": 39829,
-          "con_phai_th": 575816,
+          "th_luy_ke_tu_19_4": 44589,
+          "con_phai_th": 571056,
           "children": {
             "cmt9": {
               "dau_ky": 404500,
-              "th_luy_ke": 91354,
-              "con_phai_th": 313146
+              "th_luy_ke": 94889,
+              "con_phai_th": 309611
             },
             "yeu_the": {
               "dau_ky": 271434,
-              "th_luy_ke": 9923,
-              "con_phai_th": 261511
+              "th_luy_ke": 11148,
+              "con_phai_th": 260286
             }
           }
         }
@@ -214,24 +214,24 @@
         "total_card": {
           "dau_ky": 645765,
           "th_1_4_18_4": 36956,
-          "th_luy_ke_tu_19_4": 32932,
-          "con_phai_th": 575877
+          "th_luy_ke_tu_19_4": 37574,
+          "con_phai_th": 571235
         },
         "offline_card": {
           "dau_ky": 470034,
           "th_1_4_18_4": 36956,
-          "th_luy_ke_tu_19_4": 27258,
-          "con_phai_th": 405820,
+          "th_luy_ke_tu_19_4": 30827,
+          "con_phai_th": 402251,
           "children": {
             "cmt9": {
               "dau_ky": 280731,
-              "th_luy_ke": 58863,
-              "con_phai_th": 221868
+              "th_luy_ke": 61591,
+              "con_phai_th": 219140
             },
             "yeu_the": {
               "dau_ky": 189303,
-              "th_luy_ke": 5947,
-              "con_phai_th": 183356
+              "th_luy_ke": 6788,
+              "con_phai_th": 182515
             }
           }
         }
@@ -240,24 +240,24 @@
         "total_card": {
           "dau_ky": 1409894,
           "th_1_4_18_4": 75045,
-          "th_luy_ke_tu_19_4": 61307,
-          "con_phai_th": 1273542
+          "th_luy_ke_tu_19_4": 70644,
+          "con_phai_th": 1264205
         },
         "offline_card": {
           "dau_ky": 977311,
           "th_1_4_18_4": 75045,
-          "th_luy_ke_tu_19_4": 50407,
-          "con_phai_th": 851859,
+          "th_luy_ke_tu_19_4": 57630,
+          "con_phai_th": 844636,
           "children": {
             "cmt9": {
               "dau_ky": 656794,
-              "th_luy_ke": 118883,
-              "con_phai_th": 537911
+              "th_luy_ke": 124774,
+              "con_phai_th": 532020
             },
             "yeu_the": {
               "dau_ky": 320517,
-              "th_luy_ke": 7269,
-              "con_phai_th": 313248
+              "th_luy_ke": 8601,
+              "con_phai_th": 311916
             }
           }
         }
@@ -266,24 +266,24 @@
         "total_card": {
           "dau_ky": 1007603,
           "th_1_4_18_4": 43552,
-          "th_luy_ke_tu_19_4": 41698,
-          "con_phai_th": 922353
+          "th_luy_ke_tu_19_4": 48032,
+          "con_phai_th": 916019
         },
         "offline_card": {
           "dau_ky": 729187,
           "th_1_4_18_4": 43552,
-          "th_luy_ke_tu_19_4": 34299,
-          "con_phai_th": 651336,
+          "th_luy_ke_tu_19_4": 39346,
+          "con_phai_th": 646289,
           "children": {
             "cmt9": {
               "dau_ky": 471388,
-              "th_luy_ke": 71185,
-              "con_phai_th": 400203
+              "th_luy_ke": 75106,
+              "con_phai_th": 396282
             },
             "yeu_the": {
               "dau_ky": 257799,
-              "th_luy_ke": 7267,
-              "con_phai_th": 250532
+              "th_luy_ke": 8393,
+              "con_phai_th": 249406
             }
           }
         }
@@ -292,24 +292,24 @@
         "total_card": {
           "dau_ky": 1084925,
           "th_1_4_18_4": 61332,
-          "th_luy_ke_tu_19_4": 51315,
-          "con_phai_th": 972278
+          "th_luy_ke_tu_19_4": 59595,
+          "con_phai_th": 963998
         },
         "offline_card": {
           "dau_ky": 823905,
           "th_1_4_18_4": 61332,
-          "th_luy_ke_tu_19_4": 45315,
-          "con_phai_th": 717258,
+          "th_luy_ke_tu_19_4": 52371,
+          "con_phai_th": 710202,
           "children": {
             "cmt9": {
               "dau_ky": 494965,
-              "th_luy_ke": 97924,
-              "con_phai_th": 397041
+              "th_luy_ke": 102995,
+              "con_phai_th": 391970
             },
             "yeu_the": {
               "dau_ky": 328940,
-              "th_luy_ke": 9692,
-              "con_phai_th": 319248
+              "th_luy_ke": 11677,
+              "con_phai_th": 317263
             }
           }
         }
@@ -318,24 +318,24 @@
         "total_card": {
           "dau_ky": 3578511,
           "th_1_4_18_4": 135141,
-          "th_luy_ke_tu_19_4": 133518,
-          "con_phai_th": 3309852
+          "th_luy_ke_tu_19_4": 156005,
+          "con_phai_th": 3287365
         },
         "offline_card": {
           "dau_ky": 2150183,
           "th_1_4_18_4": 135141,
-          "th_luy_ke_tu_19_4": 85359,
-          "con_phai_th": 1929683,
+          "th_luy_ke_tu_19_4": 99207,
+          "con_phai_th": 1915835,
           "children": {
             "cmt9": {
               "dau_ky": 1412640,
-              "th_luy_ke": 205473,
-              "con_phai_th": 1207167
+              "th_luy_ke": 216343,
+              "con_phai_th": 1196297
             },
             "yeu_the": {
               "dau_ky": 737543,
-              "th_luy_ke": 15817,
-              "con_phai_th": 721726
+              "th_luy_ke": 18795,
+              "con_phai_th": 718748
             }
           }
         }
@@ -344,24 +344,24 @@
         "total_card": {
           "dau_ky": 3265949,
           "th_1_4_18_4": 122051,
-          "th_luy_ke_tu_19_4": 153137,
-          "con_phai_th": 2990761
+          "th_luy_ke_tu_19_4": 176541,
+          "con_phai_th": 2967357
         },
         "offline_card": {
           "dau_ky": 1663325,
           "th_1_4_18_4": 122051,
-          "th_luy_ke_tu_19_4": 88894,
-          "con_phai_th": 1452380,
+          "th_luy_ke_tu_19_4": 101644,
+          "con_phai_th": 1439630,
           "children": {
             "cmt9": {
               "dau_ky": 1085932,
-              "th_luy_ke": 192387,
-              "con_phai_th": 893545
+              "th_luy_ke": 202225,
+              "con_phai_th": 883707
             },
             "yeu_the": {
               "dau_ky": 577393,
-              "th_luy_ke": 20058,
-              "con_phai_th": 557335
+              "th_luy_ke": 22970,
+              "con_phai_th": 554423
             }
           }
         }
@@ -370,24 +370,24 @@
         "total_card": {
           "dau_ky": 1044956,
           "th_1_4_18_4": 49488,
-          "th_luy_ke_tu_19_4": 46045,
-          "con_phai_th": 949423
+          "th_luy_ke_tu_19_4": 55674,
+          "con_phai_th": 939794
         },
         "offline_card": {
           "dau_ky": 610852,
           "th_1_4_18_4": 49488,
-          "th_luy_ke_tu_19_4": 31779,
-          "con_phai_th": 529585,
+          "th_luy_ke_tu_19_4": 38308,
+          "con_phai_th": 523056,
           "children": {
             "cmt9": {
               "dau_ky": 399689,
-              "th_luy_ke": 75571,
-              "con_phai_th": 324118
+              "th_luy_ke": 80759,
+              "con_phai_th": 318930
             },
             "yeu_the": {
               "dau_ky": 211163,
-              "th_luy_ke": 6150,
-              "con_phai_th": 205013
+              "th_luy_ke": 7491,
+              "con_phai_th": 203672
             }
           }
         }
@@ -396,24 +396,24 @@
         "total_card": {
           "dau_ky": 361645,
           "th_1_4_18_4": 28585,
-          "th_luy_ke_tu_19_4": 35414,
-          "con_phai_th": 297646
+          "th_luy_ke_tu_19_4": 39931,
+          "con_phai_th": 293129
         },
         "offline_card": {
           "dau_ky": 272950,
           "th_1_4_18_4": 28585,
-          "th_luy_ke_tu_19_4": 30456,
-          "con_phai_th": 213909,
+          "th_luy_ke_tu_19_4": 34088,
+          "con_phai_th": 210277,
           "children": {
             "cmt9": {
               "dau_ky": 182356,
-              "th_luy_ke": 52396,
-              "con_phai_th": 129960
+              "th_luy_ke": 55015,
+              "con_phai_th": 127341
             },
             "yeu_the": {
               "dau_ky": 90594,
-              "th_luy_ke": 8435,
-              "con_phai_th": 82159
+              "th_luy_ke": 9448,
+              "con_phai_th": 81146
             }
           }
         }
@@ -422,24 +422,24 @@
         "total_card": {
           "dau_ky": 285109,
           "th_1_4_18_4": 18705,
-          "th_luy_ke_tu_19_4": 17192,
-          "con_phai_th": 249212
+          "th_luy_ke_tu_19_4": 19523,
+          "con_phai_th": 246881
         },
         "offline_card": {
           "dau_ky": 207766,
           "th_1_4_18_4": 18705,
-          "th_luy_ke_tu_19_4": 14080,
-          "con_phai_th": 174981,
+          "th_luy_ke_tu_19_4": 15822,
+          "con_phai_th": 173239,
           "children": {
             "cmt9": {
               "dau_ky": 141794,
-              "th_luy_ke": 30500,
-              "con_phai_th": 111294
+              "th_luy_ke": 31892,
+              "con_phai_th": 109902
             },
             "yeu_the": {
               "dau_ky": 65972,
-              "th_luy_ke": 2586,
-              "con_phai_th": 63386
+              "th_luy_ke": 2936,
+              "con_phai_th": 63036
             }
           }
         }
@@ -448,24 +448,24 @@
         "total_card": {
           "dau_ky": 894371,
           "th_1_4_18_4": 52801,
-          "th_luy_ke_tu_19_4": 44687,
-          "con_phai_th": 796883
+          "th_luy_ke_tu_19_4": 53656,
+          "con_phai_th": 787914
         },
         "offline_card": {
           "dau_ky": 549163,
           "th_1_4_18_4": 52801,
-          "th_luy_ke_tu_19_4": 33343,
-          "con_phai_th": 463019,
+          "th_luy_ke_tu_19_4": 39827,
+          "con_phai_th": 456535,
           "children": {
             "cmt9": {
               "dau_ky": 341243,
-              "th_luy_ke": 80145,
-              "con_phai_th": 261098
+              "th_luy_ke": 85216,
+              "con_phai_th": 256027
             },
             "yeu_the": {
               "dau_ky": 207920,
-              "th_luy_ke": 6717,
-              "con_phai_th": 201203
+              "th_luy_ke": 8130,
+              "con_phai_th": 199790
             }
           }
         }
@@ -474,24 +474,24 @@
         "total_card": {
           "dau_ky": 565397,
           "th_1_4_18_4": 36512,
-          "th_luy_ke_tu_19_4": 29959,
-          "con_phai_th": 498926
+          "th_luy_ke_tu_19_4": 33416,
+          "con_phai_th": 495469
         },
         "offline_card": {
           "dau_ky": 433574,
           "th_1_4_18_4": 36512,
-          "th_luy_ke_tu_19_4": 26204,
-          "con_phai_th": 370858,
+          "th_luy_ke_tu_19_4": 29069,
+          "con_phai_th": 367993,
           "children": {
             "cmt9": {
               "dau_ky": 294518,
-              "th_luy_ke": 59626,
-              "con_phai_th": 234892
+              "th_luy_ke": 61998,
+              "con_phai_th": 232520
             },
             "yeu_the": {
               "dau_ky": 139056,
-              "th_luy_ke": 3502,
-              "con_phai_th": 135554
+              "th_luy_ke": 3995,
+              "con_phai_th": 135061
             }
           }
         }
@@ -500,24 +500,24 @@
         "total_card": {
           "dau_ky": 526562,
           "th_1_4_18_4": 28925,
-          "th_luy_ke_tu_19_4": 24513,
-          "con_phai_th": 473124
+          "th_luy_ke_tu_19_4": 28248,
+          "con_phai_th": 469389
         },
         "offline_card": {
           "dau_ky": 398499,
           "th_1_4_18_4": 28925,
-          "th_luy_ke_tu_19_4": 21467,
-          "con_phai_th": 348107,
+          "th_luy_ke_tu_19_4": 24610,
+          "con_phai_th": 344964,
           "children": {
             "cmt9": {
               "dau_ky": 203892,
-              "th_luy_ke": 44684,
-              "con_phai_th": 159208
+              "th_luy_ke": 46782,
+              "con_phai_th": 157110
             },
             "yeu_the": {
               "dau_ky": 194607,
-              "th_luy_ke": 6586,
-              "con_phai_th": 188021
+              "th_luy_ke": 7631,
+              "con_phai_th": 186976
             }
           }
         }
@@ -526,24 +526,24 @@
         "total_card": {
           "dau_ky": 162492,
           "th_1_4_18_4": 4271,
-          "th_luy_ke_tu_19_4": 8347,
-          "con_phai_th": 149874
+          "th_luy_ke_tu_19_4": 10815,
+          "con_phai_th": 147406
         },
         "offline_card": {
           "dau_ky": 126042,
           "th_1_4_18_4": 4271,
-          "th_luy_ke_tu_19_4": 6979,
-          "con_phai_th": 114792,
+          "th_luy_ke_tu_19_4": 8997,
+          "con_phai_th": 112774,
           "children": {
             "cmt9": {
               "dau_ky": 44648,
-              "th_luy_ke": 8137,
-              "con_phai_th": 36511
+              "th_luy_ke": 8962,
+              "con_phai_th": 35686
             },
             "yeu_the": {
               "dau_ky": 81394,
-              "th_luy_ke": 3461,
-              "con_phai_th": 77933
+              "th_luy_ke": 4654,
+              "con_phai_th": 76740
             }
           }
         }
@@ -552,24 +552,24 @@
         "total_card": {
           "dau_ky": 1188375,
           "th_1_4_18_4": 49983,
-          "th_luy_ke_tu_19_4": 51459,
-          "con_phai_th": 1086933
+          "th_luy_ke_tu_19_4": 58868,
+          "con_phai_th": 1079524
         },
         "offline_card": {
           "dau_ky": 904078,
           "th_1_4_18_4": 49983,
-          "th_luy_ke_tu_19_4": 45324,
-          "con_phai_th": 808771,
+          "th_luy_ke_tu_19_4": 51552,
+          "con_phai_th": 802543,
           "children": {
             "cmt9": {
               "dau_ky": 546107,
-              "th_luy_ke": 87781,
-              "con_phai_th": 458326
+              "th_luy_ke": 92697,
+              "con_phai_th": 453410
             },
             "yeu_the": {
               "dau_ky": 357971,
-              "th_luy_ke": 8472,
-              "con_phai_th": 349499
+              "th_luy_ke": 9784,
+              "con_phai_th": 348187
             }
           }
         }
@@ -578,24 +578,24 @@
         "total_card": {
           "dau_ky": 371038,
           "th_1_4_18_4": 20848,
-          "th_luy_ke_tu_19_4": 19168,
-          "con_phai_th": 331022
+          "th_luy_ke_tu_19_4": 21833,
+          "con_phai_th": 328357
         },
         "offline_card": {
           "dau_ky": 282614,
           "th_1_4_18_4": 20848,
-          "th_luy_ke_tu_19_4": 17010,
-          "con_phai_th": 244756,
+          "th_luy_ke_tu_19_4": 19325,
+          "con_phai_th": 242441,
           "children": {
             "cmt9": {
               "dau_ky": 144063,
-              "th_luy_ke": 32530,
-              "con_phai_th": 111533
+              "th_luy_ke": 34017,
+              "con_phai_th": 110046
             },
             "yeu_the": {
               "dau_ky": 138551,
-              "th_luy_ke": 6524,
-              "con_phai_th": 132027
+              "th_luy_ke": 7352,
+              "con_phai_th": 131199
             }
           }
         }
@@ -604,24 +604,24 @@
         "total_card": {
           "dau_ky": 1017106,
           "th_1_4_18_4": 68931,
-          "th_luy_ke_tu_19_4": 61172,
-          "con_phai_th": 887003
+          "th_luy_ke_tu_19_4": 70489,
+          "con_phai_th": 877686
         },
         "offline_card": {
           "dau_ky": 768179,
           "th_1_4_18_4": 68931,
-          "th_luy_ke_tu_19_4": 52396,
-          "con_phai_th": 646852,
+          "th_luy_ke_tu_19_4": 59970,
+          "con_phai_th": 639278,
           "children": {
             "cmt9": {
               "dau_ky": 452506,
-              "th_luy_ke": 106368,
-              "con_phai_th": 346138
+              "th_luy_ke": 111600,
+              "con_phai_th": 340906
             },
             "yeu_the": {
               "dau_ky": 315673,
-              "th_luy_ke": 16888,
-              "con_phai_th": 298785
+              "th_luy_ke": 19230,
+              "con_phai_th": 296443
             }
           }
         }
@@ -630,24 +630,24 @@
         "total_card": {
           "dau_ky": 914401,
           "th_1_4_18_4": 49929,
-          "th_luy_ke_tu_19_4": 38791,
-          "con_phai_th": 825681
+          "th_luy_ke_tu_19_4": 47096,
+          "con_phai_th": 817376
         },
         "offline_card": {
           "dau_ky": 566568,
           "th_1_4_18_4": 49929,
-          "th_luy_ke_tu_19_4": 27799,
-          "con_phai_th": 488840,
+          "th_luy_ke_tu_19_4": 33530,
+          "con_phai_th": 483109,
           "children": {
             "cmt9": {
               "dau_ky": 347852,
-              "th_luy_ke": 72114,
-              "con_phai_th": 275738
+              "th_luy_ke": 76299,
+              "con_phai_th": 271553
             },
             "yeu_the": {
               "dau_ky": 218716,
-              "th_luy_ke": 6121,
-              "con_phai_th": 212595
+              "th_luy_ke": 7667,
+              "con_phai_th": 211049
             }
           }
         }
@@ -656,24 +656,24 @@
         "total_card": {
           "dau_ky": 1261095,
           "th_1_4_18_4": 83582,
-          "th_luy_ke_tu_19_4": 60203,
-          "con_phai_th": 1117310
+          "th_luy_ke_tu_19_4": 70975,
+          "con_phai_th": 1106538
         },
         "offline_card": {
           "dau_ky": 867169,
           "th_1_4_18_4": 83582,
-          "th_luy_ke_tu_19_4": 48520,
-          "con_phai_th": 735067,
+          "th_luy_ke_tu_19_4": 56818,
+          "con_phai_th": 726769,
           "children": {
             "cmt9": {
               "dau_ky": 550118,
-              "th_luy_ke": 121711,
-              "con_phai_th": 428407
+              "th_luy_ke": 128155,
+              "con_phai_th": 421963
             },
             "yeu_the": {
               "dau_ky": 317051,
-              "th_luy_ke": 11854,
-              "con_phai_th": 305197
+              "th_luy_ke": 13708,
+              "con_phai_th": 303343
             }
           }
         }
@@ -682,24 +682,24 @@
         "total_card": {
           "dau_ky": 416872,
           "th_1_4_18_4": 19902,
-          "th_luy_ke_tu_19_4": 22220,
-          "con_phai_th": 374750
+          "th_luy_ke_tu_19_4": 25830,
+          "con_phai_th": 371140
         },
         "offline_card": {
           "dau_ky": 253468,
           "th_1_4_18_4": 19902,
-          "th_luy_ke_tu_19_4": 16795,
-          "con_phai_th": 216771,
+          "th_luy_ke_tu_19_4": 19462,
+          "con_phai_th": 214104,
           "children": {
             "cmt9": {
               "dau_ky": 141892,
-              "th_luy_ke": 32314,
-              "con_phai_th": 109578
+              "th_luy_ke": 34264,
+              "con_phai_th": 107628
             },
             "yeu_the": {
               "dau_ky": 111576,
-              "th_luy_ke": 4951,
-              "con_phai_th": 106625
+              "th_luy_ke": 5668,
+              "con_phai_th": 105908
             }
           }
         }
@@ -708,24 +708,24 @@
         "total_card": {
           "dau_ky": 576110,
           "th_1_4_18_4": 42884,
-          "th_luy_ke_tu_19_4": 34416,
-          "con_phai_th": 498810
+          "th_luy_ke_tu_19_4": 38075,
+          "con_phai_th": 495151
         },
         "offline_card": {
           "dau_ky": 444216,
           "th_1_4_18_4": 42884,
-          "th_luy_ke_tu_19_4": 31423,
-          "con_phai_th": 369909,
+          "th_luy_ke_tu_19_4": 34589,
+          "con_phai_th": 366743,
           "children": {
             "cmt9": {
               "dau_ky": 273016,
-              "th_luy_ke": 70720,
-              "con_phai_th": 202296
+              "th_luy_ke": 73415,
+              "con_phai_th": 199601
             },
             "yeu_the": {
               "dau_ky": 171200,
-              "th_luy_ke": 4087,
-              "con_phai_th": 167113
+              "th_luy_ke": 4558,
+              "con_phai_th": 166642
             }
           }
         }
@@ -734,24 +734,24 @@
         "total_card": {
           "dau_ky": 322028,
           "th_1_4_18_4": 17942,
-          "th_luy_ke_tu_19_4": 19779,
-          "con_phai_th": 284307
+          "th_luy_ke_tu_19_4": 23465,
+          "con_phai_th": 280621
         },
         "offline_card": {
           "dau_ky": 234640,
           "th_1_4_18_4": 17942,
-          "th_luy_ke_tu_19_4": 16687,
-          "con_phai_th": 200011,
+          "th_luy_ke_tu_19_4": 19635,
+          "con_phai_th": 197063,
           "children": {
             "cmt9": {
               "dau_ky": 124133,
-              "th_luy_ke": 29446,
-              "con_phai_th": 94687
+              "th_luy_ke": 31262,
+              "con_phai_th": 92871
             },
             "yeu_the": {
               "dau_ky": 110507,
-              "th_luy_ke": 5583,
-              "con_phai_th": 104924
+              "th_luy_ke": 6715,
+              "con_phai_th": 103792
             }
           }
         }
@@ -760,24 +760,24 @@
         "total_card": {
           "dau_ky": 472333,
           "th_1_4_18_4": 20557,
-          "th_luy_ke_tu_19_4": 20885,
-          "con_phai_th": 430891
+          "th_luy_ke_tu_19_4": 23391,
+          "con_phai_th": 428385
         },
         "offline_card": {
           "dau_ky": 359823,
           "th_1_4_18_4": 20557,
-          "th_luy_ke_tu_19_4": 18472,
-          "con_phai_th": 320794,
+          "th_luy_ke_tu_19_4": 20549,
+          "con_phai_th": 318717,
           "children": {
             "cmt9": {
               "dau_ky": 175359,
-              "th_luy_ke": 33482,
-              "con_phai_th": 141877
+              "th_luy_ke": 34794,
+              "con_phai_th": 140565
             },
             "yeu_the": {
               "dau_ky": 184464,
-              "th_luy_ke": 6642,
-              "con_phai_th": 177822
+              "th_luy_ke": 7407,
+              "con_phai_th": 177057
             }
           }
         }
@@ -786,24 +786,24 @@
         "total_card": {
           "dau_ky": 978536,
           "th_1_4_18_4": 45959,
-          "th_luy_ke_tu_19_4": 41055,
-          "con_phai_th": 891522
+          "th_luy_ke_tu_19_4": 49528,
+          "con_phai_th": 883049
         },
         "offline_card": {
           "dau_ky": 662114,
           "th_1_4_18_4": 45959,
-          "th_luy_ke_tu_19_4": 33195,
-          "con_phai_th": 582960,
+          "th_luy_ke_tu_19_4": 39845,
+          "con_phai_th": 576310,
           "children": {
             "cmt9": {
               "dau_ky": 371619,
-              "th_luy_ke": 70583,
-              "con_phai_th": 301036
+              "th_luy_ke": 75134,
+              "con_phai_th": 296485
             },
             "yeu_the": {
               "dau_ky": 290495,
-              "th_luy_ke": 9705,
-              "con_phai_th": 280790
+              "th_luy_ke": 11804,
+              "con_phai_th": 278691
             }
           }
         }
@@ -812,24 +812,24 @@
         "total_card": {
           "dau_ky": 1009008,
           "th_1_4_18_4": 33008,
-          "th_luy_ke_tu_19_4": 45519,
-          "con_phai_th": 930481
+          "th_luy_ke_tu_19_4": 52818,
+          "con_phai_th": 923182
         },
         "offline_card": {
           "dau_ky": 660311,
           "th_1_4_18_4": 33008,
-          "th_luy_ke_tu_19_4": 35481,
-          "con_phai_th": 591822,
+          "th_luy_ke_tu_19_4": 40947,
+          "con_phai_th": 586356,
           "children": {
             "cmt9": {
               "dau_ky": 415044,
-              "th_luy_ke": 62360,
-              "con_phai_th": 352684
+              "th_luy_ke": 66655,
+              "con_phai_th": 348389
             },
             "yeu_the": {
               "dau_ky": 245267,
-              "th_luy_ke": 6721,
-              "con_phai_th": 238546
+              "th_luy_ke": 7892,
+              "con_phai_th": 237375
             }
           }
         }
@@ -838,24 +838,24 @@
         "total_card": {
           "dau_ky": 598334,
           "th_1_4_18_4": 42826,
-          "th_luy_ke_tu_19_4": 31495,
-          "con_phai_th": 524013
+          "th_luy_ke_tu_19_4": 36461,
+          "con_phai_th": 519047
         },
         "offline_card": {
           "dau_ky": 425275,
           "th_1_4_18_4": 42826,
-          "th_luy_ke_tu_19_4": 26935,
-          "con_phai_th": 355514,
+          "th_luy_ke_tu_19_4": 31014,
+          "con_phai_th": 351435,
           "children": {
             "cmt9": {
               "dau_ky": 296284,
-              "th_luy_ke": 66672,
-              "con_phai_th": 229612
+              "th_luy_ke": 70170,
+              "con_phai_th": 226114
             },
             "yeu_the": {
               "dau_ky": 128991,
-              "th_luy_ke": 3559,
-              "con_phai_th": 125432
+              "th_luy_ke": 4140,
+              "con_phai_th": 124851
             }
           }
         }
@@ -864,24 +864,24 @@
         "total_card": {
           "dau_ky": 619422,
           "th_1_4_18_4": 30397,
-          "th_luy_ke_tu_19_4": 33050,
-          "con_phai_th": 555975
+          "th_luy_ke_tu_19_4": 37860,
+          "con_phai_th": 551165
         },
         "offline_card": {
           "dau_ky": 467936,
           "th_1_4_18_4": 30397,
-          "th_luy_ke_tu_19_4": 29337,
-          "con_phai_th": 408202,
+          "th_luy_ke_tu_19_4": 33485,
+          "con_phai_th": 404054,
           "children": {
             "cmt9": {
               "dau_ky": 242696,
-              "th_luy_ke": 51831,
-              "con_phai_th": 190865
+              "th_luy_ke": 54623,
+              "con_phai_th": 188073
             },
             "yeu_the": {
               "dau_ky": 225240,
-              "th_luy_ke": 9215,
-              "con_phai_th": 216025
+              "th_luy_ke": 10571,
+              "con_phai_th": 214669
             }
           }
         }
@@ -890,24 +890,24 @@
         "total_card": {
           "dau_ky": 1040674,
           "th_1_4_18_4": 43472,
-          "th_luy_ke_tu_19_4": 44430,
-          "con_phai_th": 952772
+          "th_luy_ke_tu_19_4": 50347,
+          "con_phai_th": 946855
         },
         "offline_card": {
           "dau_ky": 743917,
           "th_1_4_18_4": 43472,
-          "th_luy_ke_tu_19_4": 37394,
-          "con_phai_th": 663051,
+          "th_luy_ke_tu_19_4": 42102,
+          "con_phai_th": 658343,
           "children": {
             "cmt9": {
               "dau_ky": 466589,
-              "th_luy_ke": 74850,
-              "con_phai_th": 391739
+              "th_luy_ke": 78395,
+              "con_phai_th": 388194
             },
             "yeu_the": {
               "dau_ky": 277328,
-              "th_luy_ke": 6555,
-              "con_phai_th": 270773
+              "th_luy_ke": 7718,
+              "con_phai_th": 269610
             }
           }
         }
@@ -920,511 +920,511 @@
       {
         "province": "HTH",
         "dau_ky": 361645,
-        "kh_den_ngay": 10166,
-        "luy_ke": 35414,
-        "online": 4943,
-        "offline": 30471,
-        "pct_th": 3.483573,
-        "pct_online": 0.139578,
-        "pct_offline": 0.860422,
-        "kh_thang4": -19439,
-        "pct_th_dau_ky": 0.097925,
-        "can_xac_thuc": 297646,
+        "kh_den_ngay": 11618,
+        "luy_ke": 39931,
+        "online": 5958,
+        "offline": 33973,
+        "pct_th": 3.436994,
+        "pct_online": 0.149207,
+        "pct_offline": 0.850793,
+        "kh_thang4": -23956,
+        "pct_th_dau_ky": 0.110415,
+        "can_xac_thuc": 293129,
         "rank": 1
       },
       {
         "province": "BNH",
         "dau_ky": 1285128,
-        "kh_den_ngay": 51818,
-        "luy_ke": 70260,
-        "online": 26121,
-        "offline": 44139,
-        "pct_th": 1.355899,
-        "pct_online": 0.371776,
-        "pct_offline": 0.628224,
-        "kh_thang4": 11168,
-        "pct_th_dau_ky": 0.054672,
-        "can_xac_thuc": 1128783,
+        "kh_den_ngay": 59220,
+        "luy_ke": 81591,
+        "online": 32215,
+        "offline": 49376,
+        "pct_th": 1.377761,
+        "pct_online": 0.394835,
+        "pct_offline": 0.605165,
+        "kh_thang4": -163,
+        "pct_th_dau_ky": 0.063489,
+        "can_xac_thuc": 1117452,
         "rank": 2
+      },
+      {
+        "province": "HYN",
+        "dau_ky": 894371,
+        "kh_den_ngay": 48556,
+        "luy_ke": 53656,
+        "online": 15881,
+        "offline": 37775,
+        "pct_th": 1.105033,
+        "pct_online": 0.295978,
+        "pct_offline": 0.704022,
+        "kh_thang4": 13108,
+        "pct_th_dau_ky": 0.059993,
+        "can_xac_thuc": 787914,
+        "rank": 3
       },
       {
         "province": "NAN",
         "dau_ky": 1017106,
-        "kh_den_ngay": 56508,
-        "luy_ke": 61172,
-        "online": 12732,
-        "offline": 48440,
-        "pct_th": 1.082537,
-        "pct_online": 0.208134,
-        "pct_offline": 0.791866,
-        "kh_thang4": 27626,
-        "pct_th_dau_ky": 0.060143,
-        "can_xac_thuc": 887003,
-        "rank": 3
-      },
-      {
-        "province": "CBG",
-        "dau_ky": 183942,
-        "kh_den_ngay": 11908,
-        "luy_ke": 12792,
-        "online": 2155,
-        "offline": 10637,
-        "pct_th": 1.074236,
-        "pct_online": 0.168465,
-        "pct_offline": 0.831535,
-        "kh_thang4": 5921,
-        "pct_th_dau_ky": 0.069544,
-        "can_xac_thuc": 157065,
+        "kh_den_ngay": 64580,
+        "luy_ke": 70489,
+        "online": 15718,
+        "offline": 54771,
+        "pct_th": 1.091499,
+        "pct_online": 0.222985,
+        "pct_offline": 0.777015,
+        "kh_thang4": 18309,
+        "pct_th_dau_ky": 0.069303,
+        "can_xac_thuc": 877686,
         "rank": 4
       },
       {
         "province": "TNN",
         "dau_ky": 598334,
-        "kh_den_ngay": 29341,
-        "luy_ke": 31495,
-        "online": 9869,
-        "offline": 21626,
-        "pct_th": 1.073413,
-        "pct_online": 0.313351,
-        "pct_offline": 0.686649,
-        "kh_thang4": 14613,
-        "pct_th_dau_ky": 0.052638,
-        "can_xac_thuc": 524013,
+        "kh_den_ngay": 33533,
+        "luy_ke": 36461,
+        "online": 12197,
+        "offline": 24264,
+        "pct_th": 1.087317,
+        "pct_online": 0.334522,
+        "pct_offline": 0.665478,
+        "kh_thang4": 9647,
+        "pct_th_dau_ky": 0.060938,
+        "can_xac_thuc": 519047,
         "rank": 5
       },
       {
-        "province": "HYN",
-        "dau_ky": 894371,
-        "kh_den_ngay": 42486,
-        "luy_ke": 44687,
-        "online": 12537,
-        "offline": 32150,
-        "pct_th": 1.051805,
-        "pct_online": 0.280551,
-        "pct_offline": 0.719449,
-        "kh_thang4": 22077,
-        "pct_th_dau_ky": 0.049965,
-        "can_xac_thuc": 796883,
+        "province": "CBG",
+        "dau_ky": 183942,
+        "kh_den_ngay": 13609,
+        "luy_ke": 14746,
+        "online": 2571,
+        "offline": 12175,
+        "pct_th": 1.083548,
+        "pct_online": 0.174352,
+        "pct_offline": 0.825648,
+        "kh_thang4": 3967,
+        "pct_th_dau_ky": 0.080167,
+        "can_xac_thuc": 155111,
         "rank": 6
       },
       {
-        "province": "QNI",
-        "dau_ky": 576110,
-        "kh_den_ngay": 33600,
-        "luy_ke": 34416,
-        "online": 5186,
-        "offline": 29230,
-        "pct_th": 1.024286,
-        "pct_online": 0.150686,
-        "pct_offline": 0.849314,
-        "kh_thang4": 18384,
-        "pct_th_dau_ky": 0.059739,
-        "can_xac_thuc": 498810,
+        "province": "PTO",
+        "dau_ky": 1261095,
+        "kh_den_ngay": 69531,
+        "luy_ke": 70975,
+        "online": 23108,
+        "offline": 47867,
+        "pct_th": 1.020768,
+        "pct_online": 0.325579,
+        "pct_offline": 0.674421,
+        "kh_thang4": 24630,
+        "pct_th_dau_ky": 0.05628,
+        "can_xac_thuc": 1106538,
         "rank": 7
       },
       {
         "province": "HUE",
         "dau_ky": 285109,
-        "kh_den_ngay": 16904,
-        "luy_ke": 17192,
-        "online": 4505,
-        "offline": 12687,
-        "pct_th": 1.017037,
-        "pct_online": 0.26204,
-        "pct_offline": 0.73796,
-        "kh_thang4": 9372,
-        "pct_th_dau_ky": 0.0603,
-        "can_xac_thuc": 249212,
+        "kh_den_ngay": 19319,
+        "luy_ke": 19523,
+        "online": 5524,
+        "offline": 13999,
+        "pct_th": 1.01056,
+        "pct_online": 0.282948,
+        "pct_offline": 0.717052,
+        "kh_thang4": 7041,
+        "pct_th_dau_ky": 0.068476,
+        "can_xac_thuc": 246881,
         "rank": 8
       },
       {
         "province": "QNH",
         "dau_ky": 416872,
-        "kh_den_ngay": 22398,
-        "luy_ke": 22220,
-        "online": 6106,
-        "offline": 16114,
-        "pct_th": 0.992053,
-        "pct_online": 0.274797,
-        "pct_offline": 0.725203,
-        "kh_thang4": 12977,
-        "pct_th_dau_ky": 0.053302,
-        "can_xac_thuc": 374750,
+        "kh_den_ngay": 25598,
+        "luy_ke": 25830,
+        "online": 7358,
+        "offline": 18472,
+        "pct_th": 1.009063,
+        "pct_online": 0.284863,
+        "pct_offline": 0.715137,
+        "kh_thang4": 9367,
+        "pct_th_dau_ky": 0.061961,
+        "can_xac_thuc": 371140,
         "rank": 9
       },
       {
-        "province": "PTO",
-        "dau_ky": 1261095,
-        "kh_den_ngay": 60840,
-        "luy_ke": 60203,
-        "online": 18146,
-        "offline": 42057,
-        "pct_th": 0.98953,
-        "pct_online": 0.301414,
-        "pct_offline": 0.698586,
-        "kh_thang4": 35402,
-        "pct_th_dau_ky": 0.047739,
-        "can_xac_thuc": 1117310,
+        "province": "QNI",
+        "dau_ky": 576110,
+        "kh_den_ngay": 38400,
+        "luy_ke": 38075,
+        "online": 6206,
+        "offline": 31869,
+        "pct_th": 0.991536,
+        "pct_online": 0.162994,
+        "pct_offline": 0.837006,
+        "kh_thang4": 14725,
+        "pct_th_dau_ky": 0.06609,
+        "can_xac_thuc": 495151,
         "rank": 10
-      },
-      {
-        "province": "QTI",
-        "dau_ky": 322028,
-        "kh_den_ngay": 21696,
-        "luy_ke": 19779,
-        "online": 3167,
-        "offline": 16612,
-        "pct_th": 0.911643,
-        "pct_online": 0.160119,
-        "pct_offline": 0.839881,
-        "kh_thang4": 14314,
-        "pct_th_dau_ky": 0.06142,
-        "can_xac_thuc": 284307,
-        "rank": 11
       },
       {
         "province": "HPG",
         "dau_ky": 1044956,
-        "kh_den_ngay": 51246,
-        "luy_ke": 46045,
-        "online": 15631,
-        "offline": 30414,
-        "pct_th": 0.898509,
-        "pct_online": 0.339472,
-        "pct_offline": 0.660528,
-        "kh_thang4": 34485,
-        "pct_th_dau_ky": 0.044064,
-        "can_xac_thuc": 949423,
+        "kh_den_ngay": 58567,
+        "luy_ke": 55674,
+        "online": 19759,
+        "offline": 35915,
+        "pct_th": 0.950604,
+        "pct_online": 0.354905,
+        "pct_offline": 0.645095,
+        "kh_thang4": 24856,
+        "pct_th_dau_ky": 0.053279,
+        "can_xac_thuc": 939794,
+        "rank": 11
+      },
+      {
+        "province": "QTI",
+        "dau_ky": 322028,
+        "kh_den_ngay": 24795,
+        "luy_ke": 23465,
+        "online": 3946,
+        "offline": 19519,
+        "pct_th": 0.94636,
+        "pct_online": 0.168165,
+        "pct_offline": 0.831835,
+        "kh_thang4": 10628,
+        "pct_th_dau_ky": 0.072866,
+        "can_xac_thuc": 280621,
         "rank": 12
       },
       {
         "province": "HNI",
         "dau_ky": 3265949,
-        "kh_den_ngay": 174870,
-        "luy_ke": 153137,
-        "online": 71410,
-        "offline": 81727,
-        "pct_th": 0.875719,
-        "pct_online": 0.466314,
-        "pct_offline": 0.533686,
-        "kh_thang4": 121658,
-        "pct_th_dau_ky": 0.046889,
-        "can_xac_thuc": 2990761,
+        "kh_den_ngay": 199851,
+        "luy_ke": 176541,
+        "online": 86086,
+        "offline": 90455,
+        "pct_th": 0.883363,
+        "pct_online": 0.487626,
+        "pct_offline": 0.512374,
+        "kh_thang4": 98254,
+        "pct_th_dau_ky": 0.054055,
+        "can_xac_thuc": 2967357,
         "rank": 13
-      },
-      {
-        "province": "KHA",
-        "dau_ky": 565397,
-        "kh_den_ngay": 35147,
-        "luy_ke": 29959,
-        "online": 7729,
-        "offline": 22230,
-        "pct_th": 0.852391,
-        "pct_online": 0.257986,
-        "pct_offline": 0.742014,
-        "kh_thang4": 25272,
-        "pct_th_dau_ky": 0.052988,
-        "can_xac_thuc": 498926,
-        "rank": 14
       },
       {
         "province": "DLK",
         "dau_ky": 865857,
-        "kh_den_ngay": 52827,
-        "luy_ke": 44892,
-        "online": 9194,
-        "offline": 35698,
-        "pct_th": 0.849793,
-        "pct_online": 0.204803,
-        "pct_offline": 0.795197,
-        "kh_thang4": 38122,
-        "pct_th_dau_ky": 0.051847,
-        "can_xac_thuc": 760676,
+        "kh_den_ngay": 60374,
+        "luy_ke": 50439,
+        "online": 10908,
+        "offline": 39531,
+        "pct_th": 0.835442,
+        "pct_online": 0.216261,
+        "pct_offline": 0.783739,
+        "kh_thang4": 32575,
+        "pct_th_dau_ky": 0.058253,
+        "can_xac_thuc": 755129,
+        "rank": 14
+      },
+      {
+        "province": "KHA",
+        "dau_ky": 565397,
+        "kh_den_ngay": 40168,
+        "luy_ke": 33416,
+        "online": 9335,
+        "offline": 24081,
+        "pct_th": 0.831906,
+        "pct_online": 0.279357,
+        "pct_offline": 0.720643,
+        "kh_thang4": 21815,
+        "pct_th_dau_ky": 0.059102,
+        "can_xac_thuc": 495469,
         "rank": 15
       },
       {
         "province": "DNG",
         "dau_ky": 645765,
-        "kh_den_ngay": 41432,
-        "luy_ke": 32932,
-        "online": 9499,
-        "offline": 23433,
-        "pct_th": 0.794845,
-        "pct_online": 0.288443,
-        "pct_offline": 0.711557,
-        "kh_thang4": 32175,
-        "pct_th_dau_ky": 0.050997,
-        "can_xac_thuc": 575877,
+        "kh_den_ngay": 47351,
+        "luy_ke": 37574,
+        "online": 11434,
+        "offline": 26140,
+        "pct_th": 0.793521,
+        "pct_online": 0.304306,
+        "pct_offline": 0.695694,
+        "kh_thang4": 27533,
+        "pct_th_dau_ky": 0.058185,
+        "can_xac_thuc": 571235,
         "rank": 16
-      },
-      {
-        "province": "LSN",
-        "dau_ky": 371038,
-        "kh_den_ngay": 26006,
-        "luy_ke": 19168,
-        "online": 4317,
-        "offline": 14851,
-        "pct_th": 0.737061,
-        "pct_online": 0.225219,
-        "pct_offline": 0.774781,
-        "kh_thang4": 21699,
-        "pct_th_dau_ky": 0.05166,
-        "can_xac_thuc": 331022,
-        "rank": 17
       },
       {
         "province": "NBH",
         "dau_ky": 914401,
-        "kh_den_ngay": 55109,
-        "luy_ke": 38791,
-        "online": 12737,
-        "offline": 26054,
-        "pct_th": 0.703896,
-        "pct_online": 0.328349,
-        "pct_offline": 0.671651,
-        "kh_thang4": 47809,
-        "pct_th_dau_ky": 0.042422,
-        "can_xac_thuc": 825681,
+        "kh_den_ngay": 62982,
+        "luy_ke": 47096,
+        "online": 16203,
+        "offline": 30893,
+        "pct_th": 0.747769,
+        "pct_online": 0.344042,
+        "pct_offline": 0.655958,
+        "kh_thang4": 39504,
+        "pct_th_dau_ky": 0.051505,
+        "can_xac_thuc": 817376,
+        "rank": 17
+      },
+      {
+        "province": "LSN",
+        "dau_ky": 371038,
+        "kh_den_ngay": 29721,
+        "luy_ke": 21833,
+        "online": 5102,
+        "offline": 16731,
+        "pct_th": 0.734598,
+        "pct_online": 0.233683,
+        "pct_offline": 0.766317,
+        "kh_thang4": 19034,
+        "pct_th_dau_ky": 0.058843,
+        "can_xac_thuc": 328357,
         "rank": 18
       },
       {
         "province": "TQG",
         "dau_ky": 619422,
-        "kh_den_ngay": 47113,
-        "luy_ke": 33050,
-        "online": 6619,
-        "offline": 26431,
-        "pct_th": 0.701505,
-        "pct_online": 0.200272,
-        "pct_offline": 0.799728,
-        "kh_thang4": 40985,
-        "pct_th_dau_ky": 0.053356,
-        "can_xac_thuc": 555975,
+        "kh_den_ngay": 53844,
+        "luy_ke": 37860,
+        "online": 7928,
+        "offline": 29932,
+        "pct_th": 0.703142,
+        "pct_online": 0.209403,
+        "pct_offline": 0.790597,
+        "kh_thang4": 36175,
+        "pct_th_dau_ky": 0.061121,
+        "can_xac_thuc": 551165,
         "rank": 19
       },
       {
         "province": "GLI",
         "dau_ky": 1084925,
-        "kh_den_ngay": 77806,
-        "luy_ke": 51315,
-        "online": 8936,
-        "offline": 42379,
-        "pct_th": 0.659525,
-        "pct_online": 0.17414,
-        "pct_offline": 0.82586,
-        "kh_thang4": 70951,
-        "pct_th_dau_ky": 0.047298,
-        "can_xac_thuc": 972278,
+        "kh_den_ngay": 88921,
+        "luy_ke": 59595,
+        "online": 10920,
+        "offline": 48675,
+        "pct_th": 0.670202,
+        "pct_online": 0.183237,
+        "pct_offline": 0.816763,
+        "kh_thang4": 62671,
+        "pct_th_dau_ky": 0.05493,
+        "can_xac_thuc": 963998,
         "rank": 20
       },
       {
         "province": "LCI",
         "dau_ky": 526562,
-        "kh_den_ngay": 37378,
-        "luy_ke": 24513,
-        "online": 6226,
-        "offline": 18287,
-        "pct_th": 0.655814,
-        "pct_online": 0.253988,
-        "pct_offline": 0.746012,
-        "kh_thang4": 34224,
-        "pct_th_dau_ky": 0.046553,
-        "can_xac_thuc": 473124,
+        "kh_den_ngay": 42718,
+        "luy_ke": 28248,
+        "online": 7554,
+        "offline": 20694,
+        "pct_th": 0.661267,
+        "pct_online": 0.267417,
+        "pct_offline": 0.732583,
+        "kh_thang4": 30489,
+        "pct_th_dau_ky": 0.053646,
+        "can_xac_thuc": 469389,
         "rank": 21
       },
       {
         "province": "DNI",
         "dau_ky": 1409894,
-        "kh_den_ngay": 96378,
-        "luy_ke": 61307,
-        "online": 19113,
-        "offline": 42194,
-        "pct_th": 0.63611,
-        "pct_online": 0.311759,
-        "pct_offline": 0.688241,
-        "kh_thang4": 90144,
-        "pct_th_dau_ky": 0.043483,
-        "can_xac_thuc": 1273542,
+        "kh_den_ngay": 110146,
+        "luy_ke": 70644,
+        "online": 23253,
+        "offline": 47391,
+        "pct_th": 0.641367,
+        "pct_online": 0.329157,
+        "pct_offline": 0.670843,
+        "kh_thang4": 80807,
+        "pct_th_dau_ky": 0.050106,
+        "can_xac_thuc": 1264205,
         "rank": 22
       },
       {
         "province": "CTO",
         "dau_ky": 853784,
-        "kh_den_ngay": 74734,
-        "luy_ke": 46160,
-        "online": 10319,
-        "offline": 35841,
-        "pct_th": 0.617657,
-        "pct_online": 0.223549,
-        "pct_offline": 0.776451,
-        "kh_thang4": 71279,
-        "pct_th_dau_ky": 0.054065,
-        "can_xac_thuc": 780850,
+        "kh_den_ngay": 85410,
+        "luy_ke": 52495,
+        "online": 12483,
+        "offline": 40012,
+        "pct_th": 0.614624,
+        "pct_online": 0.237794,
+        "pct_offline": 0.762206,
+        "kh_thang4": 64944,
+        "pct_th_dau_ky": 0.061485,
+        "can_xac_thuc": 774515,
         "rank": 23
-      },
-      {
-        "province": "CMU",
-        "dau_ky": 294606,
-        "kh_den_ngay": 26987,
-        "luy_ke": 16345,
-        "online": 4236,
-        "offline": 12109,
-        "pct_th": 0.605662,
-        "pct_online": 0.259162,
-        "pct_offline": 0.740838,
-        "kh_thang4": 26063,
-        "pct_th_dau_ky": 0.055481,
-        "can_xac_thuc": 268801,
-        "rank": 24
       },
       {
         "province": "THA",
         "dau_ky": 978536,
-        "kh_den_ngay": 70773,
-        "luy_ke": 41055,
-        "online": 9089,
-        "offline": 31966,
-        "pct_th": 0.580094,
-        "pct_online": 0.221386,
-        "pct_offline": 0.778614,
-        "kh_thang4": 70160,
-        "pct_th_dau_ky": 0.041956,
-        "can_xac_thuc": 891522,
-        "rank": 25
-      },
-      {
-        "province": "SLA",
-        "dau_ky": 472333,
-        "kh_den_ngay": 37876,
-        "luy_ke": 20885,
-        "online": 3529,
-        "offline": 17356,
-        "pct_th": 0.551405,
-        "pct_online": 0.168973,
-        "pct_offline": 0.831027,
-        "kh_thang4": 38634,
-        "pct_th_dau_ky": 0.044217,
-        "can_xac_thuc": 430891,
-        "rank": 26
+        "kh_den_ngay": 80884,
+        "luy_ke": 49528,
+        "online": 11623,
+        "offline": 37905,
+        "pct_th": 0.612334,
+        "pct_online": 0.234675,
+        "pct_offline": 0.765325,
+        "kh_thang4": 61687,
+        "pct_th_dau_ky": 0.050614,
+        "can_xac_thuc": 883049,
+        "rank": 24
       },
       {
         "province": "LCU",
         "dau_ky": 162492,
-        "kh_den_ngay": 15516,
-        "luy_ke": 8347,
-        "online": 2130,
-        "offline": 6217,
-        "pct_th": 0.537961,
-        "pct_online": 0.255182,
-        "pct_offline": 0.744818,
-        "kh_thang4": 16035,
-        "pct_th_dau_ky": 0.051369,
-        "can_xac_thuc": 149874,
-        "rank": 27
+        "kh_den_ngay": 17732,
+        "luy_ke": 10815,
+        "online": 2949,
+        "offline": 7866,
+        "pct_th": 0.609914,
+        "pct_online": 0.272677,
+        "pct_offline": 0.727323,
+        "kh_thang4": 13567,
+        "pct_th_dau_ky": 0.066557,
+        "can_xac_thuc": 147406,
+        "rank": 25
       },
       {
-        "province": "LDG",
-        "dau_ky": 1188375,
-        "kh_den_ngay": 96873,
-        "luy_ke": 51459,
-        "online": 12983,
-        "offline": 38476,
-        "pct_th": 0.531201,
-        "pct_online": 0.252298,
-        "pct_offline": 0.747702,
-        "kh_thang4": 100770,
-        "pct_th_dau_ky": 0.043302,
-        "can_xac_thuc": 1086933,
-        "rank": 28
-      },
-      {
-        "province": "TNH",
-        "dau_ky": 1009008,
-        "kh_den_ngay": 86304,
-        "luy_ke": 45519,
-        "online": 10745,
-        "offline": 34774,
-        "pct_th": 0.527426,
-        "pct_online": 0.236055,
-        "pct_offline": 0.763945,
-        "kh_thang4": 90101,
-        "pct_th_dau_ky": 0.045113,
-        "can_xac_thuc": 930481,
-        "rank": 29
-      },
-      {
-        "province": "HCM",
-        "dau_ky": 3578511,
-        "kh_den_ngay": 254180,
-        "luy_ke": 133518,
-        "online": 67237,
-        "offline": 66281,
-        "pct_th": 0.525289,
-        "pct_online": 0.50358,
-        "pct_offline": 0.49642,
-        "kh_thang4": 265907,
-        "pct_th_dau_ky": 0.037311,
-        "can_xac_thuc": 3309852,
-        "rank": 30
+        "province": "CMU",
+        "dau_ky": 294606,
+        "kh_den_ngay": 30842,
+        "luy_ke": 18534,
+        "online": 5012,
+        "offline": 13522,
+        "pct_th": 0.600934,
+        "pct_online": 0.270422,
+        "pct_offline": 0.729578,
+        "kh_thang4": 23874,
+        "pct_th_dau_ky": 0.062911,
+        "can_xac_thuc": 266612,
+        "rank": 26
       },
       {
         "province": "DBN",
         "dau_ky": 145885,
-        "kh_den_ngay": 12139,
-        "luy_ke": 6328,
-        "online": 902,
-        "offline": 5426,
-        "pct_th": 0.521295,
-        "pct_online": 0.142541,
-        "pct_offline": 0.857459,
-        "kh_thang4": 12748,
-        "pct_th_dau_ky": 0.043377,
-        "can_xac_thuc": 133358,
-        "rank": 31
+        "kh_den_ngay": 13873,
+        "luy_ke": 7502,
+        "online": 1170,
+        "offline": 6332,
+        "pct_th": 0.540763,
+        "pct_online": 0.155958,
+        "pct_offline": 0.844042,
+        "kh_thang4": 11574,
+        "pct_th_dau_ky": 0.051424,
+        "can_xac_thuc": 132184,
+        "rank": 27
       },
       {
-        "province": "VLG",
-        "dau_ky": 1040674,
-        "kh_den_ngay": 85534,
-        "luy_ke": 44430,
-        "online": 8181,
-        "offline": 36249,
-        "pct_th": 0.519443,
-        "pct_online": 0.184132,
-        "pct_offline": 0.815868,
-        "kh_thang4": 89981,
-        "pct_th_dau_ky": 0.042693,
-        "can_xac_thuc": 952772,
-        "rank": 32
+        "province": "SLA",
+        "dau_ky": 472333,
+        "kh_den_ngay": 43287,
+        "luy_ke": 23391,
+        "online": 4215,
+        "offline": 19176,
+        "pct_th": 0.54037,
+        "pct_online": 0.180198,
+        "pct_offline": 0.819802,
+        "kh_thang4": 36128,
+        "pct_th_dau_ky": 0.049522,
+        "can_xac_thuc": 428385,
+        "rank": 28
+      },
+      {
+        "province": "HCM",
+        "dau_ky": 3578511,
+        "kh_den_ngay": 290491,
+        "luy_ke": 156005,
+        "online": 80881,
+        "offline": 75124,
+        "pct_th": 0.537039,
+        "pct_online": 0.518451,
+        "pct_offline": 0.481549,
+        "kh_thang4": 243420,
+        "pct_th_dau_ky": 0.043595,
+        "can_xac_thuc": 3287365,
+        "rank": 29
+      },
+      {
+        "province": "TNH",
+        "dau_ky": 1009008,
+        "kh_den_ngay": 98633,
+        "luy_ke": 52818,
+        "online": 13326,
+        "offline": 39492,
+        "pct_th": 0.5355,
+        "pct_online": 0.2523,
+        "pct_offline": 0.7477,
+        "kh_thang4": 82802,
+        "pct_th_dau_ky": 0.052346,
+        "can_xac_thuc": 923182,
+        "rank": 30
+      },
+      {
+        "province": "LDG",
+        "dau_ky": 1188375,
+        "kh_den_ngay": 110712,
+        "luy_ke": 58868,
+        "online": 15702,
+        "offline": 43166,
+        "pct_th": 0.531722,
+        "pct_online": 0.266732,
+        "pct_offline": 0.733268,
+        "kh_thang4": 93361,
+        "pct_th_dau_ky": 0.049537,
+        "can_xac_thuc": 1079524,
+        "rank": 31
       },
       {
         "province": "DTP",
         "dau_ky": 1007603,
-        "kh_den_ngay": 81147,
-        "luy_ke": 41698,
-        "online": 9421,
-        "offline": 32277,
-        "pct_th": 0.513858,
-        "pct_online": 0.225934,
-        "pct_offline": 0.774066,
-        "kh_thang4": 85819,
-        "pct_th_dau_ky": 0.041383,
-        "can_xac_thuc": 922353,
+        "kh_den_ngay": 92740,
+        "luy_ke": 48032,
+        "online": 11747,
+        "offline": 36285,
+        "pct_th": 0.517921,
+        "pct_online": 0.244566,
+        "pct_offline": 0.755434,
+        "kh_thang4": 79485,
+        "pct_th_dau_ky": 0.04767,
+        "can_xac_thuc": 916019,
+        "rank": 32
+      },
+      {
+        "province": "VLG",
+        "dau_ky": 1040674,
+        "kh_den_ngay": 97753,
+        "luy_ke": 50347,
+        "online": 10212,
+        "offline": 40135,
+        "pct_th": 0.515043,
+        "pct_online": 0.202832,
+        "pct_offline": 0.797168,
+        "kh_thang4": 84064,
+        "pct_th_dau_ky": 0.048379,
+        "can_xac_thuc": 946855,
         "rank": 33
       },
       {
         "province": "AGG",
         "dau_ky": 1079493,
-        "kh_den_ngay": 95753,
-        "luy_ke": 42350,
-        "online": 8740,
-        "offline": 33610,
-        "pct_th": 0.442284,
-        "pct_online": 0.206375,
-        "pct_offline": 0.793625,
-        "kh_thang4": 108119,
-        "pct_th_dau_ky": 0.039231,
-        "can_xac_thuc": 1003874,
+        "kh_den_ngay": 109432,
+        "luy_ke": 48992,
+        "online": 10702,
+        "offline": 38290,
+        "pct_th": 0.447694,
+        "pct_online": 0.218444,
+        "pct_offline": 0.781556,
+        "kh_thang4": 101477,
+        "pct_th_dau_ky": 0.045384,
+        "can_xac_thuc": 997232,
         "rank": 34
       }
     ],
@@ -1432,273 +1432,288 @@
       {
         "province": "HTH",
         "dau_ky": 361645,
-        "kh_den_ngay": 10166,
-        "luy_ke": 35414,
-        "online": 4943,
-        "offline": 30471,
-        "pct_th": 3.483573,
-        "pct_online": 0.139578,
-        "pct_offline": 0.860422,
-        "kh_thang4": -19439,
-        "pct_th_dau_ky": 0.097925,
-        "can_xac_thuc": 297646,
+        "kh_den_ngay": 11618,
+        "luy_ke": 39931,
+        "online": 5958,
+        "offline": 33973,
+        "pct_th": 3.436994,
+        "pct_online": 0.149207,
+        "pct_offline": 0.850793,
+        "kh_thang4": -23956,
+        "pct_th_dau_ky": 0.110415,
+        "can_xac_thuc": 293129,
         "rank": 1
       },
       {
         "province": "BNH",
         "dau_ky": 1285128,
-        "kh_den_ngay": 51818,
-        "luy_ke": 70260,
-        "online": 26121,
-        "offline": 44139,
-        "pct_th": 1.355899,
-        "pct_online": 0.371776,
-        "pct_offline": 0.628224,
-        "kh_thang4": 11168,
-        "pct_th_dau_ky": 0.054672,
-        "can_xac_thuc": 1128783,
+        "kh_den_ngay": 59220,
+        "luy_ke": 81591,
+        "online": 32215,
+        "offline": 49376,
+        "pct_th": 1.377761,
+        "pct_online": 0.394835,
+        "pct_offline": 0.605165,
+        "kh_thang4": -163,
+        "pct_th_dau_ky": 0.063489,
+        "can_xac_thuc": 1117452,
         "rank": 2
+      },
+      {
+        "province": "HYN",
+        "dau_ky": 894371,
+        "kh_den_ngay": 48556,
+        "luy_ke": 53656,
+        "online": 15881,
+        "offline": 37775,
+        "pct_th": 1.105033,
+        "pct_online": 0.295978,
+        "pct_offline": 0.704022,
+        "kh_thang4": 13108,
+        "pct_th_dau_ky": 0.059993,
+        "can_xac_thuc": 787914,
+        "rank": 3
       },
       {
         "province": "NAN",
         "dau_ky": 1017106,
-        "kh_den_ngay": 56508,
-        "luy_ke": 61172,
-        "online": 12732,
-        "offline": 48440,
-        "pct_th": 1.082537,
-        "pct_online": 0.208134,
-        "pct_offline": 0.791866,
-        "kh_thang4": 27626,
-        "pct_th_dau_ky": 0.060143,
-        "can_xac_thuc": 887003,
-        "rank": 3
-      },
-      {
-        "province": "CBG",
-        "dau_ky": 183942,
-        "kh_den_ngay": 11908,
-        "luy_ke": 12792,
-        "online": 2155,
-        "offline": 10637,
-        "pct_th": 1.074236,
-        "pct_online": 0.168465,
-        "pct_offline": 0.831535,
-        "kh_thang4": 5921,
-        "pct_th_dau_ky": 0.069544,
-        "can_xac_thuc": 157065,
+        "kh_den_ngay": 64580,
+        "luy_ke": 70489,
+        "online": 15718,
+        "offline": 54771,
+        "pct_th": 1.091499,
+        "pct_online": 0.222985,
+        "pct_offline": 0.777015,
+        "kh_thang4": 18309,
+        "pct_th_dau_ky": 0.069303,
+        "can_xac_thuc": 877686,
         "rank": 4
       },
       {
         "province": "TNN",
         "dau_ky": 598334,
-        "kh_den_ngay": 29341,
-        "luy_ke": 31495,
-        "online": 9869,
-        "offline": 21626,
-        "pct_th": 1.073413,
-        "pct_online": 0.313351,
-        "pct_offline": 0.686649,
-        "kh_thang4": 14613,
-        "pct_th_dau_ky": 0.052638,
-        "can_xac_thuc": 524013,
+        "kh_den_ngay": 33533,
+        "luy_ke": 36461,
+        "online": 12197,
+        "offline": 24264,
+        "pct_th": 1.087317,
+        "pct_online": 0.334522,
+        "pct_offline": 0.665478,
+        "kh_thang4": 9647,
+        "pct_th_dau_ky": 0.060938,
+        "can_xac_thuc": 519047,
         "rank": 5
       },
       {
-        "province": "HYN",
-        "dau_ky": 894371,
-        "kh_den_ngay": 42486,
-        "luy_ke": 44687,
-        "online": 12537,
-        "offline": 32150,
-        "pct_th": 1.051805,
-        "pct_online": 0.280551,
-        "pct_offline": 0.719449,
-        "kh_thang4": 22077,
-        "pct_th_dau_ky": 0.049965,
-        "can_xac_thuc": 796883,
+        "province": "CBG",
+        "dau_ky": 183942,
+        "kh_den_ngay": 13609,
+        "luy_ke": 14746,
+        "online": 2571,
+        "offline": 12175,
+        "pct_th": 1.083548,
+        "pct_online": 0.174352,
+        "pct_offline": 0.825648,
+        "kh_thang4": 3967,
+        "pct_th_dau_ky": 0.080167,
+        "can_xac_thuc": 155111,
         "rank": 6
       },
       {
-        "province": "QNI",
-        "dau_ky": 576110,
-        "kh_den_ngay": 33600,
-        "luy_ke": 34416,
-        "online": 5186,
-        "offline": 29230,
-        "pct_th": 1.024286,
-        "pct_online": 0.150686,
-        "pct_offline": 0.849314,
-        "kh_thang4": 18384,
-        "pct_th_dau_ky": 0.059739,
-        "can_xac_thuc": 498810,
+        "province": "PTO",
+        "dau_ky": 1261095,
+        "kh_den_ngay": 69531,
+        "luy_ke": 70975,
+        "online": 23108,
+        "offline": 47867,
+        "pct_th": 1.020768,
+        "pct_online": 0.325579,
+        "pct_offline": 0.674421,
+        "kh_thang4": 24630,
+        "pct_th_dau_ky": 0.05628,
+        "can_xac_thuc": 1106538,
         "rank": 7
       },
       {
         "province": "HUE",
         "dau_ky": 285109,
-        "kh_den_ngay": 16904,
-        "luy_ke": 17192,
-        "online": 4505,
-        "offline": 12687,
-        "pct_th": 1.017037,
-        "pct_online": 0.26204,
-        "pct_offline": 0.73796,
-        "kh_thang4": 9372,
-        "pct_th_dau_ky": 0.0603,
-        "can_xac_thuc": 249212,
+        "kh_den_ngay": 19319,
+        "luy_ke": 19523,
+        "online": 5524,
+        "offline": 13999,
+        "pct_th": 1.01056,
+        "pct_online": 0.282948,
+        "pct_offline": 0.717052,
+        "kh_thang4": 7041,
+        "pct_th_dau_ky": 0.068476,
+        "can_xac_thuc": 246881,
         "rank": 8
+      },
+      {
+        "province": "QNH",
+        "dau_ky": 416872,
+        "kh_den_ngay": 25598,
+        "luy_ke": 25830,
+        "online": 7358,
+        "offline": 18472,
+        "pct_th": 1.009063,
+        "pct_online": 0.284863,
+        "pct_offline": 0.715137,
+        "kh_thang4": 9367,
+        "pct_th_dau_ky": 0.061961,
+        "can_xac_thuc": 371140,
+        "rank": 9
       }
     ],
     "thap_nhat": [
       {
         "province": "AGG",
         "dau_ky": 1079493,
-        "kh_den_ngay": 95753,
-        "luy_ke": 42350,
-        "online": 8740,
-        "offline": 33610,
-        "pct_th": 0.442284,
-        "pct_online": 0.206375,
-        "pct_offline": 0.793625,
-        "kh_thang4": 108119,
-        "pct_th_dau_ky": 0.039231,
-        "can_xac_thuc": 1003874,
+        "kh_den_ngay": 109432,
+        "luy_ke": 48992,
+        "online": 10702,
+        "offline": 38290,
+        "pct_th": 0.447694,
+        "pct_online": 0.218444,
+        "pct_offline": 0.781556,
+        "kh_thang4": 101477,
+        "pct_th_dau_ky": 0.045384,
+        "can_xac_thuc": 997232,
         "rank": 34
-      },
-      {
-        "province": "DTP",
-        "dau_ky": 1007603,
-        "kh_den_ngay": 81147,
-        "luy_ke": 41698,
-        "online": 9421,
-        "offline": 32277,
-        "pct_th": 0.513858,
-        "pct_online": 0.225934,
-        "pct_offline": 0.774066,
-        "kh_thang4": 85819,
-        "pct_th_dau_ky": 0.041383,
-        "can_xac_thuc": 922353,
-        "rank": 33
       },
       {
         "province": "VLG",
         "dau_ky": 1040674,
-        "kh_den_ngay": 85534,
-        "luy_ke": 44430,
-        "online": 8181,
-        "offline": 36249,
-        "pct_th": 0.519443,
-        "pct_online": 0.184132,
-        "pct_offline": 0.815868,
-        "kh_thang4": 89981,
-        "pct_th_dau_ky": 0.042693,
-        "can_xac_thuc": 952772,
+        "kh_den_ngay": 97753,
+        "luy_ke": 50347,
+        "online": 10212,
+        "offline": 40135,
+        "pct_th": 0.515043,
+        "pct_online": 0.202832,
+        "pct_offline": 0.797168,
+        "kh_thang4": 84064,
+        "pct_th_dau_ky": 0.048379,
+        "can_xac_thuc": 946855,
+        "rank": 33
+      },
+      {
+        "province": "DTP",
+        "dau_ky": 1007603,
+        "kh_den_ngay": 92740,
+        "luy_ke": 48032,
+        "online": 11747,
+        "offline": 36285,
+        "pct_th": 0.517921,
+        "pct_online": 0.244566,
+        "pct_offline": 0.755434,
+        "kh_thang4": 79485,
+        "pct_th_dau_ky": 0.04767,
+        "can_xac_thuc": 916019,
         "rank": 32
-      },
-      {
-        "province": "DBN",
-        "dau_ky": 145885,
-        "kh_den_ngay": 12139,
-        "luy_ke": 6328,
-        "online": 902,
-        "offline": 5426,
-        "pct_th": 0.521295,
-        "pct_online": 0.142541,
-        "pct_offline": 0.857459,
-        "kh_thang4": 12748,
-        "pct_th_dau_ky": 0.043377,
-        "can_xac_thuc": 133358,
-        "rank": 31
-      },
-      {
-        "province": "HCM",
-        "dau_ky": 3578511,
-        "kh_den_ngay": 254180,
-        "luy_ke": 133518,
-        "online": 67237,
-        "offline": 66281,
-        "pct_th": 0.525289,
-        "pct_online": 0.50358,
-        "pct_offline": 0.49642,
-        "kh_thang4": 265907,
-        "pct_th_dau_ky": 0.037311,
-        "can_xac_thuc": 3309852,
-        "rank": 30
-      },
-      {
-        "province": "TNH",
-        "dau_ky": 1009008,
-        "kh_den_ngay": 86304,
-        "luy_ke": 45519,
-        "online": 10745,
-        "offline": 34774,
-        "pct_th": 0.527426,
-        "pct_online": 0.236055,
-        "pct_offline": 0.763945,
-        "kh_thang4": 90101,
-        "pct_th_dau_ky": 0.045113,
-        "can_xac_thuc": 930481,
-        "rank": 29
       },
       {
         "province": "LDG",
         "dau_ky": 1188375,
-        "kh_den_ngay": 96873,
-        "luy_ke": 51459,
-        "online": 12983,
-        "offline": 38476,
-        "pct_th": 0.531201,
-        "pct_online": 0.252298,
-        "pct_offline": 0.747702,
-        "kh_thang4": 100770,
-        "pct_th_dau_ky": 0.043302,
-        "can_xac_thuc": 1086933,
-        "rank": 28
+        "kh_den_ngay": 110712,
+        "luy_ke": 58868,
+        "online": 15702,
+        "offline": 43166,
+        "pct_th": 0.531722,
+        "pct_online": 0.266732,
+        "pct_offline": 0.733268,
+        "kh_thang4": 93361,
+        "pct_th_dau_ky": 0.049537,
+        "can_xac_thuc": 1079524,
+        "rank": 31
       },
       {
-        "province": "LCU",
-        "dau_ky": 162492,
-        "kh_den_ngay": 15516,
-        "luy_ke": 8347,
-        "online": 2130,
-        "offline": 6217,
-        "pct_th": 0.537961,
-        "pct_online": 0.255182,
-        "pct_offline": 0.744818,
-        "kh_thang4": 16035,
-        "pct_th_dau_ky": 0.051369,
-        "can_xac_thuc": 149874,
-        "rank": 27
+        "province": "TNH",
+        "dau_ky": 1009008,
+        "kh_den_ngay": 98633,
+        "luy_ke": 52818,
+        "online": 13326,
+        "offline": 39492,
+        "pct_th": 0.5355,
+        "pct_online": 0.2523,
+        "pct_offline": 0.7477,
+        "kh_thang4": 82802,
+        "pct_th_dau_ky": 0.052346,
+        "can_xac_thuc": 923182,
+        "rank": 30
+      },
+      {
+        "province": "HCM",
+        "dau_ky": 3578511,
+        "kh_den_ngay": 290491,
+        "luy_ke": 156005,
+        "online": 80881,
+        "offline": 75124,
+        "pct_th": 0.537039,
+        "pct_online": 0.518451,
+        "pct_offline": 0.481549,
+        "kh_thang4": 243420,
+        "pct_th_dau_ky": 0.043595,
+        "can_xac_thuc": 3287365,
+        "rank": 29
       },
       {
         "province": "SLA",
         "dau_ky": 472333,
-        "kh_den_ngay": 37876,
-        "luy_ke": 20885,
-        "online": 3529,
-        "offline": 17356,
-        "pct_th": 0.551405,
-        "pct_online": 0.168973,
-        "pct_offline": 0.831027,
-        "kh_thang4": 38634,
-        "pct_th_dau_ky": 0.044217,
-        "can_xac_thuc": 430891,
+        "kh_den_ngay": 43287,
+        "luy_ke": 23391,
+        "online": 4215,
+        "offline": 19176,
+        "pct_th": 0.54037,
+        "pct_online": 0.180198,
+        "pct_offline": 0.819802,
+        "kh_thang4": 36128,
+        "pct_th_dau_ky": 0.049522,
+        "can_xac_thuc": 428385,
+        "rank": 28
+      },
+      {
+        "province": "DBN",
+        "dau_ky": 145885,
+        "kh_den_ngay": 13873,
+        "luy_ke": 7502,
+        "online": 1170,
+        "offline": 6332,
+        "pct_th": 0.540763,
+        "pct_online": 0.155958,
+        "pct_offline": 0.844042,
+        "kh_thang4": 11574,
+        "pct_th_dau_ky": 0.051424,
+        "can_xac_thuc": 132184,
+        "rank": 27
+      },
+      {
+        "province": "CMU",
+        "dau_ky": 294606,
+        "kh_den_ngay": 30842,
+        "luy_ke": 18534,
+        "online": 5012,
+        "offline": 13522,
+        "pct_th": 0.600934,
+        "pct_online": 0.270422,
+        "pct_offline": 0.729578,
+        "kh_thang4": 23874,
+        "pct_th_dau_ky": 0.062911,
+        "can_xac_thuc": 266612,
         "rank": 26
       },
       {
-        "province": "THA",
-        "dau_ky": 978536,
-        "kh_den_ngay": 70773,
-        "luy_ke": 41055,
-        "online": 9089,
-        "offline": 31966,
-        "pct_th": 0.580094,
-        "pct_online": 0.221386,
-        "pct_offline": 0.778614,
-        "kh_thang4": 70160,
-        "pct_th_dau_ky": 0.041956,
-        "can_xac_thuc": 891522,
+        "province": "LCU",
+        "dau_ky": 162492,
+        "kh_den_ngay": 17732,
+        "luy_ke": 10815,
+        "online": 2949,
+        "offline": 7866,
+        "pct_th": 0.609914,
+        "pct_online": 0.272677,
+        "pct_offline": 0.727323,
+        "kh_thang4": 13567,
+        "pct_th_dau_ky": 0.066557,
+        "can_xac_thuc": 147406,
         "rank": 25
       }
     ]
@@ -1709,870 +1724,870 @@
       {
         "province": "HTH",
         "dau_ky": 272950,
-        "kh_den_ngay": 8982,
-        "luy_ke": 30456,
-        "online": 3575,
-        "offline": 26881,
-        "pct_th": 3.390782,
-        "pct_online": 0.117382,
-        "pct_offline": 0.882618,
-        "kh_thang4": 12244,
-        "pct_th_dau_ky": 0.111581,
-        "can_xac_thuc": 213909,
+        "kh_den_ngay": 10265,
+        "luy_ke": 34088,
+        "online": 4266,
+        "offline": 29822,
+        "pct_th": 3.320799,
+        "pct_online": 0.125147,
+        "pct_offline": 0.874853,
+        "kh_thang4": 8612,
+        "pct_th_dau_ky": 0.124887,
+        "can_xac_thuc": 210277,
         "rank": 1,
         "rank_t1": 1
       },
       {
         "province": "CBG",
         "dau_ky": 153708,
-        "kh_den_ngay": 4982,
-        "luy_ke": 11910,
-        "online": 1896,
-        "offline": 10014,
-        "pct_th": 2.390606,
-        "pct_online": 0.159194,
-        "pct_offline": 0.840806,
-        "kh_thang4": 10004,
-        "pct_th_dau_ky": 0.077485,
-        "can_xac_thuc": 127713,
+        "kh_den_ngay": 5694,
+        "luy_ke": 13683,
+        "online": 2257,
+        "offline": 11426,
+        "pct_th": 2.403056,
+        "pct_online": 0.164949,
+        "pct_offline": 0.835051,
+        "kh_thang4": 8231,
+        "pct_th_dau_ky": 0.089019,
+        "can_xac_thuc": 125940,
         "rank": 2,
-        "rank_t1": 4
+        "rank_t1": 6
       },
       {
         "province": "QNI",
         "dau_ky": 444216,
-        "kh_den_ngay": 15962,
-        "luy_ke": 31423,
-        "online": 4039,
-        "offline": 27384,
-        "pct_th": 1.968613,
-        "pct_online": 0.128536,
-        "pct_offline": 0.871464,
-        "kh_thang4": 36544,
-        "pct_th_dau_ky": 0.070738,
-        "can_xac_thuc": 369909,
+        "kh_den_ngay": 18242,
+        "luy_ke": 34589,
+        "online": 4821,
+        "offline": 29768,
+        "pct_th": 1.896119,
+        "pct_online": 0.13938,
+        "pct_offline": 0.86062,
+        "kh_thang4": 33378,
+        "pct_th_dau_ky": 0.077865,
+        "can_xac_thuc": 366743,
         "rank": 3,
-        "rank_t1": 7
+        "rank_t1": 10
       },
       {
         "province": "NAN",
         "dau_ky": 768179,
-        "kh_den_ngay": 32391,
-        "luy_ke": 52396,
-        "online": 9174,
-        "offline": 43222,
-        "pct_th": 1.61761,
-        "pct_online": 0.17509,
-        "pct_offline": 0.82491,
-        "kh_thang4": 67435,
-        "pct_th_dau_ky": 0.068208,
-        "can_xac_thuc": 646852,
+        "kh_den_ngay": 37018,
+        "luy_ke": 59970,
+        "online": 11281,
+        "offline": 48689,
+        "pct_th": 1.620023,
+        "pct_online": 0.188111,
+        "pct_offline": 0.811889,
+        "kh_thang4": 59861,
+        "pct_th_dau_ky": 0.078068,
+        "can_xac_thuc": 639278,
         "rank": 4,
-        "rank_t1": 3
+        "rank_t1": 4
       },
       {
         "province": "TNN",
         "dau_ky": 425275,
-        "kh_den_ngay": 17553,
-        "luy_ke": 26935,
-        "online": 7367,
-        "offline": 19568,
-        "pct_th": 1.534496,
-        "pct_online": 0.27351,
-        "pct_offline": 0.72649,
-        "kh_thang4": 43474,
-        "pct_th_dau_ky": 0.063335,
-        "can_xac_thuc": 355514,
+        "kh_den_ngay": 20060,
+        "luy_ke": 31014,
+        "online": 9149,
+        "offline": 21865,
+        "pct_th": 1.546062,
+        "pct_online": 0.294996,
+        "pct_offline": 0.705004,
+        "kh_thang4": 39395,
+        "pct_th_dau_ky": 0.072927,
+        "can_xac_thuc": 351435,
         "rank": 5,
         "rank_t1": 5
       },
       {
         "province": "DLK",
         "dau_ky": 675934,
-        "kh_den_ngay": 26469,
-        "luy_ke": 39829,
-        "online": 7396,
-        "offline": 32433,
-        "pct_th": 1.504741,
-        "pct_online": 0.185694,
-        "pct_offline": 0.814306,
-        "kh_thang4": 62054,
-        "pct_th_dau_ky": 0.058924,
-        "can_xac_thuc": 575816,
+        "kh_den_ngay": 30250,
+        "luy_ke": 44589,
+        "online": 8771,
+        "offline": 35818,
+        "pct_th": 1.474017,
+        "pct_online": 0.196708,
+        "pct_offline": 0.803292,
+        "kh_thang4": 57294,
+        "pct_th_dau_ky": 0.065966,
+        "can_xac_thuc": 571056,
         "rank": 6,
-        "rank_t1": 15
+        "rank_t1": 14
       },
       {
         "province": "HUE",
         "dau_ky": 207766,
-        "kh_den_ngay": 9474,
-        "luy_ke": 14080,
-        "online": 2876,
-        "offline": 11204,
-        "pct_th": 1.486173,
-        "pct_online": 0.204261,
-        "pct_offline": 0.795739,
-        "kh_thang4": 19512,
-        "pct_th_dau_ky": 0.067769,
-        "can_xac_thuc": 174981,
+        "kh_den_ngay": 10827,
+        "luy_ke": 15822,
+        "online": 3532,
+        "offline": 12290,
+        "pct_th": 1.461347,
+        "pct_online": 0.223233,
+        "pct_offline": 0.776767,
+        "kh_thang4": 17770,
+        "pct_th_dau_ky": 0.076153,
+        "can_xac_thuc": 173239,
         "rank": 7,
         "rank_t1": 8
       },
       {
         "province": "KHA",
         "dau_ky": 433574,
-        "kh_den_ngay": 18925,
-        "luy_ke": 26204,
-        "online": 5877,
-        "offline": 20327,
-        "pct_th": 1.384624,
-        "pct_online": 0.224279,
-        "pct_offline": 0.775721,
-        "kh_thang4": 40047,
-        "pct_th_dau_ky": 0.060437,
-        "can_xac_thuc": 370858,
+        "kh_den_ngay": 21628,
+        "luy_ke": 29069,
+        "online": 7115,
+        "offline": 21954,
+        "pct_th": 1.344045,
+        "pct_online": 0.244762,
+        "pct_offline": 0.755238,
+        "kh_thang4": 37182,
+        "pct_th_dau_ky": 0.067045,
+        "can_xac_thuc": 367993,
         "rank": 8,
-        "rank_t1": 14
-      },
-      {
-        "province": "BNH",
-        "dau_ky": 855156,
-        "kh_den_ngay": 41803,
-        "luy_ke": 54545,
-        "online": 17052,
-        "offline": 37493,
-        "pct_th": 1.304811,
-        "pct_online": 0.312623,
-        "pct_offline": 0.687377,
-        "kh_thang4": 97230,
-        "pct_th_dau_ky": 0.063784,
-        "can_xac_thuc": 714526,
-        "rank": 9,
-        "rank_t1": 2
+        "rank_t1": 15
       },
       {
         "province": "QTI",
         "dau_ky": 234640,
-        "kh_den_ngay": 12797,
-        "luy_ke": 16687,
-        "online": 2172,
-        "offline": 14515,
-        "pct_th": 1.303977,
-        "pct_online": 0.130161,
-        "pct_offline": 0.869839,
-        "kh_thang4": 21364,
-        "pct_th_dau_ky": 0.071117,
-        "can_xac_thuc": 200011,
+        "kh_den_ngay": 14625,
+        "luy_ke": 19635,
+        "online": 2720,
+        "offline": 16915,
+        "pct_th": 1.342564,
+        "pct_online": 0.138528,
+        "pct_offline": 0.861472,
+        "kh_thang4": 18416,
+        "pct_th_dau_ky": 0.083681,
+        "can_xac_thuc": 197063,
+        "rank": 9,
+        "rank_t1": 12
+      },
+      {
+        "province": "BNH",
+        "dau_ky": 855156,
+        "kh_den_ngay": 47775,
+        "luy_ke": 62713,
+        "online": 21119,
+        "offline": 41594,
+        "pct_th": 1.312674,
+        "pct_online": 0.336756,
+        "pct_offline": 0.663244,
+        "kh_thang4": 89062,
+        "pct_th_dau_ky": 0.073335,
+        "can_xac_thuc": 706358,
         "rank": 10,
-        "rank_t1": 11
+        "rank_t1": 2
       },
       {
         "province": "PTO",
         "dau_ky": 867169,
-        "kh_den_ngay": 41138,
-        "luy_ke": 48520,
-        "online": 12624,
-        "offline": 35896,
-        "pct_th": 1.179445,
-        "pct_online": 0.260181,
-        "pct_offline": 0.739819,
-        "kh_thang4": 99708,
-        "pct_th_dau_ky": 0.055952,
-        "can_xac_thuc": 735067,
+        "kh_den_ngay": 47015,
+        "luy_ke": 56818,
+        "online": 16179,
+        "offline": 40639,
+        "pct_th": 1.208508,
+        "pct_online": 0.284751,
+        "pct_offline": 0.715249,
+        "kh_thang4": 91410,
+        "pct_th_dau_ky": 0.065521,
+        "can_xac_thuc": 726769,
         "rank": 11,
-        "rank_t1": 10
+        "rank_t1": 7
       },
       {
         "province": "LSN",
         "dau_ky": 282614,
-        "kh_den_ngay": 14553,
-        "luy_ke": 17010,
-        "online": 3607,
-        "offline": 13403,
-        "pct_th": 1.168831,
-        "pct_online": 0.212052,
-        "pct_offline": 0.787948,
-        "kh_thang4": 26707,
-        "pct_th_dau_ky": 0.060188,
-        "can_xac_thuc": 244756,
+        "kh_den_ngay": 16632,
+        "luy_ke": 19325,
+        "online": 4256,
+        "offline": 15069,
+        "pct_th": 1.161917,
+        "pct_online": 0.220233,
+        "pct_offline": 0.779767,
+        "kh_thang4": 24392,
+        "pct_th_dau_ky": 0.068379,
+        "can_xac_thuc": 242441,
         "rank": 12,
-        "rank_t1": 17
+        "rank_t1": 18
       },
       {
         "province": "DNG",
         "dau_ky": 470034,
-        "kh_den_ngay": 24880,
-        "luy_ke": 27258,
-        "online": 6058,
-        "offline": 21200,
-        "pct_th": 1.095579,
-        "pct_online": 0.222247,
-        "pct_offline": 0.777753,
-        "kh_thang4": 48795,
-        "pct_th_dau_ky": 0.057992,
-        "can_xac_thuc": 405820,
+        "kh_den_ngay": 28434,
+        "luy_ke": 30827,
+        "online": 7265,
+        "offline": 23562,
+        "pct_th": 1.08416,
+        "pct_online": 0.23567,
+        "pct_offline": 0.76433,
+        "kh_thang4": 45226,
+        "pct_th_dau_ky": 0.065585,
+        "can_xac_thuc": 402251,
         "rank": 13,
         "rank_t1": 16
       },
       {
-        "province": "TQG",
-        "dau_ky": 467936,
-        "kh_den_ngay": 27280,
-        "luy_ke": 29337,
-        "online": 5624,
-        "offline": 23713,
-        "pct_th": 1.075403,
-        "pct_online": 0.191703,
-        "pct_offline": 0.808297,
-        "kh_thang4": 43929,
-        "pct_th_dau_ky": 0.062694,
-        "can_xac_thuc": 408202,
-        "rank": 14,
-        "rank_t1": 19
-      },
-      {
         "province": "GLI",
         "dau_ky": 823905,
-        "kh_den_ngay": 42320,
-        "luy_ke": 45315,
-        "online": 6879,
-        "offline": 38436,
-        "pct_th": 1.07077,
-        "pct_online": 0.151804,
-        "pct_offline": 0.848196,
-        "kh_thang4": 82520,
-        "pct_th_dau_ky": 0.055,
-        "can_xac_thuc": 717258,
-        "rank": 15,
+        "kh_den_ngay": 48366,
+        "luy_ke": 52371,
+        "online": 8403,
+        "offline": 43968,
+        "pct_th": 1.082806,
+        "pct_online": 0.160451,
+        "pct_offline": 0.839549,
+        "kh_thang4": 75464,
+        "pct_th_dau_ky": 0.063564,
+        "can_xac_thuc": 710202,
+        "rank": 14,
         "rank_t1": 20
+      },
+      {
+        "province": "TQG",
+        "dau_ky": 467936,
+        "kh_den_ngay": 31177,
+        "luy_ke": 33485,
+        "online": 6719,
+        "offline": 26766,
+        "pct_th": 1.074029,
+        "pct_online": 0.200657,
+        "pct_offline": 0.799343,
+        "kh_thang4": 39781,
+        "pct_th_dau_ky": 0.071559,
+        "can_xac_thuc": 404054,
+        "rank": 15,
+        "rank_t1": 19
       },
       {
         "province": "HYN",
         "dau_ky": 549163,
-        "kh_den_ngay": 33232,
-        "luy_ke": 33343,
-        "online": 7449,
-        "offline": 25894,
-        "pct_th": 1.00334,
-        "pct_online": 0.223405,
-        "pct_offline": 0.776595,
-        "kh_thang4": 71680,
-        "pct_th_dau_ky": 0.060716,
-        "can_xac_thuc": 463019,
+        "kh_den_ngay": 37980,
+        "luy_ke": 39827,
+        "online": 9572,
+        "offline": 30255,
+        "pct_th": 1.048631,
+        "pct_online": 0.240339,
+        "pct_offline": 0.759661,
+        "kh_thang4": 65196,
+        "pct_th_dau_ky": 0.072523,
+        "can_xac_thuc": 456535,
         "rank": 16,
-        "rank_t1": 6
+        "rank_t1": 3
       },
       {
         "province": "LCI",
         "dau_ky": 398499,
-        "kh_den_ngay": 21480,
-        "luy_ke": 21467,
-        "online": 5156,
-        "offline": 16311,
-        "pct_th": 0.999395,
-        "pct_online": 0.240183,
-        "pct_offline": 0.759817,
-        "kh_thang4": 41213,
-        "pct_th_dau_ky": 0.05387,
-        "can_xac_thuc": 348107,
+        "kh_den_ngay": 24549,
+        "luy_ke": 24610,
+        "online": 6247,
+        "offline": 18363,
+        "pct_th": 1.002485,
+        "pct_online": 0.25384,
+        "pct_offline": 0.74616,
+        "kh_thang4": 38070,
+        "pct_th_dau_ky": 0.061757,
+        "can_xac_thuc": 344964,
         "rank": 17,
         "rank_t1": 21
       },
       {
         "province": "QNH",
         "dau_ky": 253468,
-        "kh_den_ngay": 18567,
-        "luy_ke": 16795,
-        "online": 3967,
-        "offline": 12828,
-        "pct_th": 0.904562,
-        "pct_online": 0.236201,
-        "pct_offline": 0.763799,
-        "kh_thang4": 32283,
-        "pct_th_dau_ky": 0.066261,
-        "can_xac_thuc": 216771,
+        "kh_den_ngay": 21219,
+        "luy_ke": 19462,
+        "online": 4769,
+        "offline": 14693,
+        "pct_th": 0.917197,
+        "pct_online": 0.245042,
+        "pct_offline": 0.754958,
+        "kh_thang4": 29616,
+        "pct_th_dau_ky": 0.076783,
+        "can_xac_thuc": 214104,
         "rank": 18,
         "rank_t1": 9
       },
       {
         "province": "DNI",
         "dau_ky": 977311,
-        "kh_den_ngay": 57790,
-        "luy_ke": 50407,
-        "online": 12857,
-        "offline": 37550,
-        "pct_th": 0.872244,
-        "pct_online": 0.255064,
-        "pct_offline": 0.744936,
-        "kh_thang4": 115451,
-        "pct_th_dau_ky": 0.051577,
-        "can_xac_thuc": 851859,
+        "kh_den_ngay": 66046,
+        "luy_ke": 57630,
+        "online": 15642,
+        "offline": 41988,
+        "pct_th": 0.872574,
+        "pct_online": 0.271421,
+        "pct_offline": 0.728579,
+        "kh_thang4": 108228,
+        "pct_th_dau_ky": 0.058968,
+        "can_xac_thuc": 844636,
         "rank": 19,
         "rank_t1": 22
       },
       {
+        "province": "NBH",
+        "dau_ky": 566568,
+        "kh_den_ngay": 41778,
+        "luy_ke": 33530,
+        "online": 9228,
+        "offline": 24302,
+        "pct_th": 0.802576,
+        "pct_online": 0.275216,
+        "pct_offline": 0.724784,
+        "kh_thang4": 73844,
+        "pct_th_dau_ky": 0.059181,
+        "can_xac_thuc": 483109,
+        "rank": 20,
+        "rank_t1": 17
+      },
+      {
+        "province": "LCU",
+        "dau_ky": 126042,
+        "kh_den_ngay": 11265,
+        "luy_ke": 8997,
+        "online": 2320,
+        "offline": 6677,
+        "pct_th": 0.798668,
+        "pct_online": 0.257864,
+        "pct_offline": 0.742136,
+        "kh_thang4": 10763,
+        "pct_th_dau_ky": 0.071381,
+        "can_xac_thuc": 112774,
+        "rank": 21,
+        "rank_t1": 25
+      },
+      {
+        "province": "THA",
+        "dau_ky": 662114,
+        "kh_den_ngay": 50183,
+        "luy_ke": 39845,
+        "online": 7766,
+        "offline": 32079,
+        "pct_th": 0.793994,
+        "pct_online": 0.194905,
+        "pct_offline": 0.805095,
+        "kh_thang4": 75116,
+        "pct_th_dau_ky": 0.060178,
+        "can_xac_thuc": 576310,
+        "rank": 22,
+        "rank_t1": 24
+      },
+      {
         "province": "SLA",
         "dau_ky": 359823,
-        "kh_den_ngay": 22724,
-        "luy_ke": 18472,
-        "online": 2941,
-        "offline": 15531,
-        "pct_th": 0.812885,
-        "pct_online": 0.159214,
-        "pct_offline": 0.840786,
-        "kh_thang4": 37794,
-        "pct_th_dau_ky": 0.051336,
-        "can_xac_thuc": 320794,
-        "rank": 20,
-        "rank_t1": 26
+        "kh_den_ngay": 25970,
+        "luy_ke": 20549,
+        "online": 3479,
+        "offline": 17070,
+        "pct_th": 0.791259,
+        "pct_online": 0.169303,
+        "pct_offline": 0.830697,
+        "kh_thang4": 35717,
+        "pct_th_dau_ky": 0.057109,
+        "can_xac_thuc": 318717,
+        "rank": 23,
+        "rank_t1": 28
       },
       {
         "province": "LDG",
         "dau_ky": 904078,
-        "kh_den_ngay": 57309,
-        "luy_ke": 45324,
-        "online": 10165,
-        "offline": 35159,
-        "pct_th": 0.790871,
-        "pct_online": 0.224274,
-        "pct_offline": 0.775726,
-        "kh_thang4": 94716,
-        "pct_th_dau_ky": 0.050133,
-        "can_xac_thuc": 808771,
-        "rank": 21,
-        "rank_t1": 28
+        "kh_den_ngay": 65496,
+        "luy_ke": 51552,
+        "online": 12265,
+        "offline": 39287,
+        "pct_th": 0.787102,
+        "pct_online": 0.237915,
+        "pct_offline": 0.762085,
+        "kh_thang4": 88488,
+        "pct_th_dau_ky": 0.057022,
+        "can_xac_thuc": 802543,
+        "rank": 24,
+        "rank_t1": 31
       },
       {
         "province": "CTO",
         "dau_ky": 590772,
-        "kh_den_ngay": 47137,
-        "luy_ke": 36929,
-        "online": 6209,
-        "offline": 30720,
-        "pct_th": 0.78344,
-        "pct_online": 0.168133,
-        "pct_offline": 0.831867,
-        "kh_thang4": 63917,
-        "pct_th_dau_ky": 0.06251,
-        "can_xac_thuc": 527069,
-        "rank": 22,
+        "kh_den_ngay": 53871,
+        "luy_ke": 41630,
+        "online": 7535,
+        "offline": 34095,
+        "pct_th": 0.772772,
+        "pct_online": 0.180999,
+        "pct_offline": 0.819001,
+        "kh_thang4": 59216,
+        "pct_th_dau_ky": 0.070467,
+        "can_xac_thuc": 522368,
+        "rank": 25,
         "rank_t1": 23
       },
       {
         "province": "CMU",
         "dau_ky": 216463,
-        "kh_den_ngay": 16729,
-        "luy_ke": 13002,
-        "online": 2635,
-        "offline": 10367,
-        "pct_th": 0.777213,
-        "pct_online": 0.202661,
-        "pct_offline": 0.797339,
-        "kh_thang4": 22747,
-        "pct_th_dau_ky": 0.060066,
-        "can_xac_thuc": 194001,
-        "rank": 23,
-        "rank_t1": 24
-      },
-      {
-        "province": "NBH",
-        "dau_ky": 566568,
-        "kh_den_ngay": 36556,
-        "luy_ke": 27799,
-        "online": 7132,
-        "offline": 20667,
-        "pct_th": 0.76045,
-        "pct_online": 0.256556,
-        "pct_offline": 0.743444,
-        "kh_thang4": 79575,
-        "pct_th_dau_ky": 0.049066,
-        "can_xac_thuc": 488840,
-        "rank": 24,
-        "rank_t1": 18
-      },
-      {
-        "province": "THA",
-        "dau_ky": 662114,
-        "kh_den_ngay": 43910,
-        "luy_ke": 33195,
-        "online": 5992,
-        "offline": 27203,
-        "pct_th": 0.755978,
-        "pct_online": 0.180509,
-        "pct_offline": 0.819491,
-        "kh_thang4": 81766,
-        "pct_th_dau_ky": 0.050135,
-        "can_xac_thuc": 582960,
-        "rank": 25,
-        "rank_t1": 25
-      },
-      {
-        "province": "VLG",
-        "dau_ky": 743917,
-        "kh_den_ngay": 50025,
-        "luy_ke": 37394,
-        "online": 5404,
-        "offline": 31990,
-        "pct_th": 0.747506,
-        "pct_online": 0.144515,
-        "pct_offline": 0.855485,
-        "kh_thang4": 84688,
-        "pct_th_dau_ky": 0.050266,
-        "can_xac_thuc": 663051,
+        "kh_den_ngay": 19119,
+        "luy_ke": 14649,
+        "online": 3084,
+        "offline": 11565,
+        "pct_th": 0.766201,
+        "pct_online": 0.210526,
+        "pct_offline": 0.789474,
+        "kh_thang4": 21100,
+        "pct_th_dau_ky": 0.067674,
+        "can_xac_thuc": 192354,
         "rank": 26,
-        "rank_t1": 32
-      },
-      {
-        "province": "DTP",
-        "dau_ky": 729187,
-        "kh_den_ngay": 47321,
-        "luy_ke": 34299,
-        "online": 6462,
-        "offline": 27837,
-        "pct_th": 0.724816,
-        "pct_online": 0.188402,
-        "pct_offline": 0.811598,
-        "kh_thang4": 83615,
-        "pct_th_dau_ky": 0.047037,
-        "can_xac_thuc": 651336,
-        "rank": 27,
-        "rank_t1": 33
+        "rank_t1": 26
       },
       {
         "province": "DBN",
         "dau_ky": 103347,
-        "kh_den_ngay": 7359,
-        "luy_ke": 5329,
-        "online": 688,
-        "offline": 4641,
-        "pct_th": 0.724147,
-        "pct_online": 0.129105,
-        "pct_offline": 0.870895,
-        "kh_thang4": 12434,
-        "pct_th_dau_ky": 0.051564,
-        "can_xac_thuc": 91819,
-        "rank": 28,
-        "rank_t1": 31
+        "kh_den_ngay": 8410,
+        "luy_ke": 6291,
+        "online": 894,
+        "offline": 5397,
+        "pct_th": 0.748038,
+        "pct_online": 0.142108,
+        "pct_offline": 0.857892,
+        "kh_thang4": 11472,
+        "pct_th_dau_ky": 0.060873,
+        "can_xac_thuc": 90857,
+        "rank": 27,
+        "rank_t1": 27
       },
       {
-        "province": "LCU",
-        "dau_ky": 126042,
-        "kh_den_ngay": 9857,
-        "luy_ke": 6979,
-        "online": 1667,
-        "offline": 5312,
-        "pct_th": 0.708025,
-        "pct_online": 0.238859,
-        "pct_offline": 0.761141,
-        "kh_thang4": 12781,
-        "pct_th_dau_ky": 0.05537,
-        "can_xac_thuc": 114792,
+        "province": "VLG",
+        "dau_ky": 743917,
+        "kh_den_ngay": 57171,
+        "luy_ke": 42102,
+        "online": 6797,
+        "offline": 35305,
+        "pct_th": 0.736422,
+        "pct_online": 0.161441,
+        "pct_offline": 0.838559,
+        "kh_thang4": 79980,
+        "pct_th_dau_ky": 0.056595,
+        "can_xac_thuc": 658343,
+        "rank": 28,
+        "rank_t1": 33
+      },
+      {
+        "province": "DTP",
+        "dau_ky": 729187,
+        "kh_den_ngay": 54081,
+        "luy_ke": 39346,
+        "online": 8167,
+        "offline": 31179,
+        "pct_th": 0.727538,
+        "pct_online": 0.207569,
+        "pct_offline": 0.792431,
+        "kh_thang4": 78568,
+        "pct_th_dau_ky": 0.053959,
+        "can_xac_thuc": 646289,
         "rank": 29,
-        "rank_t1": 27
+        "rank_t1": 32
       },
       {
         "province": "HPG",
         "dau_ky": 610852,
-        "kh_den_ngay": 46972,
-        "luy_ke": 31779,
-        "online": 8781,
-        "offline": 22998,
-        "pct_th": 0.676552,
-        "pct_online": 0.276315,
-        "pct_offline": 0.723685,
-        "kh_thang4": 91522,
-        "pct_th_dau_ky": 0.052024,
-        "can_xac_thuc": 529585,
+        "kh_den_ngay": 53682,
+        "luy_ke": 38308,
+        "online": 11280,
+        "offline": 27028,
+        "pct_th": 0.71361,
+        "pct_online": 0.294455,
+        "pct_offline": 0.705545,
+        "kh_thang4": 84993,
+        "pct_th_dau_ky": 0.062712,
+        "can_xac_thuc": 523056,
         "rank": 30,
-        "rank_t1": 12
+        "rank_t1": 11
       },
       {
         "province": "TNH",
         "dau_ky": 660311,
-        "kh_den_ngay": 54408,
-        "luy_ke": 35481,
-        "online": 6547,
-        "offline": 28934,
-        "pct_th": 0.652128,
-        "pct_online": 0.184521,
-        "pct_offline": 0.815479,
-        "kh_thang4": 83026,
-        "pct_th_dau_ky": 0.053734,
-        "can_xac_thuc": 591822,
+        "kh_den_ngay": 62181,
+        "luy_ke": 40947,
+        "online": 8182,
+        "offline": 32765,
+        "pct_th": 0.658513,
+        "pct_online": 0.199819,
+        "pct_offline": 0.800181,
+        "kh_thang4": 77560,
+        "pct_th_dau_ky": 0.062012,
+        "can_xac_thuc": 586356,
         "rank": 31,
-        "rank_t1": 29
+        "rank_t1": 30
       },
       {
         "province": "AGG",
         "dau_ky": 777063,
-        "kh_den_ngay": 59739,
-        "luy_ke": 34235,
-        "online": 5872,
-        "offline": 28363,
-        "pct_th": 0.573076,
-        "pct_online": 0.17152,
-        "pct_offline": 0.82848,
-        "kh_thang4": 92909,
-        "pct_th_dau_ky": 0.044057,
-        "can_xac_thuc": 709559,
+        "kh_den_ngay": 68273,
+        "luy_ke": 39307,
+        "online": 7188,
+        "offline": 32119,
+        "pct_th": 0.575733,
+        "pct_online": 0.182868,
+        "pct_offline": 0.817132,
+        "kh_thang4": 87837,
+        "pct_th_dau_ky": 0.050584,
+        "can_xac_thuc": 704487,
         "rank": 32,
         "rank_t1": 34
       },
       {
         "province": "HNI",
         "dau_ky": 1663325,
-        "kh_den_ngay": 167009,
-        "luy_ke": 88894,
-        "online": 34040,
-        "offline": 54854,
-        "pct_th": 0.532271,
-        "pct_online": 0.382928,
-        "pct_offline": 0.617072,
-        "kh_thang4": 295599,
-        "pct_th_dau_ky": 0.053444,
-        "can_xac_thuc": 1452380,
+        "kh_den_ngay": 190867,
+        "luy_ke": 101644,
+        "online": 41171,
+        "offline": 60473,
+        "pct_th": 0.532538,
+        "pct_online": 0.405051,
+        "pct_offline": 0.594949,
+        "kh_thang4": 282849,
+        "pct_th_dau_ky": 0.061109,
+        "can_xac_thuc": 1439630,
         "rank": 33,
         "rank_t1": 13
       },
       {
         "province": "HCM",
         "dau_ky": 2150183,
-        "kh_den_ngay": 182343,
-        "luy_ke": 85359,
-        "online": 35107,
-        "offline": 50252,
-        "pct_th": 0.468123,
-        "pct_online": 0.411286,
-        "pct_offline": 0.588714,
-        "kh_thang4": 336321,
-        "pct_th_dau_ky": 0.039698,
-        "can_xac_thuc": 1929683,
+        "kh_den_ngay": 208392,
+        "luy_ke": 99207,
+        "online": 42350,
+        "offline": 56857,
+        "pct_th": 0.47606,
+        "pct_online": 0.426885,
+        "pct_offline": 0.573115,
+        "kh_thang4": 322473,
+        "pct_th_dau_ky": 0.046139,
+        "can_xac_thuc": 1915835,
         "rank": 34,
-        "rank_t1": 30
+        "rank_t1": 29
       }
     ],
     "dat_kh": [
       {
         "province": "HTH",
         "dau_ky": 272950,
-        "kh_den_ngay": 8982,
-        "luy_ke": 30456,
-        "online": 3575,
-        "offline": 26881,
-        "pct_th": 3.390782,
-        "pct_online": 0.117382,
-        "pct_offline": 0.882618,
-        "kh_thang4": 12244,
-        "pct_th_dau_ky": 0.111581,
-        "can_xac_thuc": 213909,
+        "kh_den_ngay": 10265,
+        "luy_ke": 34088,
+        "online": 4266,
+        "offline": 29822,
+        "pct_th": 3.320799,
+        "pct_online": 0.125147,
+        "pct_offline": 0.874853,
+        "kh_thang4": 8612,
+        "pct_th_dau_ky": 0.124887,
+        "can_xac_thuc": 210277,
         "rank": 1,
         "rank_t1": 1
       },
       {
         "province": "CBG",
         "dau_ky": 153708,
-        "kh_den_ngay": 4982,
-        "luy_ke": 11910,
-        "online": 1896,
-        "offline": 10014,
-        "pct_th": 2.390606,
-        "pct_online": 0.159194,
-        "pct_offline": 0.840806,
-        "kh_thang4": 10004,
-        "pct_th_dau_ky": 0.077485,
-        "can_xac_thuc": 127713,
+        "kh_den_ngay": 5694,
+        "luy_ke": 13683,
+        "online": 2257,
+        "offline": 11426,
+        "pct_th": 2.403056,
+        "pct_online": 0.164949,
+        "pct_offline": 0.835051,
+        "kh_thang4": 8231,
+        "pct_th_dau_ky": 0.089019,
+        "can_xac_thuc": 125940,
         "rank": 2,
-        "rank_t1": 4
+        "rank_t1": 6
       },
       {
         "province": "QNI",
         "dau_ky": 444216,
-        "kh_den_ngay": 15962,
-        "luy_ke": 31423,
-        "online": 4039,
-        "offline": 27384,
-        "pct_th": 1.968613,
-        "pct_online": 0.128536,
-        "pct_offline": 0.871464,
-        "kh_thang4": 36544,
-        "pct_th_dau_ky": 0.070738,
-        "can_xac_thuc": 369909,
+        "kh_den_ngay": 18242,
+        "luy_ke": 34589,
+        "online": 4821,
+        "offline": 29768,
+        "pct_th": 1.896119,
+        "pct_online": 0.13938,
+        "pct_offline": 0.86062,
+        "kh_thang4": 33378,
+        "pct_th_dau_ky": 0.077865,
+        "can_xac_thuc": 366743,
         "rank": 3,
-        "rank_t1": 7
+        "rank_t1": 10
       },
       {
         "province": "NAN",
         "dau_ky": 768179,
-        "kh_den_ngay": 32391,
-        "luy_ke": 52396,
-        "online": 9174,
-        "offline": 43222,
-        "pct_th": 1.61761,
-        "pct_online": 0.17509,
-        "pct_offline": 0.82491,
-        "kh_thang4": 67435,
-        "pct_th_dau_ky": 0.068208,
-        "can_xac_thuc": 646852,
+        "kh_den_ngay": 37018,
+        "luy_ke": 59970,
+        "online": 11281,
+        "offline": 48689,
+        "pct_th": 1.620023,
+        "pct_online": 0.188111,
+        "pct_offline": 0.811889,
+        "kh_thang4": 59861,
+        "pct_th_dau_ky": 0.078068,
+        "can_xac_thuc": 639278,
         "rank": 4,
-        "rank_t1": 3
+        "rank_t1": 4
       },
       {
         "province": "TNN",
         "dau_ky": 425275,
-        "kh_den_ngay": 17553,
-        "luy_ke": 26935,
-        "online": 7367,
-        "offline": 19568,
-        "pct_th": 1.534496,
-        "pct_online": 0.27351,
-        "pct_offline": 0.72649,
-        "kh_thang4": 43474,
-        "pct_th_dau_ky": 0.063335,
-        "can_xac_thuc": 355514,
+        "kh_den_ngay": 20060,
+        "luy_ke": 31014,
+        "online": 9149,
+        "offline": 21865,
+        "pct_th": 1.546062,
+        "pct_online": 0.294996,
+        "pct_offline": 0.705004,
+        "kh_thang4": 39395,
+        "pct_th_dau_ky": 0.072927,
+        "can_xac_thuc": 351435,
         "rank": 5,
         "rank_t1": 5
       },
       {
         "province": "DLK",
         "dau_ky": 675934,
-        "kh_den_ngay": 26469,
-        "luy_ke": 39829,
-        "online": 7396,
-        "offline": 32433,
-        "pct_th": 1.504741,
-        "pct_online": 0.185694,
-        "pct_offline": 0.814306,
-        "kh_thang4": 62054,
-        "pct_th_dau_ky": 0.058924,
-        "can_xac_thuc": 575816,
+        "kh_den_ngay": 30250,
+        "luy_ke": 44589,
+        "online": 8771,
+        "offline": 35818,
+        "pct_th": 1.474017,
+        "pct_online": 0.196708,
+        "pct_offline": 0.803292,
+        "kh_thang4": 57294,
+        "pct_th_dau_ky": 0.065966,
+        "can_xac_thuc": 571056,
         "rank": 6,
-        "rank_t1": 15
+        "rank_t1": 14
       },
       {
         "province": "HUE",
         "dau_ky": 207766,
-        "kh_den_ngay": 9474,
-        "luy_ke": 14080,
-        "online": 2876,
-        "offline": 11204,
-        "pct_th": 1.486173,
-        "pct_online": 0.204261,
-        "pct_offline": 0.795739,
-        "kh_thang4": 19512,
-        "pct_th_dau_ky": 0.067769,
-        "can_xac_thuc": 174981,
+        "kh_den_ngay": 10827,
+        "luy_ke": 15822,
+        "online": 3532,
+        "offline": 12290,
+        "pct_th": 1.461347,
+        "pct_online": 0.223233,
+        "pct_offline": 0.776767,
+        "kh_thang4": 17770,
+        "pct_th_dau_ky": 0.076153,
+        "can_xac_thuc": 173239,
         "rank": 7,
         "rank_t1": 8
       },
       {
         "province": "KHA",
         "dau_ky": 433574,
-        "kh_den_ngay": 18925,
-        "luy_ke": 26204,
-        "online": 5877,
-        "offline": 20327,
-        "pct_th": 1.384624,
-        "pct_online": 0.224279,
-        "pct_offline": 0.775721,
-        "kh_thang4": 40047,
-        "pct_th_dau_ky": 0.060437,
-        "can_xac_thuc": 370858,
+        "kh_den_ngay": 21628,
+        "luy_ke": 29069,
+        "online": 7115,
+        "offline": 21954,
+        "pct_th": 1.344045,
+        "pct_online": 0.244762,
+        "pct_offline": 0.755238,
+        "kh_thang4": 37182,
+        "pct_th_dau_ky": 0.067045,
+        "can_xac_thuc": 367993,
         "rank": 8,
-        "rank_t1": 14
-      },
-      {
-        "province": "BNH",
-        "dau_ky": 855156,
-        "kh_den_ngay": 41803,
-        "luy_ke": 54545,
-        "online": 17052,
-        "offline": 37493,
-        "pct_th": 1.304811,
-        "pct_online": 0.312623,
-        "pct_offline": 0.687377,
-        "kh_thang4": 97230,
-        "pct_th_dau_ky": 0.063784,
-        "can_xac_thuc": 714526,
-        "rank": 9,
-        "rank_t1": 2
+        "rank_t1": 15
       },
       {
         "province": "QTI",
         "dau_ky": 234640,
-        "kh_den_ngay": 12797,
-        "luy_ke": 16687,
-        "online": 2172,
-        "offline": 14515,
-        "pct_th": 1.303977,
-        "pct_online": 0.130161,
-        "pct_offline": 0.869839,
-        "kh_thang4": 21364,
-        "pct_th_dau_ky": 0.071117,
-        "can_xac_thuc": 200011,
+        "kh_den_ngay": 14625,
+        "luy_ke": 19635,
+        "online": 2720,
+        "offline": 16915,
+        "pct_th": 1.342564,
+        "pct_online": 0.138528,
+        "pct_offline": 0.861472,
+        "kh_thang4": 18416,
+        "pct_th_dau_ky": 0.083681,
+        "can_xac_thuc": 197063,
+        "rank": 9,
+        "rank_t1": 12
+      },
+      {
+        "province": "BNH",
+        "dau_ky": 855156,
+        "kh_den_ngay": 47775,
+        "luy_ke": 62713,
+        "online": 21119,
+        "offline": 41594,
+        "pct_th": 1.312674,
+        "pct_online": 0.336756,
+        "pct_offline": 0.663244,
+        "kh_thang4": 89062,
+        "pct_th_dau_ky": 0.073335,
+        "can_xac_thuc": 706358,
         "rank": 10,
-        "rank_t1": 11
+        "rank_t1": 2
       }
     ],
     "thap_nhat": [
       {
         "province": "HCM",
         "dau_ky": 2150183,
-        "kh_den_ngay": 182343,
-        "luy_ke": 85359,
-        "online": 35107,
-        "offline": 50252,
-        "pct_th": 0.468123,
-        "pct_online": 0.411286,
-        "pct_offline": 0.588714,
-        "kh_thang4": 336321,
-        "pct_th_dau_ky": 0.039698,
-        "can_xac_thuc": 1929683,
+        "kh_den_ngay": 208392,
+        "luy_ke": 99207,
+        "online": 42350,
+        "offline": 56857,
+        "pct_th": 0.47606,
+        "pct_online": 0.426885,
+        "pct_offline": 0.573115,
+        "kh_thang4": 322473,
+        "pct_th_dau_ky": 0.046139,
+        "can_xac_thuc": 1915835,
         "rank": 34,
-        "rank_t1": 30
+        "rank_t1": 29
       },
       {
         "province": "HNI",
         "dau_ky": 1663325,
-        "kh_den_ngay": 167009,
-        "luy_ke": 88894,
-        "online": 34040,
-        "offline": 54854,
-        "pct_th": 0.532271,
-        "pct_online": 0.382928,
-        "pct_offline": 0.617072,
-        "kh_thang4": 295599,
-        "pct_th_dau_ky": 0.053444,
-        "can_xac_thuc": 1452380,
+        "kh_den_ngay": 190867,
+        "luy_ke": 101644,
+        "online": 41171,
+        "offline": 60473,
+        "pct_th": 0.532538,
+        "pct_online": 0.405051,
+        "pct_offline": 0.594949,
+        "kh_thang4": 282849,
+        "pct_th_dau_ky": 0.061109,
+        "can_xac_thuc": 1439630,
         "rank": 33,
         "rank_t1": 13
       },
       {
         "province": "AGG",
         "dau_ky": 777063,
-        "kh_den_ngay": 59739,
-        "luy_ke": 34235,
-        "online": 5872,
-        "offline": 28363,
-        "pct_th": 0.573076,
-        "pct_online": 0.17152,
-        "pct_offline": 0.82848,
-        "kh_thang4": 92909,
-        "pct_th_dau_ky": 0.044057,
-        "can_xac_thuc": 709559,
+        "kh_den_ngay": 68273,
+        "luy_ke": 39307,
+        "online": 7188,
+        "offline": 32119,
+        "pct_th": 0.575733,
+        "pct_online": 0.182868,
+        "pct_offline": 0.817132,
+        "kh_thang4": 87837,
+        "pct_th_dau_ky": 0.050584,
+        "can_xac_thuc": 704487,
         "rank": 32,
         "rank_t1": 34
       },
       {
         "province": "TNH",
         "dau_ky": 660311,
-        "kh_den_ngay": 54408,
-        "luy_ke": 35481,
-        "online": 6547,
-        "offline": 28934,
-        "pct_th": 0.652128,
-        "pct_online": 0.184521,
-        "pct_offline": 0.815479,
-        "kh_thang4": 83026,
-        "pct_th_dau_ky": 0.053734,
-        "can_xac_thuc": 591822,
+        "kh_den_ngay": 62181,
+        "luy_ke": 40947,
+        "online": 8182,
+        "offline": 32765,
+        "pct_th": 0.658513,
+        "pct_online": 0.199819,
+        "pct_offline": 0.800181,
+        "kh_thang4": 77560,
+        "pct_th_dau_ky": 0.062012,
+        "can_xac_thuc": 586356,
         "rank": 31,
-        "rank_t1": 29
+        "rank_t1": 30
       },
       {
         "province": "HPG",
         "dau_ky": 610852,
-        "kh_den_ngay": 46972,
-        "luy_ke": 31779,
-        "online": 8781,
-        "offline": 22998,
-        "pct_th": 0.676552,
-        "pct_online": 0.276315,
-        "pct_offline": 0.723685,
-        "kh_thang4": 91522,
-        "pct_th_dau_ky": 0.052024,
-        "can_xac_thuc": 529585,
+        "kh_den_ngay": 53682,
+        "luy_ke": 38308,
+        "online": 11280,
+        "offline": 27028,
+        "pct_th": 0.71361,
+        "pct_online": 0.294455,
+        "pct_offline": 0.705545,
+        "kh_thang4": 84993,
+        "pct_th_dau_ky": 0.062712,
+        "can_xac_thuc": 523056,
         "rank": 30,
-        "rank_t1": 12
-      },
-      {
-        "province": "LCU",
-        "dau_ky": 126042,
-        "kh_den_ngay": 9857,
-        "luy_ke": 6979,
-        "online": 1667,
-        "offline": 5312,
-        "pct_th": 0.708025,
-        "pct_online": 0.238859,
-        "pct_offline": 0.761141,
-        "kh_thang4": 12781,
-        "pct_th_dau_ky": 0.05537,
-        "can_xac_thuc": 114792,
-        "rank": 29,
-        "rank_t1": 27
-      },
-      {
-        "province": "DBN",
-        "dau_ky": 103347,
-        "kh_den_ngay": 7359,
-        "luy_ke": 5329,
-        "online": 688,
-        "offline": 4641,
-        "pct_th": 0.724147,
-        "pct_online": 0.129105,
-        "pct_offline": 0.870895,
-        "kh_thang4": 12434,
-        "pct_th_dau_ky": 0.051564,
-        "can_xac_thuc": 91819,
-        "rank": 28,
-        "rank_t1": 31
+        "rank_t1": 11
       },
       {
         "province": "DTP",
         "dau_ky": 729187,
-        "kh_den_ngay": 47321,
-        "luy_ke": 34299,
-        "online": 6462,
-        "offline": 27837,
-        "pct_th": 0.724816,
-        "pct_online": 0.188402,
-        "pct_offline": 0.811598,
-        "kh_thang4": 83615,
-        "pct_th_dau_ky": 0.047037,
-        "can_xac_thuc": 651336,
-        "rank": 27,
-        "rank_t1": 33
+        "kh_den_ngay": 54081,
+        "luy_ke": 39346,
+        "online": 8167,
+        "offline": 31179,
+        "pct_th": 0.727538,
+        "pct_online": 0.207569,
+        "pct_offline": 0.792431,
+        "kh_thang4": 78568,
+        "pct_th_dau_ky": 0.053959,
+        "can_xac_thuc": 646289,
+        "rank": 29,
+        "rank_t1": 32
       },
       {
         "province": "VLG",
         "dau_ky": 743917,
-        "kh_den_ngay": 50025,
-        "luy_ke": 37394,
-        "online": 5404,
-        "offline": 31990,
-        "pct_th": 0.747506,
-        "pct_online": 0.144515,
-        "pct_offline": 0.855485,
-        "kh_thang4": 84688,
-        "pct_th_dau_ky": 0.050266,
-        "can_xac_thuc": 663051,
-        "rank": 26,
-        "rank_t1": 32
+        "kh_den_ngay": 57171,
+        "luy_ke": 42102,
+        "online": 6797,
+        "offline": 35305,
+        "pct_th": 0.736422,
+        "pct_online": 0.161441,
+        "pct_offline": 0.838559,
+        "kh_thang4": 79980,
+        "pct_th_dau_ky": 0.056595,
+        "can_xac_thuc": 658343,
+        "rank": 28,
+        "rank_t1": 33
       },
       {
-        "province": "THA",
-        "dau_ky": 662114,
-        "kh_den_ngay": 43910,
-        "luy_ke": 33195,
-        "online": 5992,
-        "offline": 27203,
-        "pct_th": 0.755978,
-        "pct_online": 0.180509,
-        "pct_offline": 0.819491,
-        "kh_thang4": 81766,
-        "pct_th_dau_ky": 0.050135,
-        "can_xac_thuc": 582960,
+        "province": "DBN",
+        "dau_ky": 103347,
+        "kh_den_ngay": 8410,
+        "luy_ke": 6291,
+        "online": 894,
+        "offline": 5397,
+        "pct_th": 0.748038,
+        "pct_online": 0.142108,
+        "pct_offline": 0.857892,
+        "kh_thang4": 11472,
+        "pct_th_dau_ky": 0.060873,
+        "can_xac_thuc": 90857,
+        "rank": 27,
+        "rank_t1": 27
+      },
+      {
+        "province": "CMU",
+        "dau_ky": 216463,
+        "kh_den_ngay": 19119,
+        "luy_ke": 14649,
+        "online": 3084,
+        "offline": 11565,
+        "pct_th": 0.766201,
+        "pct_online": 0.210526,
+        "pct_offline": 0.789474,
+        "kh_thang4": 21100,
+        "pct_th_dau_ky": 0.067674,
+        "can_xac_thuc": 192354,
+        "rank": 26,
+        "rank_t1": 26
+      },
+      {
+        "province": "CTO",
+        "dau_ky": 590772,
+        "kh_den_ngay": 53871,
+        "luy_ke": 41630,
+        "online": 7535,
+        "offline": 34095,
+        "pct_th": 0.772772,
+        "pct_online": 0.180999,
+        "pct_offline": 0.819001,
+        "kh_thang4": 59216,
+        "pct_th_dau_ky": 0.070467,
+        "can_xac_thuc": 522368,
         "rank": 25,
-        "rank_t1": 25
+        "rank_t1": 23
       }
     ]
   },
@@ -2588,13 +2603,14 @@
       "22/4",
       "23/4",
       "24/4",
-      "25/4"
+      "25/4",
+      "26/4"
     ],
     "provinces": [
       {
         "code": "HCM",
         "rank_t2": 34,
-        "pct_th": 0.468123,
+        "pct_th": 0.47606,
         "total": [
           32421,
           17881,
@@ -2606,7 +2622,8 @@
           9339,
           21595,
           17797,
-          20578
+          20578,
+          22487
         ],
         "offline": [
           32421,
@@ -2619,13 +2636,14 @@
           9264,
           12377,
           11228,
-          14749
+          14749,
+          13848
         ]
       },
       {
         "code": "HNI",
         "rank_t2": 33,
-        "pct_th": 0.532271,
+        "pct_th": 0.532538,
         "total": [
           30239,
           15882,
@@ -2637,7 +2655,8 @@
           9993,
           24834,
           23028,
-          26150
+          26150,
+          23404
         ],
         "offline": [
           30239,
@@ -2650,13 +2669,14 @@
           9872,
           12956,
           12920,
-          16718
+          16718,
+          12750
         ]
       },
       {
         "code": "AGG",
         "rank_t2": 32,
-        "pct_th": 0.573076,
+        "pct_th": 0.575733,
         "total": [
           5818,
           4772,
@@ -2668,7 +2688,8 @@
           4730,
           6510,
           6907,
-          6888
+          6888,
+          6642
         ],
         "offline": [
           5818,
@@ -2681,13 +2702,14 @@
           4711,
           4898,
           5407,
-          5538
+          5538,
+          5072
         ]
       },
       {
         "code": "TNH",
         "rank_t2": 31,
-        "pct_th": 0.652128,
+        "pct_th": 0.658513,
         "total": [
           7106,
           4588,
@@ -2699,7 +2721,8 @@
           4661,
           7245,
           6743,
-          6797
+          6797,
+          7299
         ],
         "offline": [
           7106,
@@ -2712,13 +2735,14 @@
           4618,
           5306,
           5088,
-          5359
+          5359,
+          5466
         ]
       },
       {
         "code": "HPG",
         "rank_t2": 30,
-        "pct_th": 0.676552,
+        "pct_th": 0.71361,
         "total": [
           10943,
           6609,
@@ -2730,7 +2754,8 @@
           3456,
           7558,
           7415,
-          7842
+          7842,
+          9629
         ],
         "offline": [
           10943,
@@ -2743,75 +2768,14 @@
           3426,
           4601,
           5009,
-          5708
-        ]
-      },
-      {
-        "code": "LCU",
-        "rank_t2": 29,
-        "pct_th": 0.708025,
-        "total": [
-          935,
-          540,
-          501,
-          444,
-          435,
-          661,
-          1105,
-          968,
-          1184,
-          1817,
-          2177
-        ],
-        "offline": [
-          935,
-          540,
-          501,
-          444,
-          404,
-          527,
-          888,
-          961,
-          986,
-          1474,
-          1739
-        ]
-      },
-      {
-        "code": "DBN",
-        "rank_t2": 28,
-        "pct_th": 0.724147,
-        "total": [
-          1711,
-          809,
-          532,
-          449,
-          289,
-          419,
-          636,
-          865,
-          1375,
-          1429,
-          1315
-        ],
-        "offline": [
-          1711,
-          809,
-          532,
-          449,
-          261,
-          358,
-          561,
-          864,
-          1100,
-          1150,
-          1035
+          5708,
+          6529
         ]
       },
       {
         "code": "DTP",
-        "rank_t2": 27,
-        "pct_th": 0.724816,
+        "rank_t2": 29,
+        "pct_th": 0.727538,
         "total": [
           8598,
           5724,
@@ -2823,7 +2787,8 @@
           5040,
           6794,
           6577,
-          6638
+          6638,
+          6334
         ],
         "offline": [
           8598,
@@ -2836,13 +2801,14 @@
           5017,
           5302,
           5253,
-          5462
+          5462,
+          5047
         ]
       },
       {
         "code": "VLG",
-        "rank_t2": 26,
-        "pct_th": 0.747506,
+        "rank_t2": 28,
+        "pct_th": 0.736422,
         "total": [
           8147,
           6725,
@@ -2854,7 +2820,8 @@
           5113,
           6180,
           6259,
-          6557
+          6557,
+          5917
         ],
         "offline": [
           8147,
@@ -2867,38 +2834,107 @@
           5091,
           4791,
           5181,
-          5511
+          5511,
+          4708
         ]
       },
       {
-        "code": "THA",
-        "rank_t2": 25,
-        "pct_th": 0.755978,
+        "code": "DBN",
+        "rank_t2": 27,
+        "pct_th": 0.748038,
         "total": [
-          10082,
-          5388,
-          6090,
-          4049,
-          4797,
-          5822,
-          5039,
-          4394,
-          6176,
-          7180,
-          7647
+          1711,
+          809,
+          532,
+          449,
+          289,
+          419,
+          636,
+          865,
+          1375,
+          1429,
+          1315,
+          1174
         ],
         "offline": [
-          10082,
-          5388,
-          6089,
-          4043,
-          4206,
-          4445,
-          3789,
-          4376,
-          4663,
-          5507,
-          6209
+          1711,
+          809,
+          532,
+          449,
+          261,
+          358,
+          561,
+          864,
+          1100,
+          1150,
+          1035,
+          962
+        ]
+      },
+      {
+        "code": "CMU",
+        "rank_t2": 26,
+        "pct_th": 0.766201,
+        "total": [
+          2012,
+          1361,
+          1074,
+          959,
+          996,
+          1954,
+          1930,
+          2162,
+          3279,
+          3252,
+          2772,
+          2189
+        ],
+        "offline": [
+          2012,
+          1361,
+          1074,
+          957,
+          875,
+          1429,
+          1426,
+          2139,
+          2387,
+          2508,
+          2238,
+          1647
+        ]
+      },
+      {
+        "code": "CTO",
+        "rank_t2": 25,
+        "pct_th": 0.772772,
+        "total": [
+          5056,
+          3805,
+          4033,
+          3701,
+          4248,
+          6077,
+          5727,
+          5688,
+          8295,
+          8398,
+          7727,
+          6335
+        ],
+        "offline": [
+          5056,
+          3805,
+          4031,
+          3700,
+          3685,
+          4382,
+          4331,
+          5656,
+          6142,
+          6542,
+          6191,
+          4701
         ]
       }
     ],
@@ -2913,13 +2949,14 @@
       155477,
       237675,
       226525,
-      238581
+      238581,
+      228156
     ],
     "all_provinces": [
       {
         "code": "AGG",
         "rank_t2": 32,
-        "pct_th": 0.573076,
+        "pct_th": 0.575733,
         "total": [
           5818,
           4772,
@@ -2931,7 +2968,8 @@
           4730,
           6510,
           6907,
-          6888
+          6888,
+          6642
         ],
         "offline": [
           5818,
@@ -2944,13 +2982,14 @@
           4711,
           4898,
           5407,
-          5538
+          5538,
+          5072
         ]
       },
       {
         "code": "BNH",
-        "rank_t2": 9,
-        "pct_th": 1.304811,
+        "rank_t2": 10,
+        "pct_th": 1.312674,
         "total": [
           20261,
           13047,
@@ -2962,7 +3001,8 @@
           6624,
           11093,
           9397,
-          10853
+          10853,
+          11331
         ],
         "offline": [
           20261,
@@ -2975,13 +3015,14 @@
           6582,
           8005,
           6940,
-          8668
+          8668,
+          8168
         ]
       },
       {
         "code": "CBG",
         "rank_t2": 2,
-        "pct_th": 2.390606,
+        "pct_th": 2.403056,
         "total": [
           3064,
           2427,
@@ -2993,7 +3034,8 @@
           2288,
           2836,
           2207,
-          1755
+          1755,
+          1954
         ],
         "offline": [
           3064,
@@ -3006,13 +3048,14 @@
           2285,
           2618,
           2016,
-          1592
+          1592,
+          1773
         ]
       },
       {
         "code": "CMU",
-        "rank_t2": 23,
-        "pct_th": 0.777213,
+        "rank_t2": 26,
+        "pct_th": 0.766201,
         "total": [
           2012,
           1361,
@@ -3024,7 +3067,8 @@
           2162,
           3279,
           3252,
-          2772
+          2772,
+          2189
         ],
         "offline": [
           2012,
@@ -3037,13 +3081,14 @@
           2139,
           2387,
           2508,
-          2238
+          2238,
+          1647
         ]
       },
       {
         "code": "CTO",
-        "rank_t2": 22,
-        "pct_th": 0.78344,
+        "rank_t2": 25,
+        "pct_th": 0.772772,
         "total": [
           5056,
           3805,
@@ -3055,7 +3100,8 @@
           5688,
           8295,
           8398,
-          7727
+          7727,
+          6335
         ],
         "offline": [
           5056,
@@ -3068,13 +3114,14 @@
           5656,
           6142,
           6542,
-          6191
+          6191,
+          4701
         ]
       },
       {
         "code": "DBN",
-        "rank_t2": 28,
-        "pct_th": 0.724147,
+        "rank_t2": 27,
+        "pct_th": 0.748038,
         "total": [
           1711,
           809,
@@ -3086,7 +3133,8 @@
           865,
           1375,
           1429,
-          1315
+          1315,
+          1174
         ],
         "offline": [
           1711,
@@ -3099,13 +3147,14 @@
           864,
           1100,
           1150,
-          1035
+          1035,
+          962
         ]
       },
       {
         "code": "DLK",
         "rank_t2": 6,
-        "pct_th": 1.504741,
+        "pct_th": 1.474017,
         "total": [
           10872,
           8341,
@@ -3117,7 +3166,8 @@
           6157,
           7860,
           7265,
-          7208
+          7208,
+          5547
         ],
         "offline": [
           10872,
@@ -3130,13 +3180,14 @@
           6143,
           6687,
           6315,
-          6259
+          6259,
+          4760
         ]
       },
       {
         "code": "DNG",
         "rank_t2": 13,
-        "pct_th": 1.095579,
+        "pct_th": 1.08416,
         "total": [
           7994,
           5195,
@@ -3148,7 +3199,8 @@
           3630,
           5193,
           4939,
-          5940
+          5940,
+          4642
         ],
         "offline": [
           7994,
@@ -3161,13 +3213,14 @@
           3611,
           4033,
           4019,
-          5059
+          5059,
+          3569
         ]
       },
       {
         "code": "DNI",
         "rank_t2": 19,
-        "pct_th": 0.872244,
+        "pct_th": 0.872574,
         "total": [
           17202,
           10356,
@@ -3179,7 +3232,8 @@
           7350,
           10660,
           8678,
-          8771
+          8771,
+          9337
         ],
         "offline": [
           17202,
@@ -3192,13 +3246,14 @@
           7321,
           8508,
           7033,
-          7263
+          7263,
+          7223
         ]
       },
       {
         "code": "DTP",
-        "rank_t2": 27,
-        "pct_th": 0.724816,
+        "rank_t2": 29,
+        "pct_th": 0.727538,
         "total": [
           8598,
           5724,
@@ -3210,7 +3265,8 @@
           5040,
           6794,
           6577,
-          6638
+          6638,
+          6334
         ],
         "offline": [
           8598,
@@ -3223,13 +3279,14 @@
           5017,
           5302,
           5253,
-          5462
+          5462,
+          5047
         ]
       },
       {
         "code": "GLI",
-        "rank_t2": 15,
-        "pct_th": 1.07077,
+        "rank_t2": 14,
+        "pct_th": 1.082806,
         "total": [
           12037,
           7398,
@@ -3241,7 +3298,8 @@
           5924,
           8725,
           8031,
-          10069
+          10069,
+          8280
         ],
         "offline": [
           12037,
@@ -3254,13 +3312,14 @@
           5910,
           7418,
           6975,
-          8817
+          8817,
+          7056
         ]
       },
       {
         "code": "HCM",
         "rank_t2": 34,
-        "pct_th": 0.468123,
+        "pct_th": 0.47606,
         "total": [
           32421,
           17881,
@@ -3272,7 +3331,8 @@
           9339,
           21595,
           17797,
-          20578
+          20578,
+          22487
         ],
         "offline": [
           32421,
@@ -3285,13 +3345,14 @@
           9264,
           12377,
           11228,
-          14749
+          14749,
+          13848
         ]
       },
       {
         "code": "HNI",
         "rank_t2": 33,
-        "pct_th": 0.532271,
+        "pct_th": 0.532538,
         "total": [
           30239,
           15882,
@@ -3303,7 +3364,8 @@
           9993,
           24834,
           23028,
-          26150
+          26150,
+          23404
         ],
         "offline": [
           30239,
@@ -3316,13 +3378,14 @@
           9872,
           12956,
           12920,
-          16718
+          16718,
+          12750
         ]
       },
       {
         "code": "HPG",
         "rank_t2": 30,
-        "pct_th": 0.676552,
+        "pct_th": 0.71361,
         "total": [
           10943,
           6609,
@@ -3334,7 +3397,8 @@
           3456,
           7558,
           7415,
-          7842
+          7842,
+          9629
         ],
         "offline": [
           10943,
@@ -3347,13 +3411,14 @@
           3426,
           4601,
           5009,
-          5708
+          5708,
+          6529
         ]
       },
       {
         "code": "HTH",
         "rank_t2": 1,
-        "pct_th": 3.390782,
+        "pct_th": 3.320799,
         "total": [
           5267,
           4049,
@@ -3365,7 +3430,8 @@
           4280,
           4444,
           4893,
-          5760
+          5760,
+          4517
         ],
         "offline": [
           5267,
@@ -3378,13 +3444,14 @@
           4265,
           3565,
           3978,
-          4845
+          4845,
+          3632
         ]
       },
       {
         "code": "HUE",
         "rank_t2": 7,
-        "pct_th": 1.486173,
+        "pct_th": 1.461347,
         "total": [
           3228,
           2425,
@@ -3396,7 +3463,8 @@
           1765,
           2860,
           3190,
-          2665
+          2665,
+          2331
         ],
         "offline": [
           3228,
@@ -3409,13 +3477,14 @@
           1758,
           2168,
           2567,
-          2216
+          2216,
+          1742
         ]
       },
       {
         "code": "HYN",
         "rank_t2": 16,
-        "pct_th": 1.00334,
+        "pct_th": 1.048631,
         "total": [
           10990,
           6750,
@@ -3427,7 +3496,8 @@
           3856,
           6235,
           6527,
-          8783
+          8783,
+          8969
         ],
         "offline": [
           10990,
@@ -3440,13 +3510,14 @@
           3821,
           4256,
           4710,
-          6850
+          6850,
+          6484
         ]
       },
       {
         "code": "KHA",
         "rank_t2": 8,
-        "pct_th": 1.384624,
+        "pct_th": 1.344045,
         "total": [
           7882,
           4909,
@@ -3458,7 +3529,8 @@
           4478,
           5155,
           4138,
-          3801
+          3801,
+          3457
         ],
         "offline": [
           7882,
@@ -3471,13 +3543,14 @@
           4473,
           4382,
           3477,
-          3224
+          3224,
+          2865
         ]
       },
       {
         "code": "LCI",
         "rank_t2": 17,
-        "pct_th": 0.999395,
+        "pct_th": 1.002485,
         "total": [
           6769,
           4139,
@@ -3489,7 +3562,8 @@
           2738,
           3794,
           4242,
-          4336
+          4336,
+          3735
         ],
         "offline": [
           6769,
@@ -3502,13 +3576,14 @@
           2734,
           3155,
           3534,
-          3694
+          3694,
+          3143
         ]
       },
       {
         "code": "LCU",
-        "rank_t2": 29,
-        "pct_th": 0.708025,
+        "rank_t2": 21,
+        "pct_th": 0.798668,
         "total": [
           935,
           540,
@@ -3520,7 +3595,8 @@
           968,
           1184,
           1817,
-          2177
+          2177,
+          2468
         ],
         "offline": [
           935,
@@ -3533,13 +3609,14 @@
           961,
           986,
           1474,
-          1739
+          1739,
+          2018
         ]
       },
       {
         "code": "LDG",
-        "rank_t2": 21,
-        "pct_th": 0.790871,
+        "rank_t2": 24,
+        "pct_th": 0.787102,
         "total": [
           11531,
           7385,
@@ -3551,7 +3628,8 @@
           7281,
           9004,
           8295,
-          7650
+          7650,
+          7409
         ],
         "offline": [
           11531,
@@ -3564,13 +3642,14 @@
           7259,
           7645,
           7166,
-          6671
+          6671,
+          6228
         ]
       },
       {
         "code": "LSN",
         "rank_t2": 12,
-        "pct_th": 1.168831,
+        "pct_th": 1.161917,
         "total": [
           4446,
           3678,
@@ -3582,7 +3661,8 @@
           2794,
           3054,
           3118,
-          3411
+          3411,
+          2665
         ],
         "offline": [
           4446,
@@ -3595,13 +3675,14 @@
           2790,
           2616,
           2640,
-          3003
+          3003,
+          2315
         ]
       },
       {
         "code": "NBH",
-        "rank_t2": 24,
-        "pct_th": 0.76045,
+        "rank_t2": 20,
+        "pct_th": 0.802576,
         "total": [
           10127,
           6075,
@@ -3613,7 +3694,8 @@
           3352,
           6005,
           6368,
-          7043
+          7043,
+          8305
         ],
         "offline": [
           10127,
@@ -3626,13 +3708,14 @@
           3324,
           3931,
           4518,
-          5227
+          5227,
+          5731
         ]
       },
       {
         "code": "PTO",
         "rank_t2": 11,
-        "pct_th": 1.179445,
+        "pct_th": 1.208508,
         "total": [
           18927,
           11754,
@@ -3644,7 +3727,8 @@
           6742,
           9060,
           10257,
-          9921
+          9921,
+          10772
         ],
         "offline": [
           18927,
@@ -3657,13 +3741,14 @@
           6714,
           6958,
           8008,
-          7991
+          7991,
+          8298
         ]
       },
       {
         "code": "QNH",
         "rank_t2": 18,
-        "pct_th": 0.904562,
+        "pct_th": 0.917197,
         "total": [
           4091,
           2794,
@@ -3675,7 +3760,8 @@
           2268,
           2919,
           3888,
-          3791
+          3791,
+          3610
         ],
         "offline": [
           4091,
@@ -3688,13 +3774,14 @@
           2251,
           2004,
           2901,
-          2955
+          2955,
+          2667
         ]
       },
       {
         "code": "QNI",
         "rank_t2": 3,
-        "pct_th": 1.968613,
+        "pct_th": 1.896119,
         "total": [
           8312,
           6160,
@@ -3706,7 +3793,8 @@
           5311,
           5932,
           5038,
-          4987
+          4987,
+          3659
         ],
         "offline": [
           8312,
@@ -3719,13 +3807,14 @@
           5301,
           5240,
           4537,
-          4519
+          4519,
+          3166
         ]
       },
       {
         "code": "QTI",
-        "rank_t2": 10,
-        "pct_th": 1.303977,
+        "rank_t2": 9,
+        "pct_th": 1.342564,
         "total": [
           3198,
           2157,
@@ -3737,7 +3826,8 @@
           2617,
           3414,
           3645,
-          4150
+          4150,
+          3686
         ],
         "offline": [
           3198,
@@ -3750,13 +3840,14 @@
           2609,
           2740,
           2941,
-          3417
+          3417,
+          2948
         ]
       },
       {
         "code": "SLA",
-        "rank_t2": 20,
-        "pct_th": 0.812885,
+        "rank_t2": 23,
+        "pct_th": 0.791259,
         "total": [
           3851,
           2728,
@@ -3768,7 +3859,8 @@
           3010,
           3801,
           3443,
-          3269
+          3269,
+          2506
         ],
         "offline": [
           3851,
@@ -3781,13 +3873,14 @@
           3005,
           3272,
           2961,
-          2778
+          2778,
+          2077
         ]
       },
       {
         "code": "THA",
-        "rank_t2": 25,
-        "pct_th": 0.755978,
+        "rank_t2": 22,
+        "pct_th": 0.793994,
         "total": [
           10082,
           5388,
@@ -3799,7 +3892,8 @@
           4394,
           6176,
           7180,
-          7647
+          7647,
+          8473
         ],
         "offline": [
           10082,
@@ -3812,13 +3906,14 @@
           4376,
           4663,
           5507,
-          6209
+          6209,
+          6650
         ]
       },
       {
         "code": "TNH",
         "rank_t2": 31,
-        "pct_th": 0.652128,
+        "pct_th": 0.658513,
         "total": [
           7106,
           4588,
@@ -3830,7 +3925,8 @@
           4661,
           7245,
           6743,
-          6797
+          6797,
+          7299
         ],
         "offline": [
           7106,
@@ -3843,13 +3939,14 @@
           4618,
           5306,
           5088,
-          5359
+          5359,
+          5466
         ]
       },
       {
         "code": "TNN",
         "rank_t2": 5,
-        "pct_th": 1.534496,
+        "pct_th": 1.546062,
         "total": [
           10482,
           6373,
@@ -3861,7 +3958,8 @@
           3482,
           5521,
           4970,
-          5463
+          5463,
+          4966
         ],
         "offline": [
           10482,
@@ -3874,13 +3972,14 @@
           3472,
           4619,
           4140,
-          4726
+          4726,
+          4079
         ]
       },
       {
         "code": "TQG",
-        "rank_t2": 14,
-        "pct_th": 1.075403,
+        "rank_t2": 15,
+        "pct_th": 1.074029,
         "total": [
           6122,
           3960,
@@ -3892,7 +3991,8 @@
           5155,
           6854,
           4912,
-          4746
+          4746,
+          4810
         ],
         "offline": [
           6122,
@@ -3905,13 +4005,14 @@
           5148,
           5837,
           4145,
-          4059
+          4059,
+          4148
         ]
       },
       {
         "code": "VLG",
-        "rank_t2": 26,
-        "pct_th": 0.747506,
+        "rank_t2": 28,
+        "pct_th": 0.736422,
         "total": [
           8147,
           6725,
@@ -3923,7 +4024,8 @@
           5113,
           6180,
           6259,
-          6557
+          6557,
+          5917
         ],
         "offline": [
           8147,
@@ -3936,7 +4038,8 @@
           5091,
           4791,
           5181,
-          5511
+          5511,
+          4708
         ]
       }
     ]
