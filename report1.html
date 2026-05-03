@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BÁO CÁO ĐIỀU HÀNH TỈNH XÁC THỰC</title>
+  <meta property="og:title" content="BÁO CÁO ĐIỀU HÀNH TỈNH XÁC THỰC" />
+  <meta name="twitter:title" content="BÁO CÁO ĐIỀU HÀNH TỈNH XÁC THỰC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* 2-COLUMN REDESIGN */
+    :root {
+      --bg: #ffffff; --surface: #fff5f6; --surface2: #ffecec;
+      --border: rgba(0,0,0,.06); --red: #ff4d6d;
+      --text: #111827; --muted: #6b7280; --radius: 10px;
+      --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    }
+    html { height: 100%; }
+    body {
+      font-family: var(--font); background: var(--bg); color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      display: flex; flex-direction: column; height: calc(100vh / 1.25); overflow: hidden;
+      zoom: 1.25;
+    }
+    /* -- TOPBAR -- */
+    .topbar {
+      background: linear-gradient(135deg,#ff6b81 0%,#ff4d6d 50%,var(--red) 100%);
+      padding: 6px 18px; flex-shrink: 0; position: relative; overflow: hidden;
+    }
+    .topbar::before {
+      content:''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% -10%,rgba(255,77,109,.18) 0%,transparent 60%);
+      pointer-events: none;
+    }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .topbar-title { font-size: 15px; font-weight: 800; letter-spacing: -.2px; line-height: 1.3; position: relative; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+    .topbar-title span { color: #ffd6d6; font-size: 11px; font-weight: 400; display: inline; margin-top: 0; }
+    .topbar-badge {
+      background: rgba(0,0,0,.18); border: 1px solid rgba(255,255,255,.08);
+      padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 600; white-space: nowrap; color: #ffd6d6;
+    }
+    /* ── GLOBAL PROVINCE FILTER BAR ── */
+    .global-filter-bar {
+      background: #fff5f6; border-bottom: 1px solid rgba(255,77,109,.15);
+      padding: 4px 18px; display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .global-filter-bar label { font-size: 11px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+    .global-filter-select {
+      font-family: var(--font); font-size: 11px;
+      border: 1px solid rgba(255,77,109,.3); border-radius: 6px;
+      padding: 3px 8px; background: #fff; color: var(--text);
+      cursor: pointer; min-width: 170px;
+    }
+    .global-filter-badge {
+      background: rgba(255,77,109,.12); color: var(--red);
+      border: 1px solid rgba(255,77,109,.2);
+      font-size: 11px; font-weight: 600;
+      padding: 2px 8px; border-radius: 12px; display: none;
+    }
+    .global-filter-badge.show { display: inline; }
+    .global-filter-reset {
+      font-size: 11px; color: var(--muted); cursor: pointer;
+      background: none; border: none; padding: 2px 4px; display: none;
+    }
+    .global-filter-reset.show { display: inline; }
+    /* ── MAIN 2-COLUMN GRID ── */
+    .main-grid {
+      display: grid; grid-template-columns: 270px 1fr;
+      flex: 1; min-height: 0; overflow: hidden;
+    }
+    /* &#9472;&#9472; LEFT COLUMN &#9472;&#9472; */
+    .left-col {
+      padding: 10px; border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 7px; overflow-y: auto;
+    }
+    .scale-banner {
+      background: linear-gradient(90deg, rgba(255,77,109,.06) 0%, transparent 100%);
+      border: 1px solid rgba(255,77,109,.12); border-left: 3px solid var(--red);
+      border-radius: 7px; padding: 7px 10px;
+      font-size: 11px; font-weight: 700; color: var(--text);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .scale-banner .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--red); box-shadow: 0 0 5px var(--red); flex-shrink: 0;
+    }
+    .card {
+      border-radius: var(--radius); padding: 14px 16px;
+      position: relative; overflow: hidden;
+      border: 1px solid var(--border); transition: transform .12s ease;
+      background: linear-gradient(135deg, #fffafc 0%, #fff5f6 100%);
+      box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto auto auto;
+      column-gap: 14px;
+      align-items: center;
+    }
+    .card:hover { transform: translateY(-2px); }
+    /* Make KPI cards bold red to stand out */
+    .card.green, .card.orange, .card.red {
+      color: #fff; /* ensure text contrast on dark backgrounds */
+      border-color: rgba(255,77,109,.22);
+      background: linear-gradient(135deg, #ff6b81 0%, #ff4d6d 100%);
+      box-shadow: 0 10px 30px rgba(255,77,109,0.14), inset 0 -6px 18px rgba(0,0,0,0.06);
+    }
+    .card.orange { background: linear-gradient(135deg,#ff7a8f 0%,#ff5a75 100%); }
+    .card.red    { background: linear-gradient(135deg,#ff5a6a 0%,#ff2b4a 100%); }
+    .card::after {
+      content:''; position: absolute; top: -20px; right: -20px;
+      width: 60px; height: 60px; border-radius: 50%;
+      background: rgba(255,255,255,.04); pointer-events: none;
+    }
+    .card-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+      color: #fff; font-size: 22px; font-weight: 700;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12), inset 0 -6px 12px rgba(255,255,255,0.04);
+      grid-column: 1; grid-row: 1 / span 2;
+      position: relative; overflow: visible;
+      transform: translateY(-20px);
+    }
+    .card-icon::after {
+      content: '';
+      position: absolute; right: -6px; top: -22px;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(255,255,255,0));
+      box-shadow: inset 0 -2px 6px rgba(255,255,255,0.06);
+      transform: translate(6px, -20px);
+      pointer-events: none;
+    }
+
+
+    .card-num  { font-size: 40px; font-weight: 900; letter-spacing: -.6px; line-height: 1; color: #fff; grid-column: 2; justify-self: end; }
+    .card-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; opacity: .95; color: rgba(255,255,255,0.98); grid-column: 1; grid-row: 2; align-self: start; }
+    .card-note { font-size: 11px; font-weight: 600; text-transform: none; letter-spacing: .2px; margin-top: 6px; color: rgba(255,255,255,0.92); grid-column: 1; grid-row: 3; align-self: start; }
+    .card-subnote { font-size: 11px; font-weight: 600; text-transform: none; letter-spacing: .2px; margin-top: 6px; color: rgba(255,255,255,0.92); grid-column: 2; grid-row: 2; justify-self: end; text-align: right; }
+    .card-rightnote { font-size: 12px; font-weight: 600; text-transform: none; letter-spacing: .2px; margin-top: 6px; color: rgba(255,255,255,0.96); grid-column: 2; grid-row: 3; justify-self: end; text-align: right; }
+    .card-subnote { font-size: 9px; font-weight: 600; color: rgba(255,255,255,0.92); margin-top: 1px; }
+    .card-subnote strong { font-weight: 800; }
+    .card-rightnote .line-inline { display:flex; align-items:center; gap:8px; justify-content:flex-end; white-space:nowrap; }
+    .card-rightnote .rightmid { display: inline-block; font-size: 18px; font-weight: 800; margin-left: 6px; line-height: 1; }
+    .card-rightnote .rightbig { display: inline-block; font-size: 36px; font-weight: 900; margin-left: 6px; line-height: 1; }
+    /* No-icon balanced layout for orange & red */
+    .card.orange, .card.red { grid-template-columns: 1fr 1.5fr; align-items: center; column-gap: 10px; }
+    .card.orange .card-label, .card.red .card-label { grid-column: 1; grid-row: 1; align-self: start; padding-top: 2px; }
+    .card.orange .card-note, .card.red .card-note { grid-column: 1; grid-row: 2; align-self: start; }
+    .card.orange .card-rightnote, .card.red .card-rightnote { grid-column: 2; grid-row: 1 / span 2; align-self: center; justify-self: end; margin-top: 0; }
+    .card.orange .card-bar, .card.red .card-bar { grid-column: 1 / -1; grid-row: 3; }
+    .card-bar  { height: 2px; border-radius: 2px; background: rgba(255,255,255,.06); overflow: hidden; margin-top: 8px; grid-column: 1 / -1; grid-row: 4; }
+    .card-bar-fill { height: 100%; border-radius: 2px; background: rgba(255,255,255,.45); }
+    .card-bar-fill { height: 100%; border-radius: 2px; background: rgba(255,255,255,.45); }
+    .offline-subcards {
+      display: grid;
+      gap: 8px;
+      margin-top: 2px;
+      grid-column: 1 / -1;
+      grid-row: 5;
+    }
+    .offline-child-card {
+      border-radius: 10px;
+      padding: 8px 8px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.10);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .offline-child-card .child-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.96);
+    }
+    .offline-child-card .child-value {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      color: #fff;
+      white-space: nowrap;
+    }
+    .offline-child-card .child-value-small {
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #fff;
+    }
+    .offline-child-card > .child-left { flex: 0 0 68px; width: 68px; }
+    .offline-child-card .child-label { font-size: 11px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase; color: rgba(255,255,255,.96); line-height: 1.2; white-space: normal; word-break: break-word; }
+    .offline-child-card > .child-right { flex: 1 1 0; text-align: right; min-width: 0; }
+    .offline-child-card .child-sub { font-size: 10px; font-weight: 600; color: rgba(255,255,255,.86); margin-top: 1px; white-space: nowrap; }
+    /* ─── CHART GRID ─── */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 12px;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .chart-card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 10px 12px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .chart-card-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chart-card-title-left {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .chart-card-growth {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .chart-card-pct {
+      font-size: 11px;
+      font-weight: 700;
+      color: #dc2626;
+    }
+    .chart-card-sub {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .chart-card canvas { width: 100% !important; }
+    /* ─── PROVINCE FILTER PANEL (t4) ─── */
+    .province-filter-bar {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 14px; flex-shrink: 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .province-select {
+      padding: 5px 10px; border-radius: 8px;
+      border: 1.5px solid var(--red); font-size: 12px; font-weight: 700;
+      color: var(--red); background: #fff; cursor: pointer;
+      outline: none; min-width: 120px;
+    }
+    .province-select:focus { box-shadow: 0 0 0 2px rgba(255,77,109,.2); }
+    .t4-chart-wrap {
+      flex: 1; min-height: 0; overflow-y: auto;
+      padding: 14px; display: flex; flex-direction: column; gap: 4px;
+    }
+    .t4-card {
+      background: #fff; border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 12px 14px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+    .t4-card-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .t4-card-title { font-size: 14px; font-weight: 800; color: var(--text); }
+    .t4-card-pct { font-size: 13px; font-weight: 700; color: #dc2626; }
+    .t4-card-sub { font-size: 11px; color: var(--muted); }
+    /* ─── RIGHT COLUMN ─── */
+    .right-col { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
+    .table-header {
+      padding: 9px 14px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .table-title { font-size: 13px; font-weight: 700; }
+    .table-sub   { font-size: 10px; color: var(--muted); margin-top: 1px; }
+    .table-badge { background: var(--surface2); border-radius: 14px; padding: 3px 10px; font-size: 11px; font-weight: 600; color: var(--muted); }
+    .table-wrap  { flex: 1; min-height: 0; overflow-y: auto; background: var(--bg); }
+    table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+    thead th {
+      position: sticky; top: 0; z-index: 2; background: var(--surface2);
+      padding: 6px 9px; text-align: left;
+      font-size: 10px; font-weight: 700; letter-spacing: .5px;
+      text-transform: uppercase; color: var(--text); white-space: nowrap;
+    }
+    /* Two-line header helpers for rank and province columns */
+    .rank-top { padding-top: 10px; }
+    .rank-bottom { text-align: center; padding-top: 5px; }
+    .province-top { padding-top: 10px; }
+    .province-bottom { text-align: left; padding-top: 5px; }
+    thead th:first-child { width: 36px; text-align: center; }
+    .th-group {
+      text-align: center !important;
+      padding: 4px 9px !important; font-size: 10.5px !important; font-weight: 800 !important;
+      letter-spacing: .4px; color: var(--red) !important;
+    }
+    tbody tr { border-top: none; transition: background .12s; }
+    tbody tr:hover { background: rgba(255,77,109,.04); }
+    tbody td { padding: 6px 9px; vertical-align: middle; }
+    /* Tighten vertical spacing for OFFLINE table rows */
+    #t2 table td, #t2 table th { padding: 4px 7px; }
+    tr.sep { border-top: none; }
+    .td-rank { text-align: center; font-size: 10.5px; font-weight: 700; color: var(--muted); }
+    .td-rank span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 18px; height: 18px; border-radius: 50%; background: var(--surface2); font-size: 9px;
+    }
+    .td-rank.gold   span { background: rgba(250,204,21,.2); color: #fbbf24; }
+    .td-rank.silver span { background: rgba(148,163,184,.2); color: #94a3b8; }
+    .td-rank.bronze span { background: rgba(180,120,60,.2);  color: #c8924a; }
+    .td-code { font-weight: 800; font-size: 11.5px; letter-spacing: .3px; color: var(--red); }
+    .td-num  { font-variant-numeric: tabular-nums; color: var(--muted); text-align: right; padding-right: 10px; }
+    .td-num strong { color: var(--text); font-weight: 600; }
+    /* Vertical separator: last column of ĐẦU KỲ group (col 4) */
+    thead tr:first-child .th-group:first-of-type { border-right: 2px solid rgba(255,90,95,.30) !important; }
+    thead tr:last-child th:nth-child(4) { border-right: 2px solid rgba(255,90,95,.25); text-align: right; padding-right: 12px; }
+    thead tr:last-child th:nth-child(3),
+    thead tr:last-child th:nth-child(5),
+    thead tr:last-child th:nth-child(6) { text-align: right; padding-right: 12px; }
+    tbody td:nth-child(4) { border-right: 2px solid rgba(255,90,95,.15); }
+    /* % completion colored by group */
+    .pct { font-size: 9.5px; font-weight: 700; margin-left: 2px; }
+    tr[data-group="green"]  .pct { color: #4ade80; }
+    tr[data-group="orange"] .pct { color: #fb923c; }
+    tr[data-group="red"]    .pct { color: #f87171; }
+    /* New warning table */
+    .sect-green td { background: #9acd32; color: #173300; font-weight: 800; text-align: center; font-size: 10px; }
+    .sect-red   td { background: #ff2b2b; color: #fff; font-weight: 800; text-align: center; font-size: 10px; }
+    .pct-green { color: #16a34a; font-weight: 800; }
+    /* removed orange variant to keep only green/red */
+    .pct-red    { color: #dc2626; font-weight: 800; }
+    /* Green gradient for OFFLINE table (strongest to lightest) */
+    .pct-green-1 { color: #064e3b; font-weight:900; }
+    .pct-green-2 { color: #0b6b44; font-weight:900; }
+    .pct-green-3 { color: #047857; font-weight:900; }
+    .pct-green-4 { color: #059669; font-weight:900; }
+    .pct-green-5 { color: #16a34a; font-weight:900; }
+    
+    /* Red gradient for alerts (darkest = worst) */
+    .pct-red-1 { color: #5f1414; font-weight: 900; } /* Đậm nhất */
+    .pct-red-2 { color: #7f1d1d; font-weight: 900; }
+    .pct-red-3 { color: #991b1b; font-weight: 900; }
+    .pct-red-4 { color: #9a0212; font-weight: 900; }
+    .pct-red-5 { color: #b91c1c; font-weight: 900; }
+    .pct-red-6 { color: #dc2626; font-weight: 900; }
+    .pct-red-7 { color: #ef4444; font-weight: 900; }
+    .pct-red-8 { color: #ef4444; font-weight: 800; }
+    .pct-red-9 { color: #f87171; font-weight: 800; } /* Nhạt nhất */
+    .pct-red-10{ color: #fca5a5; font-weight: 700; }
+    /* yellow header styles removed to keep green/red only */
+    .offline-title-row th {
+      background: transparent !important;
+      color: var(--text) !important;
+      font-size: 13px !important;
+      font-weight: 900 !important;
+      text-align: center !important;
+      letter-spacing: .3px;
+      text-transform: uppercase !important;
+      padding: 6px 8px !important;
+    }
+    .offline-group-row th {
+      background: #fff200 !important;
+      color: #222 !important;
+      font-size: 10.5px !important;
+      font-weight: 800 !important;
+      text-align: center !important;
+      letter-spacing: .2px;
+      text-transform: none !important;
+      line-height: 1.1;
+    }
+    .offline-group-row .group-note {
+      display: block;
+      margin-top: 2px;
+      font-size: 9px;
+      font-weight: 600;
+      color: #333;
+      text-transform: none;
+    }
+    .offline-subhead-row th {
+      background: #fff7a8 !important;
+      color: #222 !important;
+      font-size: 9.5px !important;
+      font-weight: 800 !important;
+      text-align: center !important;
+      text-transform: none !important;
+      line-height: 1.1;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+    .offline-subhead-row .sub-note {
+      display: block;
+      font-size: 9px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 1px;
+    }
+    .td-r { text-align: right; padding-right: 9px; font-variant-numeric: tabular-nums; font-size: 10.5px; color: var(--text); }
+    .td-c { text-align: center; font-size: 10.5px; color: var(--text); }
+    /* Toggle buttons */
+    .toggle-bar { display: flex; gap: 6px; }
+    .toggle-btn { padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--red); font-size: 11px; font-weight: 700; cursor: pointer; transition: all .15s; background: transparent; color: var(--red); }
+    .toggle-btn.active { background: var(--red); color: #fff; }
+    .table-panel { display: none; flex: 1; min-height: 0; overflow-y: auto; }
+    .table-panel.active { display: flex; flex-direction: column; flex: 1; min-height: 0; overflow: hidden; }
+    #t3.table-panel.active {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      min-height: 0;
+      overflow: hidden;
+    }
+    .chart-grid { flex: 1; min-height: 0; overflow-y: auto; align-content: start; }
+    #trend-grid {
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    /* Total table: don't force a yellow background; use green/red classes only */
+    #t1 tbody td:nth-child(6) {
+      background: transparent;
+      text-align: center;
+    }
+    #t1 tbody td:nth-child(6) .pct-green { color: #16a34a; font-weight: 800; }
+    #t1 tbody td:nth-child(6) .pct-red { color: #dc2626; font-weight: 800; }
+    /* Row highlight for OFFLINE table */
+    .row-pink td { background: #ffe4e6; }
+    .row-green-hl td { background: #dcfce7; }
+    @media (max-width: 768px) {
+      .main-grid { grid-template-columns: 1fr; }
+      body, .main-grid { height: auto; overflow: auto; }
+      .right-col, .table-wrap { overflow: visible; }
+      .chart-grid { grid-template-columns: 1fr; }
+
+    }
+    @media (min-width: 769px) {
+      .main-grid { grid-template-columns: 260px 1fr; min-height: 0; }
+      .right-col { height: 100%; min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-title">
+        BÁO CÁO ĐIỀU HÀNH TỈNH XÁC THỰC
+        <span id="topbar-sub">C&#7853;p nh&#7853;t l&#361;y k&#7871; 24h00 ng&#224;y <span id="topbar-report-date">23/04/2026</span></span>
+      </div>
+      <div class="topbar-badge" id="topbar-badge">&#128467; 23/04/2026 &#183; 24:00</div>
+    </div>
+  </div>
+
+  <div class="global-filter-bar" id="global-filter-bar">
+    <label>&#128269; L&#7885;c t&#7881;nh:</label>
+    <select class="global-filter-select" id="global-province-select" onchange="applyGlobalFilter(this.value)">
+      <option value="ALL">— T&#7845;t c&#7843; t&#7881;nh —</option>
+    </select>
+    <span class="global-filter-badge" id="global-filter-badge"></span>
+    <button class="global-filter-reset" id="global-filter-reset" onclick="applyGlobalFilter('ALL')">&#10005; B&#7887; l&#7885;c</button>
+  </div>
+
+  <div class="main-grid">
+
+    <!-- &#9472;&#9472;&#9472; LEFT: KPI + banners &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; -->
+    <aside class="left-col">
+      <div class="scale-banner">
+        <div class="dot"></div>
+        Quy m&#244; S&#7888; LI&#7878;U &#272;I&#7872;U H&#192;NH to&#224;n m&#7841;ng&nbsp;<strong style="color:#fff">20.4tr TB</strong>
+      </div>
+
+      <div class="card orange">
+        <div class="card-label">C&#7847;n x&#225;c th&#7921;c</div>
+        <div class="card-rightnote">
+          <div>Đầu kỳ: <span class="rightmid" id="total-card-dau-ky"></span></div>
+          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 1/5: <strong id="total-card-th-19">-977K</strong></div>
+          <div>Còn phải TH:</div>
+          <div><span class="rightbig" id="total-card-con-phai-th">27.8tr</span></div>
+        </div>
+        <div class="card-bar"><div class="card-bar-fill" style="width:43%"></div></div>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT: two switchable tables -->
+    <main class="right-col">
+      <!-- TABLE 1: Tổng -->
+      <div class="table-panel active" id="t1">
+        <div class="table-header">
+          <div>
+            <div class="table-title">C&#7842;NH B&#193;O T&#7880;NH T&#7888;T K&#201;M</div>
+            <div class="table-sub" id="t1-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
+          </div>
+          <div class="toggle-bar">
+            <button class="toggle-btn active" id="btn1" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO</button>
+            <button class="toggle-btn" data-target="t3" onclick="switchTable('t3')">&#128200; Xu h&#432;&#7899;ng</button>
+            <button class="toggle-btn" data-target="t4" onclick="switchTable('t4')">&#128269; T&#7881;nh</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr class="offline-title-row">
+                <th colspan="11">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO T&#7892;NG <span style="color:#e11d48"></span></th>
+              </tr>
+              <tr class="offline-group-row">
+                <th rowspan="2" style="text-align:center;vertical-align:middle">TT</th>
+                <th rowspan="2" style="vertical-align:middle">T&#7880;NH</th>
+                <th rowspan="2">&#272;&#7846;U K&#7922;<span class="group-note">(T&#7893;ng c&#7847;n x&#225;c th&#7921;c)</span></th>
+                <th colspan="3">TH&#7920;C HI&#7878;N LŨY K&#7870;</th>
+                <th colspan="2">K&#202;NH TH&#7920;C HI&#7878;N</th>
+                <th rowspan="2">KH Th&#225;ng 4<span class="group-note">(c&#242;n ph&#7843;i TH)</span></th>
+                <th colspan="2">So sánh &#273;&#7847;u k&#7923; giao</th>
+              </tr>
+              <tr class="offline-subhead-row">
+                <th>KH &#273;&#7871;n ng&#224;y<span class="sub-note">(LK t&#7915; 1/5)</span></th>
+                <th>L&#361;y k&#7871;<span class="sub-note">(t&#7915; 1/5)</span></th>
+                <th>%TH KH &#273;&#7871;n ng&#224;y</th>
+                <th>%ONLINE</th>
+                <th>%OFFLINE</th>
+                <th>%TH &#931; &#272;&#7847;u k&#7923;</th>
+                <th>&#931; C&#7847;n x&#225;c th&#7921;c<span class="sub-note">(c&#242;n l&#7841;i)</span></th>
+              </tr>
+            </thead>
+            <tbody id="t1-tbody"><tr><td colspan="11" style="text-align:center;padding:18px;color:var(--muted)">Đang tải dữ liệu…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TABLE 2: OFFLINE -->
+      <div class="table-panel" id="t2">
+        <div class="table-header">
+          <div>
+            <div class="table-title">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO K&#202;NH OFFLINE <span style="color:#f97316">20.4tr</span></div>
+            <div class="table-sub" id="t2-sub">L&#361;y k&#7871; &#273;&#7871;n 24h00 ng&#224;y 23/04/2026</div>
+          </div>
+          <div class="toggle-bar">
+            <button class="toggle-btn" id="btn1" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO </button>
+            <button class="toggle-btn" data-target="t3" onclick="switchTable('t3')">&#128200; Xu h&#432;&#7899;ng</button>
+            <button class="toggle-btn" data-target="t4" onclick="switchTable('t4')">&#128269; T&#7881;nh</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr class="offline-title-row">
+                <th colspan="12">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO K&#202;NH OFFLINE <span style="color:#e11d48">20.4tr</span></th>
+              </tr>
+              <tr class="offline-group-row">
+                <th rowspan="2" style="text-align:center;vertical-align:middle">TT</th>
+                <th rowspan="2" style="vertical-align:middle">T&#7880;NH</th>
+                <th rowspan="2">&#272;&#7846;U K&#7922; OFF<span class="group-note">(CTM 9 s&#7889;, KH y&#7871;u th&#7871;)</span></th>
+                <th colspan="3">TH&#7920;C HI&#7878;N LŨY K&#7870;</th>
+                <th colspan="2">K&#202;NH TH&#7920;C HI&#7878;N</th>
+                <th rowspan="2">KH THÁNG 5<span class="group-note">(c&#242;n ph&#7843;i TH)</span></th>
+                <th colspan="2">S&#7888; &#272;&#7846;U K&#7922; GIAO</th>
+                <th rowspan="2">XẾP HẠNG KQ &#931; T&#7880;NH</th>
+              </tr>
+              <tr class="offline-subhead-row">
+                <th>KH &#273;&#7871;n ng&#224;y<span class="sub-note">(LK t&#7915; 1/5)</span></th>
+                <th>L&#361;y k&#7871;<span class="sub-note">(t&#7915; 1/5)</span></th>
+                <th>%TH KH &#273;&#7871;n ng&#224;y</th>
+                <th>%ONLINE</th>
+                <th>%OFFLINE</th>
+                <th>%TH &#272;&#7847;u k&#7923;</th>
+                <th>&#931; C&#7847;n x&#225;c th&#7921;c<span class="sub-note">(c&#242;n l&#7841;i)</span></th>
+              </tr>
+            </thead>
+            <tbody id="t2-tbody"><tr><td colspan="12" style="text-align:center;padding:18px;color:var(--muted)">Đang tải dữ liệu…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PANEL 3: Trend charts -->
+      <div class="table-panel" id="t3">
+        <div class="table-header">
+          <div>
+            <div class="table-title">XU H&#431;&#7898;NG 10 T&#7880;NH K&#201;M NH&#7844;T K&#202;NH OFFLINE</div>
+            <div class="table-sub" id="t3-sub">T&#7915; 15/04 &#8211; 23/04/2026 &nbsp;&#183;&nbsp; &#9646; Bar = Offline &nbsp;&#183;&nbsp; &#9472; Line = T&#7893;ng</div>
+          </div>
+          <div class="toggle-bar">
+            <button class="toggle-btn" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO </button>
+            <button class="toggle-btn active" data-target="t3" onclick="switchTable('t3')">&#128200; Xu h&#432;&#7899;ng</button>
+            <button class="toggle-btn" data-target="t4" onclick="switchTable('t4')">&#128269; T&#7881;nh</button>
+          </div>
+        </div>
+        <div class="chart-grid" id="trend-grid">
+          <!-- populated by renderTrend() -->
+        </div>
+      </div>
+
+      <!-- PANEL 4: Province filter trend -->
+      <div class="table-panel" id="t4">
+        <div class="table-header">
+          <div>
+            <div class="table-title">XU H&#431;&#7898;NG THEO T&#7880;NH</div>
+            <div class="table-sub" id="t4-sub">D&#249;ng b&#7897; l&#7885;c t&#7881;nh ph&#237;a tr&#234;n &#273;&#7875; xem bi&#7875;u &#273;&#7891;</div>
+          </div>
+          <div class="toggle-bar">
+            <button class="toggle-btn" data-target="t1" onclick="switchTable('t1')">T&#7893;ng GIAO </button>
+            <button class="toggle-btn" data-target="t3" onclick="switchTable('t3')">&#128200; Xu h&#432;&#7899;ng</button>
+            <button class="toggle-btn active" data-target="t4" onclick="switchTable('t4')">&#128269; T&#7881;nh</button>
+          </div>
+        </div>
+        <div class="t4-chart-wrap" id="t4-chart-wrap">
+          <!-- populated by renderT4Province() -->
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+<script>
+function switchTable(id) {
+  document.querySelectorAll('.table-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.toggle-btn[data-target="' + id + '"]').forEach(b => b.classList.add('active'));
+  if (id === 't3' && !window._chartsInited) { initCharts(); window._chartsInited = true; }
+  // Hide global filter on Xu hướng tab
+  var gfb = document.getElementById('global-filter-bar');
+  if (gfb) gfb.style.display = (id === 't3') ? 'none' : 'flex';
+  if (id === 't4') {
+    renderT4Province(window._globalProvince || 'ALL');
+  }
+}
+
+/* CHART_DATA is now loaded dynamically from data.json via renderTrend() */
+Chart.register(ChartDataLabels);
+
+/* ─── Global province filter ────────────────────────────────── */
+window._globalProvince = 'ALL';
+function applyGlobalFilter(code) {
+  window._globalProvince = code;
+  var badge = document.getElementById('global-filter-badge');
+  var reset = document.getElementById('global-filter-reset');
+  var sel = document.getElementById('global-province-select');
+  if (sel && sel.value !== code) sel.value = code;
+  if (code === 'ALL') {
+    if (badge) { badge.textContent = ''; badge.classList.remove('show'); }
+    if (reset) reset.classList.remove('show');
+    if (window._rawData) {
+      renderT1(window._rawData);
+      renderT2(window._rawData);
+    }
+    updateSummaryByProvince('ALL');
+  } else {
+    if (badge) { badge.textContent = code; badge.classList.add('show'); }
+    if (reset) reset.classList.add('show');
+    if (window._rawData) {
+      renderT1(window._rawData);
+      renderT2(window._rawData);
+    }
+    updateSummaryByProvince(code);
+    renderT4Province(code);
+  }
+}
+
+function findProvinceRow(arr, code) {
+  if (!arr) return null;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].province === code) return arr[i];
+  }
+  return null;
+}
+
+function fmtK(v) {
+  return v < 10000 ? (v / 1000).toFixed(1) + 'k' : Math.round(v / 1000) + 'k';
+}
+
+function fmtGrowthPct(curr, prev) {
+  var c = Number(curr) || 0;
+  var p = Number(prev) || 0;
+  if (p === 0) return '(N/A)';
+  var pct = ((c - p) / p) * 100;
+  var sign = pct > 0 ? '+' : '';
+  return '(' + sign + pct.toFixed(1) + '%)';
+}
+
+function fmtTotalLabelWithGrowth(ctx) {
+  var series = (ctx && ctx.dataset && ctx.dataset.data) ? ctx.dataset.data : [];
+  var idx = ctx && typeof ctx.dataIndex === 'number' ? ctx.dataIndex : -1;
+  if (idx < 0 || idx >= series.length) return '';
+
+  var current = series[idx];
+  var growthText = idx === 0 ? '(-)' : fmtGrowthPct(current, series[idx - 1]);
+  return [fmtK(current), growthText];
+}
+
+function fmtYesterdayGrowth(series) {
+  if (!series || series.length < 2) return '(-)';
+  return fmtGrowthPct(series[series.length - 1], series[series.length - 2]);
+}
+
+function updateSummaryByProvince(code) {
+  var data = window._rawData;
+  if (!data) return;
+  if (!code || code === 'ALL') {
+    renderSummary(data);
+    return;
+  }
+
+  var byProvince = data.summary && data.summary.by_province;
+  var pSummary = byProvince && byProvince[code];
+  if (!pSummary) return;
+
+  var totalCard = pSummary.total_card;
+  if (totalCard) {
+    var totalDauKy = document.getElementById('total-card-dau-ky');
+    var totalTh18 = document.getElementById('total-card-th-18');
+    var totalTh19 = document.getElementById('total-card-th-19');
+    var totalCon = document.getElementById('total-card-con-phai-th');
+    if (totalDauKy) totalDauKy.textContent = fmtCompact(totalCard.dau_ky);
+    if (totalTh18) totalTh18.textContent = '-' + fmtCompact(totalCard.th_1_4_18_4);
+    if (totalTh19) totalTh19.textContent = '-' + fmtCompact(totalCard.th_luy_ke_tu_19_4);
+    if (totalCon) totalCon.textContent = fmtCompact(totalCard.con_phai_th);
+  }
+
+  var offlineCard = pSummary.offline_card;
+  if (offlineCard) {
+    var offDauKy = document.getElementById('offline-card-dau-ky');
+    var offTh18 = document.getElementById('offline-card-th-18');
+    var offTh19 = document.getElementById('offline-card-th-19');
+    var offCon = document.getElementById('offline-card-con-phai-th');
+    if (offDauKy) offDauKy.textContent = fmtCompact(offlineCard.dau_ky);
+    if (offTh18) offTh18.textContent = '-' + fmtCompact(offlineCard.th_1_4_18_4);
+    if (offTh19) offTh19.textContent = '-' + fmtCompact(offlineCard.th_luy_ke_tu_19_4);
+    if (offCon) offCon.textContent = fmtCompact(offlineCard.con_phai_th);
+
+    var cmt9 = offlineCard.children && offlineCard.children.cmt9;
+    if (cmt9) {
+      var cmtDauKy = document.getElementById('offline-cmt-dau-ky');
+      var cmtThLuyKe = document.getElementById('offline-cmt-th-luy-ke');
+      var cmtConPhaiTh = document.getElementById('offline-cmt-con-phai-th');
+      if (cmtDauKy) cmtDauKy.textContent = fmtCompact(cmt9.dau_ky);
+      if (cmtThLuyKe) cmtThLuyKe.textContent = '-' + fmtCompact(cmt9.th_luy_ke);
+      if (cmtConPhaiTh) cmtConPhaiTh.textContent = fmtCompact(cmt9.con_phai_th);
+    }
+
+    var yeuThe = offlineCard.children && offlineCard.children.yeu_the;
+    if (yeuThe) {
+      var yeuTheDauKy = document.getElementById('offline-yeu-the-dau-ky');
+      var yeuTheThLuyKe = document.getElementById('offline-yeu-the-th-luy-ke');
+      var yeuTheConPhaiTh = document.getElementById('offline-yeu-the-con-phai-th');
+      if (yeuTheDauKy) yeuTheDauKy.textContent = fmtCompact(yeuThe.dau_ky);
+      if (yeuTheThLuyKe) yeuTheThLuyKe.textContent = '-' + fmtCompact(yeuThe.th_luy_ke);
+      if (yeuTheConPhaiTh) yeuTheConPhaiTh.textContent = fmtCompact(yeuThe.con_phai_th);
+    }
+  }
+}
+
+function makeChart(id, data, labels) {
+  new Chart(document.getElementById('chart-' + id), {
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          type: 'bar',
+          label: 'Offline',
+          data: data.offline,
+          backgroundColor: 'rgba(255,77,109,0.55)',
+          borderRadius: 4,
+          order: 2,
+          yAxisID: 'y',
+          datalabels: {
+            anchor: 'center',
+            align: 'center',
+            color: '#fff',
+            font: { size: 8, family: 'Inter', weight: '700' },
+            formatter: function(v) { return fmtK(v); },
+            offset: 0,
+            padding: 0
+          }
+        },
+        {
+          type: 'line',
+          label: 'Tổng',
+          data: data.total,
+          borderColor: '#111827',
+          backgroundColor: 'rgba(17,24,39,0.08)',
+          borderWidth: 2,
+          pointRadius: 3,
+          pointBackgroundColor: '#111827',
+          tension: 0.35,
+          fill: false,
+          order: 1,
+          yAxisID: 'y',
+          datalabels: {
+            anchor: 'end',
+            align: 'top',
+            color: '#111827',
+            font: { size: 8, family: 'Inter', weight: '600' },
+            formatter: function(v) { return fmtK(v); },
+            offset: 3,
+            padding: 0
+          }
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      interaction: { mode: 'index', intersect: false },
+      layout: { padding: { top: 18 } },
+      plugins: {
+        legend: { labels: { font: { size: 10, family: 'Inter' }, boxWidth: 12 } },
+        tooltip: {
+          bodyFont: { size: 10 }, titleFont: { size: 10 },
+          callbacks: {
+            label: function(ctx) {
+              var v = ctx.parsed.y;
+              return ctx.dataset.label + ': ' + fmtK(v);
+            }
+          }
+        },
+        datalabels: {}
+      },
+      scales: {
+        x: { ticks: { font: { size: 9 } }, grid: { display: false } },
+        y: {
+          position: 'left',
+          ticks: {
+            font: { size: 9 },
+            callback: function(v) { return fmtK(v); }
+          },
+          grid: { color: 'rgba(0,0,0,.05)' }
+        }
+      }
+    }
+  });
+}
+
+function initCharts() {
+  var trend = window._trendData;
+  if (!trend) return;
+  trend.provinces.forEach(function(p) {
+    makeChart(p.code.toLowerCase(), { total: p.total, offline: p.offline, national: trend.national }, trend.labels);
+  });
+}
+
+function renderTrend(data) {
+  var trend = data.trend;
+  if (!trend || !trend.provinces) return;
+
+  // Update subtitle
+  var sub = document.querySelector('#t3 .table-sub');
+  if (sub && trend.labels && trend.labels.length > 0) {
+    sub.textContent = 'Từ ' + trend.labels[0] + ' – ' + trend.labels[trend.labels.length - 1]
+      + ' \u00b7 \u25aa Bar = Offline \u00b7 \u2500 Line = Tổng';
+  }
+  // Update title
+  var title = document.querySelector('#t3 .table-title');
+  if (title) title.textContent = 'XU HƯỚNG 10 TỈNH KÉM NHẤT KÊNH OFFLINE';
+
+  // Build province cards
+  var grid = document.getElementById('trend-grid');
+  if (!grid) return;
+  var total = data.t2 ? data.t2.total_provinces : trend.provinces.length;
+  var html = '';
+  trend.provinces.forEach(function(p) {
+    var yesterdayGrowth = fmtYesterdayGrowth(p.total);
+    html += '<div class="chart-card">' +
+      '<div class="chart-card-title"><span class="chart-card-title-left">' + p.code +
+        ' <span class="chart-card-growth">' + yesterdayGrowth + '</span></span>' +
+        ' <span class="chart-card-pct">' + (p.pct_th * 100).toFixed(1) + '%</span></div>' +
+      '<div class="chart-card-sub">Xếp hạng ' + p.rank_t2 + '/' + total + ' (Offline)</div>' +
+      '<canvas id="chart-' + p.code.toLowerCase() + '" height="160"></canvas>' +
+      '</div>';
+  });
+  grid.innerHTML = html;
+
+  // Store for initCharts, fire if t3 is already visible
+  window._trendData = trend;
+  if (document.getElementById('t3').classList.contains('active') && !window._chartsInited) {
+    initCharts();
+    window._chartsInited = true;
+  }
+}
+
+/* ─── Dynamic T1 table renderer ─────────────────────────────── */
+function fmtNum(n) {
+  return Math.round(n).toLocaleString('en-US');
+}
+function fmtCompact(n) {
+  var abs = Math.abs(Number(n) || 0);
+  var sign = (Number(n) || 0) < 0 ? '-' : '';
+  if (abs >= 1000000) {
+    return sign + (abs / 1000000).toFixed(1).replace(/\.0$/, '') + 'tr';
+  }
+  if (abs >= 1000) {
+    return sign + Math.round(abs / 1000) + 'K';
+  }
+  return sign + Math.round(abs);
+}
+function fmtPct(p) {
+  return (p * 100).toFixed(1) + '%';
+}
+function renderSummary(data) {
+  // Update all date placeholders from pipeline report_date
+  var rd = data.report_date || '';
+  var els = ['topbar-report-date', 't1-sub', 't2-sub'];
+  els.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      if (id === 't1-sub' || id === 't2-sub') {
+        el.textContent = 'Lũy kế đến 24h00 ngày ' + rd;
+      } else {
+        el.textContent = rd;
+      }
+    }
+  });
+  var badge = document.getElementById('topbar-badge');
+  if (badge) badge.textContent = '\uD83D\uDCC5 ' + rd + ' \u00B7 24:00';
+
+  var totalCard = data.summary && data.summary.total_card;
+  if (totalCard) {
+    var dauKy = document.getElementById('total-card-dau-ky');
+    var th18 = document.getElementById('total-card-th-18');
+    var th19 = document.getElementById('total-card-th-19');
+    var conPhaiTh = document.getElementById('total-card-con-phai-th');
+
+    if (dauKy) dauKy.textContent = fmtCompact(totalCard.dau_ky);
+    if (th18) th18.textContent = '-' + fmtCompact(totalCard.th_1_4_18_4);
+    if (th19) th19.textContent = '-' + fmtCompact(totalCard.th_luy_ke_tu_19_4);
+    if (conPhaiTh) conPhaiTh.textContent = fmtCompact(totalCard.con_phai_th);
+  }
+
+  var offlineCard = data.summary && data.summary.offline_card;
+  if (!offlineCard) return;
+
+  var offlineDauKy = document.getElementById('offline-card-dau-ky');
+  var offlineTh18 = document.getElementById('offline-card-th-18');
+  var offlineTh19 = document.getElementById('offline-card-th-19');
+  var offlineConPhaiTh = document.getElementById('offline-card-con-phai-th');
+
+  if (offlineDauKy) offlineDauKy.textContent = fmtCompact(offlineCard.dau_ky);
+  if (offlineTh18) offlineTh18.textContent = '-' + fmtCompact(offlineCard.th_1_4_18_4);
+  if (offlineTh19) offlineTh19.textContent = '-' + fmtCompact(offlineCard.th_luy_ke_tu_19_4);
+  if (offlineConPhaiTh) offlineConPhaiTh.textContent = fmtCompact(offlineCard.con_phai_th);
+
+  var cmt9 = offlineCard.children && offlineCard.children.cmt9;
+  if (cmt9) {
+    var cmtDauKy = document.getElementById('offline-cmt-dau-ky');
+    var cmtThLuyKe = document.getElementById('offline-cmt-th-luy-ke');
+    var cmtConPhaiTh = document.getElementById('offline-cmt-con-phai-th');
+    if (cmtDauKy) cmtDauKy.textContent = fmtCompact(cmt9.dau_ky);
+    if (cmtThLuyKe) cmtThLuyKe.textContent = '-' + fmtCompact(cmt9.th_luy_ke);
+    if (cmtConPhaiTh) cmtConPhaiTh.textContent = fmtCompact(cmt9.con_phai_th);
+  }
+
+  var yeuThe = offlineCard.children && offlineCard.children.yeu_the;
+  if (yeuThe) {
+    var yeuTheDauKy = document.getElementById('offline-yeu-the-dau-ky');
+    var yeuTheThLuyKe = document.getElementById('offline-yeu-the-th-luy-ke');
+    var yeuTheConPhaiTh = document.getElementById('offline-yeu-the-con-phai-th');
+    if (yeuTheDauKy) yeuTheDauKy.textContent = fmtCompact(yeuThe.dau_ky);
+    if (yeuTheThLuyKe) yeuTheThLuyKe.textContent = '-' + fmtCompact(yeuThe.th_luy_ke);
+    if (yeuTheConPhaiTh) yeuTheConPhaiTh.textContent = fmtCompact(yeuThe.con_phai_th);
+  }
+}
+function fmtKhThang4(n) {
+  return n < 0 ? '(' + fmtNum(-n) + ')' : fmtNum(n);
+}
+function pctGreenClass(idx) {
+  // idx: 0-based position in dat_kh (best first)
+  const cls = ['pct-green-1','pct-green-2','pct-green-3','pct-green-4','pct-green-5'];
+  return cls[Math.min(idx, cls.length - 1)];
+}
+function pctRedClass(idx) {
+  // idx: 0-based position in thap_nhat (worst first → darkest class)
+  const cls = ['pct-red-1','pct-red-2','pct-red-3','pct-red-4','pct-red-5',
+               'pct-red-6','pct-red-7','pct-red-8','pct-red-9','pct-red-10'];
+  return cls[Math.min(idx, cls.length - 1)];
+}
+function buildT1Row(r, pctClass) {
+  return '<tr>' +
+    '<td class="td-c">' + r.rank + '</td>' +
+    '<td class="td-code">' + r.province + '</td>' +
+    '<td class="td-r">' + fmtNum(r.dau_ky) + '</td>' +
+    '<td class="td-r">' + fmtNum(r.kh_den_ngay) + '</td>' +
+    '<td class="td-r"><strong>' + fmtNum(r.luy_ke) + '</strong></td>' +
+    '<td class="td-c"><span class="' + pctClass + '">' + fmtPct(r.pct_th) + '</span></td>' +
+    '<td class="td-c">' + fmtPct(r.pct_online) + '</td>' +
+    '<td class="td-c">' + fmtPct(r.pct_offline) + '</td>' +
+    '<td class="td-r">' + fmtKhThang4(r.kh_thang4) + '</td>' +
+    '<td class="td-c">' + fmtPct(r.pct_th_dau_ky) + '</td>' +
+    '<td class="td-r">' + fmtNum(r.can_xac_thuc) + '</td>' +
+    '</tr>';
+}
+function renderT1(data) {
+  const tbody = document.getElementById('t1-tbody');
+  if (!tbody) return;
+  const t1 = data.t1;
+  const selected = window._globalProvince || 'ALL';
+  let html = '';
+
+  if (selected !== 'ALL') {
+    const allRows = t1.all_rows || [];
+    const row = findProvinceRow(allRows, selected);
+    html += '<tr class="sect-red"><td colspan="11">TỈNH ĐANG LỌC</td></tr>';
+    if (row) {
+      html += buildT1Row(row, 'pct-red-5');
+    } else {
+      html += '<tr><td colspan="11" style="text-align:center;padding:10px;color:var(--muted)">Không có dữ liệu cho tỉnh ' + selected + '</td></tr>';
+    }
+    tbody.innerHTML = html;
+    var subSel = document.querySelector('#t1 .table-sub');
+    if (subSel) subSel.textContent = 'Lũy kế đến 24h00 ngày ' + data.report_date;
+    return;
+  }
+
+  // Header: TOP 10 TỈNH THỰC HIỆN CAO NHẤT
+  html += '<tr class="sect-green"><td colspan="11">10 TỈNH THỰC HIỆN CAO NHẤT</td></tr>';
+  var top10 = (t1.all_rows || []).slice(0, 10);
+  if (top10.length === 0) {
+    html += '<tr><td colspan="11" style="text-align:center;padding:10px;color:var(--muted)">Chưa có dữ liệu</td></tr>';
+  } else {
+    top10.forEach(function(r, idx) {
+      html += buildT1Row(r, pctGreenClass(idx));
+    });
+  }
+  // Header: 10 TỈNH THỰC HIỆN THẤP NHẤT
+  html += '<tr class="sect-red"><td colspan="11">10 TỈNH THỰC HIỆN THẤP NHẤT</td></tr>';
+  t1.thap_nhat.forEach(function(r, idx) {
+    html += buildT1Row(r, pctRedClass(idx));
+  });
+  tbody.innerHTML = html;
+  // Update subtitle date
+  var sub = document.querySelector('#t1 .table-sub');
+  if (sub) sub.textContent = 'Lũy kế đến 24h00 ngày ' + data.report_date;
+}
+
+
+function renderT2(data) {
+  const tbody = document.getElementById('t2-tbody');
+  if (!tbody) return;
+  const t2 = data.t2;
+  const selected = window._globalProvince || 'ALL';
+  let html = '';
+
+  if (selected !== 'ALL') {
+    const allRows = t2.all_rows || [];
+    const row = findProvinceRow(allRows, selected);
+    html += '<tr class="sect-red"><td colspan="12">TỈNH ĐANG LỌC</td></tr>';
+    if (row) {
+      html += buildT2Row(row, 'pct-red-5');
+    } else {
+      html += '<tr><td colspan="12" style="text-align:center;padding:10px;color:var(--muted)">Không có dữ liệu cho tỉnh ' + selected + '</td></tr>';
+    }
+    tbody.innerHTML = html;
+    var subSel = document.querySelector('#t2 .table-sub');
+    if (subSel) subSel.textContent = 'Lũy kế đến 24h00 ngày ' + data.report_date;
+    return;
+  }
+
+  html += '<tr class="sect-green"><td colspan="12">TỈNH ĐẠT KH ĐẾN NGÀY</td></tr>';
+  if (t2.dat_kh.length === 0) {
+    html += '<tr><td colspan="12" style="text-align:center;padding:10px;color:var(--muted)">Chưa có tỉnh đạt KH đến ngày</td></tr>';
+  } else {
+    t2.dat_kh.forEach(function(r, idx) {
+      html += buildT2Row(r, pctGreenClass(idx));
+    });
+  }
+  html += '<tr class="sect-red"><td colspan="12">10 TỈNH THỰC HIỆN THẤP NHẤT</td></tr>';
+  t2.thap_nhat.forEach(function(r, idx) {
+    html += buildT2Row(r, pctRedClass(idx));
+  });
+  tbody.innerHTML = html;
+  var sub = document.querySelector('#t2 .table-sub');
+  if (sub) sub.textContent = 'Lũy kế đến 24h00 ngày ' + data.report_date;
+}
+function buildT2Row(r, pctClass) {
+  return '<tr>' +
+    '<td class="td-c">' + r.rank + '</td>' +
+    '<td class="td-code">' + r.province + '</td>' +
+    '<td class="td-r">' + fmtNum(r.dau_ky) + '</td>' +
+    '<td class="td-r">' + fmtNum(r.kh_den_ngay) + '</td>' +
+    '<td class="td-r"><strong>' + fmtNum(r.luy_ke) + '</strong></td>' +
+    '<td class="td-c"><span class="' + pctClass + '">' + fmtPct(r.pct_th) + '</span></td>' +
+    '<td class="td-c">' + fmtPct(r.pct_online) + '</td>' +
+    '<td class="td-c">' + fmtPct(r.pct_offline) + '</td>' +
+    '<td class="td-r">' + fmtKhThang4(r.kh_thang4) + '</td>' +
+    '<td class="td-c">' + fmtPct(r.pct_th_dau_ky) + '</td>' +
+    '<td class="td-r">' + fmtNum(r.can_xac_thuc) + '</td>' +
+    '<td class="td-c">' + r.rank_t1 + '</td>' +
+    '</tr>';
+}
+(function loadData() {
+  fetch('data.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) { window._rawData = data; renderSummary(data); renderT1(data); renderT2(data); renderTrend(data); renderT4(data); })
+    .catch(function(err) {
+      console.error('Không tải được data.json:', err);
+      var tbody = document.getElementById('t1-tbody');
+      if (tbody) tbody.innerHTML = '<tr><td colspan="11" style="text-align:center;padding:18px;color:#dc2626">Không tải được data.json: ' + err.message + '</td></tr>';
+    });
+})();
+
+/* ─── T4: Province filter trend ─────────────────────────────── */
+function renderT4(data) {
+  var trend = data.trend;
+  if (!trend || !trend.all_provinces) return;
+  window._t4Data = trend;
+
+  // Populate global province filter select
+  var gSel = document.getElementById('global-province-select');
+  if (gSel) {
+    gSel.innerHTML = '<option value="ALL">— Tất cả tỉnh —</option>';
+    trend.all_provinces.forEach(function(p) {
+      var opt = document.createElement('option');
+      opt.value = p.code;
+      opt.textContent = p.code;
+      gSel.appendChild(opt);
+    });
+  }
+
+  renderT4Province(window._globalProvince || 'ALL');
+}
+
+var _t4ChartInstance = null;
+function renderT4Province(code) {
+  var trend = window._t4Data;
+  if (!trend) return;
+  var wrap = document.getElementById('t4-chart-wrap');
+  var sub = document.getElementById('t4-sub');
+  if (!wrap) return;
+
+  if (!code || code === 'ALL') {
+    if (_t4ChartInstance) { _t4ChartInstance.destroy(); _t4ChartInstance = null; }
+    if (sub) sub.textContent = 'Dùng bộ lọc tỉnh phía trên để xem biểu đồ của một tỉnh cụ thể';
+    wrap.innerHTML = '<div class="t4-card"><div class="t4-card-header"><div><div class="t4-card-title">Chưa chọn tỉnh</div><div class="t4-card-sub">Chọn một tỉnh ở bộ lọc chung để xem xu hướng</div></div></div></div>';
+    return;
+  }
+
+  var p = trend.all_provinces.find(function(x) { return x.code === code; });
+  if (!p) return;
+
+  // Update sub text
+  if (sub) {
+    sub.textContent = trend.labels[0] + ' – ' + trend.labels[trend.labels.length - 1]
+      + ' · ' + (p.rank_t2 !== '-' ? 'Xếp hạng Offline: ' + p.rank_t2 + '/' + trend.all_provinces.length : 'Không có trong bảng Offline')
+      + ' · %TH: ' + (p.pct_th * 100).toFixed(1) + '%';
+  }
+
+  // Destroy old chart
+  if (_t4ChartInstance) { _t4ChartInstance.destroy(); _t4ChartInstance = null; }
+
+  wrap.innerHTML = '<div class="t4-card"><div class="t4-card-header">'
+    + '<div><div class="t4-card-title">' + p.code + '</div>'
+    + '<div class="t4-card-sub">Từ ' + trend.labels[0] + ' đến ' + trend.labels[trend.labels.length - 1] + '</div></div>'
+    + '<div class="t4-card-pct">' + (p.pct_th * 100).toFixed(1) + '%</div>'
+    + '</div><canvas id="chart-t4-main" height="120"></canvas></div>';
+
+  _t4ChartInstance = new Chart(document.getElementById('chart-t4-main'), {
+    data: {
+      labels: trend.labels,
+      datasets: [
+        {
+          type: 'bar', label: 'Offline', data: p.offline,
+          backgroundColor: 'rgba(255,77,109,0.55)', borderRadius: 4, order: 2, yAxisID: 'y',
+          datalabels: { anchor: 'center', align: 'center', color: '#fff',
+            font: { size: 10, family: 'Inter', weight: '700' },
+            formatter: fmtK, padding: 0 }
+        },
+        {
+          type: 'line', label: 'Tổng', data: p.total,
+          borderColor: '#111827', backgroundColor: 'rgba(17,24,39,0.08)',
+          borderWidth: 2, pointRadius: 4, pointBackgroundColor: '#111827',
+          tension: 0.35, fill: false, order: 1, yAxisID: 'y',
+          datalabels: { anchor: 'end', align: 'top', color: '#111827',
+            font: { size: 10, family: 'Inter', weight: '600' },
+            formatter: function(v, ctx) { return fmtTotalLabelWithGrowth(ctx); }, offset: 4, padding: 0 }
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      interaction: { mode: 'index', intersect: false },
+      layout: { padding: { top: 34 } },
+      plugins: {
+        legend: { labels: { font: { size: 11, family: 'Inter' }, boxWidth: 14 } },
+        tooltip: {
+          bodyFont: { size: 11 }, titleFont: { size: 11 },
+          callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + fmtK(ctx.parsed.y); } }
+        },
+        datalabels: {}
+      },
+      scales: {
+        x: { ticks: { font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { font: { size: 10 }, callback: fmtK }, grid: { color: 'rgba(0,0,0,.05)' } }
+      }
+    }
+  });
+}
+</script>
+</html>
