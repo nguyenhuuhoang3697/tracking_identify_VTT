@@ -770,7 +770,7 @@ function makeChart(id, data, labels) {
       datasets: [
         {
           type: 'line',
-          label: 'KH lũy kế',
+          label: 'KH ngày',
           data: data.kh,
           borderColor: 'rgba(239,68,68,0.25)',
           backgroundColor: 'rgba(239,68,68,0.18)',
@@ -786,7 +786,7 @@ function makeChart(id, data, labels) {
         },
         {
           type: 'bar',
-          label: 'TH lũy kế',
+          label: 'TH ngày',
           data: data.total,
           backgroundColor: 'rgba(239,68,68,0.7)',
           borderColor: 'rgba(220,38,38,0.8)',
@@ -855,7 +855,7 @@ function renderTrend(data) {
   var sub = document.querySelector('#t3 .table-sub');
   if (sub && trend.labels && trend.labels.length > 0) {
     sub.textContent = 'Từ ' + trend.labels[0] + ' – ' + trend.labels[trend.labels.length - 1]
-      + ' \u00b7 \u25aa Bar = TH lũy kế \u00b7 \u2500 Area = KH lũy kế';
+      + ' · ▪ Bar = TH ngày · ─ Area = KH ngày';
   }
   // Update title
   var title = document.querySelector('#t3 .table-title');
@@ -1201,14 +1201,14 @@ function renderT4Province(code) {
       labels: trend.labels,
       datasets: [
         {
-          type: 'line', label: 'KH lũy kế', data: p.kh,
+          type: 'line', label: 'KH ngày', data: p.kh,
           borderColor: 'rgba(239,68,68,0.25)', backgroundColor: 'rgba(239,68,68,0.18)',
           borderWidth: 1.5, pointRadius: 2, pointBackgroundColor: 'rgba(239,68,68,0.5)', pointBorderColor: 'rgba(239,68,68,0)',
           tension: 0.35, fill: true, order: 2, yAxisID: 'y',
           datalabels: { display: false }
         },
         {
-          type: 'bar', label: 'TH lũy kế', data: p.total,
+          type: 'bar', label: 'TH ngày', data: p.total,
           backgroundColor: 'rgba(239,68,68,0.7)', borderColor: 'rgba(220,38,38,0.8)', borderWidth: 0.5,
           borderRadius: 3, order: 1, yAxisID: 'y',
           datalabels: { anchor: 'center', align: 'center', color: '#fff',

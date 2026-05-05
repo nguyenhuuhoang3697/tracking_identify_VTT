@@ -328,20 +328,12 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
     num_days = len(all_dates)
     
     # National daily values
-    daily_national = [
+    national_series = [
         int(national_grp.loc[d, "national_total"]) if d in national_grp.index else 0
         for d in all_dates
     ]
-    
-    # Convert national to cumulative (from first available date)
-    cumul_national = []
-    running = 0
-    for daily in daily_national:
-        running += daily
-        cumul_national.append(running)
-    national_series = cumul_national
 
-    # 10 worst provinces - build cumulative from correct daily totals
+    # 10 worst provinces - daily values
     province_list = []
     rank_map = {r["province"]: r for r in (all_t1_rows or [])}
     for r in t1_worst:
@@ -349,28 +341,18 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
         p_df = grp[grp["province_code_home"] == p].set_index("prd_id")
         daily_total = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         daily_offline = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
-        
-        # Build cumulative series directly from daily values
-        cumul_total = []
-        cumul_offline = []
-        running_total = 0
-        running_offline = 0
-        for daily_t, daily_o in zip(daily_total, daily_offline):
-            running_total += daily_t
-            running_offline += daily_o
-            cumul_total.append(int(running_total))
-            cumul_offline.append(int(running_offline))
-        
-        # KH = full period cumulative target (flat reference line)
-        kh_target = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
-        kh_series = [kh_target] * len(all_dates)
-        
+
+        # KH ngay = kh_den_ngay / so ngay trong ky
+        kh_den_ngay = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
+        kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
+        kh_series = [kh_per_day] * len(all_dates)
+
         province_list.append({
             "code": p,
             "rank_t1": r["rank"],
             "pct_th": r["pct_th"],
-            "total": cumul_total,
-            "offline": cumul_offline,
+            "total": daily_total,
+            "offline": daily_offline,
             "kh": kh_series,
         })
 
@@ -381,29 +363,19 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
         p_df = grp[grp["province_code_home"] == p].set_index("prd_id")
         daily_total = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         daily_offline = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
-        
-        # Build cumulative series directly from daily values
-        cumul_total = []
-        cumul_offline = []
-        running_total = 0
-        running_offline = 0
-        for daily_t, daily_o in zip(daily_total, daily_offline):
-            running_total += daily_t
-            running_offline += daily_o
-            cumul_total.append(int(running_total))
-            cumul_offline.append(int(running_offline))
-        
-        # KH = full period cumulative target (flat reference line)
-        kh_target = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
-        kh_series = [kh_target] * len(all_dates)
-        
+
+        # KH ngay = kh_den_ngay / so ngay trong ky
+        kh_den_ngay = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
+        kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
+        kh_series = [kh_per_day] * len(all_dates)
+
         p_info = rank_map.get(p, {})
         all_province_list.append({
             "code": p,
             "rank_t1": p_info.get("rank", "-"),
             "pct_th": p_info.get("pct_th", 0),
-            "total": cumul_total,
-            "offline": cumul_offline,
+            "total": daily_total,
+            "offline": daily_offline,
             "kh": kh_series,
         })
 
