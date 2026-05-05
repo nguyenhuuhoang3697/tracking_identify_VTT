@@ -1131,7 +1131,7 @@ function buildT2Row(r, pctClass) {
     '</tr>';
 }
 (function loadData() {
-  fetch('data.json')
+  fetch('data.json?v=' + Date.now())
     .then(function(res) { return res.json(); })
     .then(function(data) { window._rawData = data; renderSummary(data); renderT1(data); renderT2(data); renderTrend(data); renderT4(data); })
     .catch(function(err) {
