@@ -52,56 +52,155 @@ def normalize_numeric(series: pd.Series) -> pd.Series:
 def build_luy_ke_map(xac_thuc_path: str, from_date: str):
     df_xt = pd.read_csv(xac_thuc_path, sep="|", low_memory=False)
 
-    df_xt["ngay"] = pd.to_datetime(df_xt["ngay"].astype(str), format="%Y%m%d", errors="coerce")
+    df_xt["prd_id"] = pd.to_datetime(df_xt["prd_id"].astype(str), format="%Y%m%d", errors="coerce")
     from_dt = datetime.strptime(from_date, "%Y-%m-%d")
-    df_xt = df_xt[df_xt["ngay"] >= from_dt]
+    df_xt = df_xt[df_xt["prd_id"] >= from_dt]
 
     df_xt["province_code_home"] = df_xt["province_code_home"].astype(str).str.strip()
     df_xt["kenh"] = df_xt["kenh"].astype(str).str.strip()
-    df_xt["sltb_xac_thuc_final_giao_gboc"] = normalize_numeric(
-        df_xt["sltb_xac_thuc_final_giao_gboc"]
-    )
-    df_xt["sltb_xac_thuc_final_giao_gboc_offline"] = normalize_numeric(
-        df_xt["sltb_xac_thuc_final_giao_gboc_offline"]
-    )
+    df_xt["sltb_xac_thuc_gboc"] = normalize_numeric(df_xt["sltb_xac_thuc_gboc"])
+    df_xt["sltb_xac_thuc_gboc_offline"] = normalize_numeric(df_xt["sltb_xac_thuc_gboc_offline"])
     df_xt["sltb_gboc_60tuoi"] = normalize_numeric(df_xt["sltb_gboc_60tuoi"])
     df_xt["sltb_gboc_ko_nfc"] = normalize_numeric(df_xt["sltb_gboc_ko_nfc"])
-    df_xt["sltb_gboc_vung_sau_vung_xa"] = normalize_numeric(df_xt["sltb_gboc_vung_sau_vung_xa"])
+    df_xt["sltb_gboc_vungsau_vungxa"] = normalize_numeric(df_xt["sltb_gboc_vungsau_vungxa"])
     df_xt["sltb_gboc_cmt"] = normalize_numeric(df_xt["sltb_gboc_cmt"])
+    df_xt["sltb_trangthai_01_gboc"] = normalize_numeric(df_xt["sltb_trangthai_01_gboc"])
 
-    # Totals (no kenh filter)
+    # TH luy ke = sltb_xac_thuc_gboc + sltb_trangthai_01_gboc
+    df_xt["sltb_luy_ke"] = df_xt["sltb_xac_thuc_gboc"] + df_xt["sltb_trangthai_01_gboc"]
     map_303 = (
-        df_xt.groupby("province_code_home", dropna=False)["sltb_xac_thuc_final_giao_gboc"].sum().to_dict()
+        df_xt.groupby("province_code_home", dropna=False)["sltb_luy_ke"].sum().to_dict()
     )
-    # Online (kenh = MYVT)
+    # VNeID = sum(sltb_trangthai_01_gboc) — all kenh
+    map_vneid = (
+        df_xt.groupby("province_code_home", dropna=False)["sltb_trangthai_01_gboc"].sum().to_dict()
+    )
+    # My Viettel = sum(sltb_xac_thuc_gboc) where kenh = MYVT
     df_myvt = df_xt[df_xt["kenh"].str.upper() == "MYVT"]
-    map_online_myvt_303 = df_myvt.groupby("province_code_home", dropna=False)["sltb_xac_thuc_final_giao_gboc"].sum().to_dict()
+    map_myviettel = df_myvt.groupby("province_code_home", dropna=False)["sltb_xac_thuc_gboc"].sum().to_dict()
 
-    # Offline (kenh = MBCCS)
+    # MBCCS = sum(sltb_xac_thuc_gboc) where kenh = MBCCS
     df_mbccs = df_xt[df_xt["kenh"].str.upper() == "MBCCS"]
-    map_offline_mbccs_303 = df_mbccs.groupby("province_code_home", dropna=False)["sltb_xac_thuc_final_giao_gboc"].sum().to_dict()
+    map_mbccs = df_mbccs.groupby("province_code_home", dropna=False)["sltb_xac_thuc_gboc"].sum().to_dict()
 
     return {
         "total_303": map_303,
-        "online_myvt_303": map_online_myvt_303,
-        "offline_mbccs_303": map_offline_mbccs_303,
-        "grand_total_303": float(df_xt["sltb_xac_thuc_final_giao_gboc"].sum()),
+        "vneid_303": map_vneid,
+        "myviettel_303": map_myviettel,
+        "mbccs_303": map_mbccs,
+        "online_myvt_303": map_myviettel,
+        "offline_mbccs_303": map_mbccs,
+        "grand_total_303": float(df_xt["sltb_luy_ke"].sum()),
+        # Grand totals across all provinces (for channel cards)
+        "vneid_total": float(df_xt["sltb_trangthai_01_gboc"].sum()),
+        "myviettel_total": float(df_myvt["sltb_xac_thuc_gboc"].sum()),
+        "mbccs_total": float(df_mbccs["sltb_xac_thuc_gboc"].sum()),
     }
 
 
+def build_channel_daily(xac_thuc_path: str, report_date: date) -> dict:
+    """Tinh so luong tung kenh cho ngay N va N-1 de tinh % so sanh."""
+    df = pd.read_csv(xac_thuc_path, sep="|", low_memory=False)
+    df["prd_id"] = pd.to_datetime(df["prd_id"].astype(str), format="%Y%m%d", errors="coerce")
+    df["kenh"] = df["kenh"].astype(str).str.strip().str.upper()
+    df["sltb_xac_thuc_gboc"] = normalize_numeric(df["sltb_xac_thuc_gboc"])
+    df["sltb_trangthai_01_gboc"] = normalize_numeric(df["sltb_trangthai_01_gboc"])
+
+    dt_n = pd.Timestamp(report_date)
+    dt_n1 = pd.Timestamp(report_date - timedelta(days=1))
+
+    def _day_sum(dt, col, kenh_filter=None):
+        mask = df["prd_id"] == dt
+        if kenh_filter:
+            mask &= df["kenh"] == kenh_filter
+        return float(df.loc[mask, col].sum())
+
+    def _delta_pct(n, n1):
+        if n1 == 0:
+            return None
+        return round((n - n1) / n1, 6)
+
+    vneid_n   = _day_sum(dt_n,  "sltb_trangthai_01_gboc")
+    vneid_n1  = _day_sum(dt_n1, "sltb_trangthai_01_gboc")
+    myvt_n    = _day_sum(dt_n,  "sltb_xac_thuc_gboc", "MYVT")
+    myvt_n1   = _day_sum(dt_n1, "sltb_xac_thuc_gboc", "MYVT")
+    mbccs_n   = _day_sum(dt_n,  "sltb_xac_thuc_gboc", "MBCCS")
+    mbccs_n1  = _day_sum(dt_n1, "sltb_xac_thuc_gboc", "MBCCS")
+
+    return {
+        "vneid":    {"n": int(vneid_n),  "n1": int(vneid_n1),  "n1_pct": _delta_pct(vneid_n, vneid_n1)},
+        "myviettel": {"n": int(myvt_n), "n1": int(myvt_n1),   "n1_pct": _delta_pct(myvt_n, myvt_n1)},
+        "mbccs":    {"n": int(mbccs_n), "n1": int(mbccs_n1),  "n1_pct": _delta_pct(mbccs_n, mbccs_n1)},
+    }
+
+
+def build_channel_daily_by_province(xac_thuc_path: str, report_date: date) -> dict:
+    """Tinh TH ngay N, N-1 va % so voi N-1 cho tung kenh theo tung tinh."""
+    df = pd.read_csv(
+        xac_thuc_path,
+        sep="|",
+        low_memory=False,
+        usecols=["prd_id", "province_code_home", "kenh", "sltb_xac_thuc_gboc", "sltb_trangthai_01_gboc"],
+    )
+    df["prd_id"] = pd.to_datetime(df["prd_id"].astype(str), format="%Y%m%d", errors="coerce")
+    df["province_code_home"] = df["province_code_home"].astype(str).str.strip()
+    df["kenh"] = df["kenh"].astype(str).str.strip().str.upper()
+    df["sltb_xac_thuc_gboc"] = normalize_numeric(df["sltb_xac_thuc_gboc"])
+    df["sltb_trangthai_01_gboc"] = normalize_numeric(df["sltb_trangthai_01_gboc"])
+
+    dt_n = pd.Timestamp(report_date)
+    dt_n1 = pd.Timestamp(report_date - timedelta(days=1))
+
+    df_n = df[df["prd_id"] == dt_n]
+    df_n1 = df[df["prd_id"] == dt_n1]
+
+    def _to_map(frame: pd.DataFrame, col: str, kenh_filter: str | None = None) -> dict:
+        f = frame
+        if kenh_filter is not None:
+            f = f[f["kenh"] == kenh_filter]
+        return f.groupby("province_code_home", dropna=False)[col].sum().to_dict()
+
+    def _delta_pct(n: float, n1: float) -> float | None:
+        if n1 == 0:
+            return None
+        return round((n - n1) / n1, 6)
+
+    vneid_n = _to_map(df_n, "sltb_trangthai_01_gboc")
+    vneid_n1 = _to_map(df_n1, "sltb_trangthai_01_gboc")
+    myvt_n = _to_map(df_n, "sltb_xac_thuc_gboc", "MYVT")
+    myvt_n1 = _to_map(df_n1, "sltb_xac_thuc_gboc", "MYVT")
+    mbccs_n = _to_map(df_n, "sltb_xac_thuc_gboc", "MBCCS")
+    mbccs_n1 = _to_map(df_n1, "sltb_xac_thuc_gboc", "MBCCS")
+
+    provinces = sorted(set(vneid_n) | set(vneid_n1) | set(myvt_n) | set(myvt_n1) | set(mbccs_n) | set(mbccs_n1))
+    out = {}
+    for prov in provinces:
+        vn = float(vneid_n.get(prov, 0.0))
+        vn1 = float(vneid_n1.get(prov, 0.0))
+        mv = float(myvt_n.get(prov, 0.0))
+        mv1 = float(myvt_n1.get(prov, 0.0))
+        mb = float(mbccs_n.get(prov, 0.0))
+        mb1 = float(mbccs_n1.get(prov, 0.0))
+        out[prov] = {
+            "vneid": {"th_n": int(round(vn)), "th_n1": int(round(vn1)), "n1_pct": _delta_pct(vn, vn1)},
+            "myviettel": {"th_n": int(round(mv)), "th_n1": int(round(mv1)), "n1_pct": _delta_pct(mv, mv1)},
+            "mbccs": {"th_n": int(round(mb)), "th_n1": int(round(mb1)), "n1_pct": _delta_pct(mb, mb1)},
+        }
+    return out
+
+
 def build_total_card_summary(df_total: pd.DataFrame, maps: dict) -> dict:
-    """Tinh KPI cho the 'Can xac thuc' theo du lieu 30.3tr."""
+    """Tinh KPI cho the 'Can xac thuc' theo du lieu tong hop trong f_total."""
     df303 = df_total[df_total["Loại"] == "30.3tr"].copy()
 
     dau_ky = float(normalize_numeric(df303["Tổng giao"]).sum())
-    th_ngay_18 = float(normalize_numeric(df303["TH ngày 18"]).sum()) if "TH ngày 18" in df303.columns else 0.0
-    th_luy_ke_tu_19_4 = float(maps.get("grand_total_303", 0.0))
-    con_phai_th = dau_ky - th_ngay_18 - th_luy_ke_tu_19_4
+    th_luy_ke = float(normalize_numeric(df303["Lũy kế TH"]).sum()) if "Lũy kế TH" in df303.columns else 0.0
+    con_phai_th = dau_ky - th_luy_ke
 
     return {
         "dau_ky": int(round(dau_ky)),
-        "th_1_4_18_4": int(round(th_ngay_18)),
-        "th_luy_ke_tu_19_4": int(round(th_luy_ke_tu_19_4)),
+        "th_1_4_18_4": 0,
+        "th_luy_ke_tu_19_4": int(round(th_luy_ke)),
         "con_phai_th": int(round(con_phai_th)),
     }
 
@@ -129,12 +228,12 @@ def row_num(r: pd.Series, col: str, default: float = 0.0) -> float:
     return float(val)
 
 
-def build_t1_rows(df303: pd.DataFrame, days: int) -> list[dict]:
+def build_t1_rows(df303: pd.DataFrame, days: int, channel_maps: dict | None = None) -> list[dict]:
     """Tinh toan cac cot phai sinh cho bang t1 (30.3tr)."""
     rows = []
     for _, r in df303.iterrows():
         province = str(r.get("Tỉnh", "")).strip()
-        dau_ky = int(round(row_num(r, "Tổng giao", 0.0)))
+        dau_ky = int(round(row_num(r, "KH giao", 0.0)))
         kh_den_ngay = round(row_num(r, "KH ngày", 0.0) * days)
         luy_ke = int(round(row_num(r, "Lũy kế TH", 0.0)))
         online = int(round(row_num(r, "Online", 0.0)))
@@ -148,6 +247,13 @@ def build_t1_rows(df303: pd.DataFrame, days: int) -> list[dict]:
         pct_th_dau_ky = safe_pct(luy_ke, dau_ky)
         can_xac_thuc = dau_ky - luy_ke
 
+        cm = channel_maps or {}
+        vneid_abs  = float(cm.get("vneid_303", {}).get(province, 0))
+        myvt_abs   = float(cm.get("myviettel_303", {}).get(province, 0))
+        mbccs_abs  = float(cm.get("mbccs_303", {}).get(province, 0))
+        pct_vneid    = safe_pct(vneid_abs, luy_ke)
+        pct_myviettel = safe_pct(myvt_abs, luy_ke)
+        pct_mbccs    = safe_pct(mbccs_abs, luy_ke)
         rows.append({
             "province": province,
             "dau_ky": dau_ky,
@@ -158,6 +264,9 @@ def build_t1_rows(df303: pd.DataFrame, days: int) -> list[dict]:
             "pct_th": pct_th,
             "pct_online": pct_online,
             "pct_offline": pct_offline,
+            "pct_vneid": pct_vneid,
+            "pct_myviettel": pct_myviettel,
+            "pct_mbccs": pct_mbccs,
             "kh_thang4": kh_thang4,
             "pct_th_dau_ky": pct_th_dau_ky,
             "can_xac_thuc": can_xac_thuc,
@@ -179,38 +288,38 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
 
     df = pd.read_csv(
         xac_thuc_path, sep="|", low_memory=False,
-        usecols=["ngay", "province_code_home",
-                 "sltb_xac_thuc_final_giao_gboc",
-                 "sltb_xac_thuc_final_giao_gboc_offline"],
+        usecols=["prd_id", "province_code_home",
+                 "sltb_xac_thuc_gboc",
+                 "sltb_xac_thuc_gboc_offline"],
     )
-    df["ngay"] = pd.to_datetime(df["ngay"].astype(str), format="%Y%m%d", errors="coerce")
+    df["prd_id"] = pd.to_datetime(df["prd_id"].astype(str), format="%Y%m%d", errors="coerce")
     trend_from_dt = datetime.strptime(trend_from_date, "%Y-%m-%d")
-    df = df[df["ngay"] >= trend_from_dt]
+    df = df[df["prd_id"] >= trend_from_dt]
     df["province_code_home"] = df["province_code_home"].astype(str).str.strip()
 
-    df["sltb_xac_thuc_final_giao_gboc"] = normalize_numeric(df["sltb_xac_thuc_final_giao_gboc"])
-    df["sltb_xac_thuc_final_giao_gboc_offline"] = normalize_numeric(
-        df["sltb_xac_thuc_final_giao_gboc_offline"]
+    df["sltb_xac_thuc_gboc"] = normalize_numeric(df["sltb_xac_thuc_gboc"])
+    df["sltb_xac_thuc_gboc_offline"] = normalize_numeric(
+        df["sltb_xac_thuc_gboc_offline"]
     )
 
     # National totals (all provinces) per day
     national_grp = (
-        df.groupby("ngay", dropna=False)
-        .agg(national_total=("sltb_xac_thuc_final_giao_gboc", "sum"))
+        df.groupby("prd_id", dropna=False)
+        .agg(national_total=("sltb_xac_thuc_gboc", "sum"))
         .reset_index()
-        .set_index("ngay")
+        .set_index("prd_id")
     )
 
     grp = (
-        df.groupby(["ngay", "province_code_home"], dropna=False)
+        df.groupby(["prd_id", "province_code_home"], dropna=False)
         .agg(
-            total=("sltb_xac_thuc_final_giao_gboc", "sum"),
-            offline=("sltb_xac_thuc_final_giao_gboc_offline", "sum"),
+            total=("sltb_xac_thuc_gboc", "sum"),
+            offline=("sltb_xac_thuc_gboc_offline", "sum"),
         )
         .reset_index()
     )
 
-    all_dates = sorted(grp["ngay"].dropna().unique())
+    all_dates = sorted(grp["prd_id"].dropna().unique())
     labels = [f"{d.day}/{d.month}" for d in all_dates]
     national_series = [
         int(national_grp.loc[d, "national_total"]) if d in national_grp.index else 0
@@ -221,7 +330,7 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
     province_list = []
     for r in t1_worst:
         p = r["province"]
-        p_df = grp[grp["province_code_home"] == p].set_index("ngay")
+        p_df = grp[grp["province_code_home"] == p].set_index("prd_id")
         total_series = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         offline_series = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
         province_list.append({
@@ -237,7 +346,7 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
     all_province_codes = sorted(p for p in grp["province_code_home"].dropna().unique() if p.lower() != "nan")
     all_province_list = []
     for p in all_province_codes:
-        p_df = grp[grp["province_code_home"] == p].set_index("ngay")
+        p_df = grp[grp["province_code_home"] == p].set_index("prd_id")
         total_series = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         offline_series = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
         r = rank_map.get(p, {})
@@ -275,7 +384,7 @@ def main() -> None:
     df_total["Tỉnh"] = df_total["Tỉnh"].astype(str).str.strip()
     df_total["Loại"] = df_total["Loại"].astype(str).str.strip()
 
-    for col in ["Lũy kế TH", "Online", "Offline"]:
+    for col in ["Lũy kế TH", "Online", "Offline", "VNeID", "My Viettel", "MBCCS"]:
         if col not in df_total.columns:
             df_total[col] = 0
 
@@ -291,6 +400,15 @@ def main() -> None:
     df_total.loc[df_total["Loại"] == "30.3tr", "Offline"] = (
         df_total.loc[df_total["Loại"] == "30.3tr", "Tỉnh"].map(maps["offline_mbccs_303"]).fillna(0)
     )
+    df_total.loc[df_total["Loại"] == "30.3tr", "VNeID"] = (
+        df_total.loc[df_total["Loại"] == "30.3tr", "Tỉnh"].map(maps["vneid_303"]).fillna(0)
+    )
+    df_total.loc[df_total["Loại"] == "30.3tr", "My Viettel"] = (
+        df_total.loc[df_total["Loại"] == "30.3tr", "Tỉnh"].map(maps["myviettel_303"]).fillna(0)
+    )
+    df_total.loc[df_total["Loại"] == "30.3tr", "MBCCS"] = (
+        df_total.loc[df_total["Loại"] == "30.3tr", "Tỉnh"].map(maps["mbccs_303"]).fillna(0)
+    )
 
     # --- Ghi Excel ---
     df_total.to_excel(args.output, index=False)
@@ -304,7 +422,7 @@ def main() -> None:
     days_from_may_1 = (report_dt - may_1_2026).days + 1
 
     # T1: 30.3tr
-    t1_rows = build_t1_rows(df303, days_from_may_1)
+    t1_rows = build_t1_rows(df303, days_from_may_1, channel_maps=maps)
     t1_dat_kh = [r for r in t1_rows if r["pct_th"] >= 1.0][:10]
     t1_thap_nhat = list(reversed(t1_rows))[:10]
 
@@ -313,6 +431,33 @@ def main() -> None:
     print(f"  [T3] So ngay xu huong: {len(trend['labels'])} | So tinh: {len(trend['provinces'])}")
 
     total_card = build_total_card_summary(df_total, maps)
+    daily_delta = build_channel_daily(args.xac_thuc, report_dt)
+    daily_delta_by_province = build_channel_daily_by_province(args.xac_thuc, report_dt)
+
+    total_luy_ke = maps["grand_total_303"] or 1.0
+    channel_cards = {
+        "vneid": {
+            "luy_ke": int(round(maps["vneid_total"])),
+            "th_n": daily_delta["vneid"]["n"],
+            "th_n1": daily_delta["vneid"]["n1"],
+            "n1_pct": daily_delta["vneid"]["n1_pct"],
+            "ti_trong": round(maps["vneid_total"] / total_luy_ke, 6),
+        },
+        "myviettel": {
+            "luy_ke": int(round(maps["myviettel_total"])),
+            "th_n": daily_delta["myviettel"]["n"],
+            "th_n1": daily_delta["myviettel"]["n1"],
+            "n1_pct": daily_delta["myviettel"]["n1_pct"],
+            "ti_trong": round(maps["myviettel_total"] / total_luy_ke, 6),
+        },
+        "mbccs": {
+            "luy_ke": int(round(maps["mbccs_total"])),
+            "th_n": daily_delta["mbccs"]["n"],
+            "th_n1": daily_delta["mbccs"]["n1"],
+            "n1_pct": daily_delta["mbccs"]["n1_pct"],
+            "ti_trong": round(maps["mbccs_total"] / total_luy_ke, 6),
+        },
+    }
 
     data = {
         "report_date": report_date_str,
@@ -320,6 +465,8 @@ def main() -> None:
         "days_from_start": days,
         "summary": {
             "total_card": total_card,
+            "channel_cards": channel_cards,
+            "channel_cards_by_province": daily_delta_by_province,
         },
         "t1": {
             "total_provinces": len(t1_rows),
@@ -343,7 +490,7 @@ def main() -> None:
     print(f"Da ghi file: {args.json_output}")
     print(f"Ngay bao cao: {report_date_str} | So ngay tu {from_date_display}: {days}")
     print(
-        "  [CARD] Dau ky={dau_ky:,} | TH 1/4-18/4={th_1_4_18_4:,} | TH tu 19/4={th_luy_ke_tu_19_4:,} | Con phai TH={con_phai_th:,}".format(
+        "  [CARD] Dau ky={dau_ky:,} | TH luy ke={th_luy_ke_tu_19_4:,} | Con phai TH={con_phai_th:,}".format(
             **total_card
         )
     )

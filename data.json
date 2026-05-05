@@ -1,13 +1,650 @@
 {
-  "report_date": "02/05/2026",
+  "report_date": "04/05/2026",
   "from_date": "19/04/2026",
-  "days_from_start": 14,
+  "days_from_start": 16,
   "summary": {
     "total_card": {
-      "dau_ky": 16000000,
+      "dau_ky": 21164779,
       "th_1_4_18_4": 0,
-      "th_luy_ke_tu_19_4": 575037,
-      "con_phai_th": 15424963
+      "th_luy_ke_tu_19_4": 1576417,
+      "con_phai_th": 19588362
+    },
+    "channel_cards": {
+      "vneid": {
+        "luy_ke": 312537,
+        "th_n": 94887,
+        "th_n1": 69009,
+        "n1_pct": 0.374995,
+        "ti_trong": 0.195825
+      },
+      "myviettel": {
+        "luy_ke": 518130,
+        "th_n": 128574,
+        "th_n1": 135509,
+        "n1_pct": -0.051177,
+        "ti_trong": 0.324643
+      },
+      "mbccs": {
+        "luy_ke": 765333,
+        "th_n": 257629,
+        "th_n1": 186749,
+        "n1_pct": 0.379547,
+        "ti_trong": 0.479532
+      }
+    },
+    "channel_cards_by_province": {
+      "AGG": {
+        "vneid": {
+          "th_n": 1753,
+          "th_n1": 1360,
+          "n1_pct": 0.288971
+        },
+        "myviettel": {
+          "th_n": 3838,
+          "th_n1": 3263,
+          "n1_pct": 0.176218
+        },
+        "mbccs": {
+          "th_n": 9980,
+          "th_n1": 7578,
+          "n1_pct": 0.31697
+        }
+      },
+      "BNH": {
+        "vneid": {
+          "th_n": 4287,
+          "th_n1": 2963,
+          "n1_pct": 0.446844
+        },
+        "myviettel": {
+          "th_n": 7327,
+          "th_n1": 8359,
+          "n1_pct": -0.12346
+        },
+        "mbccs": {
+          "th_n": 9748,
+          "th_n1": 7382,
+          "n1_pct": 0.320509
+        }
+      },
+      "CBG": {
+        "vneid": {
+          "th_n": 338,
+          "th_n1": 238,
+          "n1_pct": 0.420168
+        },
+        "myviettel": {
+          "th_n": 658,
+          "th_n1": 517,
+          "n1_pct": 0.272727
+        },
+        "mbccs": {
+          "th_n": 1849,
+          "th_n1": 812,
+          "n1_pct": 1.277094
+        }
+      },
+      "CMU": {
+        "vneid": {
+          "th_n": 594,
+          "th_n1": 460,
+          "n1_pct": 0.291304
+        },
+        "myviettel": {
+          "th_n": 1223,
+          "th_n1": 959,
+          "n1_pct": 0.275287
+        },
+        "mbccs": {
+          "th_n": 2571,
+          "th_n1": 1356,
+          "n1_pct": 0.896018
+        }
+      },
+      "CTO": {
+        "vneid": {
+          "th_n": 1837,
+          "th_n1": 1318,
+          "n1_pct": 0.393778
+        },
+        "myviettel": {
+          "th_n": 3311,
+          "th_n1": 2613,
+          "n1_pct": 0.267126
+        },
+        "mbccs": {
+          "th_n": 8299,
+          "th_n1": 6086,
+          "n1_pct": 0.363621
+        }
+      },
+      "DBN": {
+        "vneid": {
+          "th_n": 315,
+          "th_n1": 207,
+          "n1_pct": 0.521739
+        },
+        "myviettel": {
+          "th_n": 322,
+          "th_n1": 248,
+          "n1_pct": 0.298387
+        },
+        "mbccs": {
+          "th_n": 1077,
+          "th_n1": 612,
+          "n1_pct": 0.759804
+        }
+      },
+      "DLK": {
+        "vneid": {
+          "th_n": 1781,
+          "th_n1": 1267,
+          "n1_pct": 0.405683
+        },
+        "myviettel": {
+          "th_n": 2609,
+          "th_n1": 2285,
+          "n1_pct": 0.141794
+        },
+        "mbccs": {
+          "th_n": 7165,
+          "th_n1": 4935,
+          "n1_pct": 0.451874
+        }
+      },
+      "DNG": {
+        "vneid": {
+          "th_n": 1479,
+          "th_n1": 1099,
+          "n1_pct": 0.345769
+        },
+        "myviettel": {
+          "th_n": 2607,
+          "th_n1": 2760,
+          "n1_pct": -0.055435
+        },
+        "mbccs": {
+          "th_n": 5077,
+          "th_n1": 3626,
+          "n1_pct": 0.400165
+        }
+      },
+      "DNI": {
+        "vneid": {
+          "th_n": 4045,
+          "th_n1": 3065,
+          "n1_pct": 0.319739
+        },
+        "myviettel": {
+          "th_n": 4825,
+          "th_n1": 5468,
+          "n1_pct": -0.117593
+        },
+        "mbccs": {
+          "th_n": 9030,
+          "th_n1": 6932,
+          "n1_pct": 0.302654
+        }
+      },
+      "DTP": {
+        "vneid": {
+          "th_n": 2043,
+          "th_n1": 1624,
+          "n1_pct": 0.258005
+        },
+        "myviettel": {
+          "th_n": 3286,
+          "th_n1": 3209,
+          "n1_pct": 0.023995
+        },
+        "mbccs": {
+          "th_n": 8862,
+          "th_n1": 6246,
+          "n1_pct": 0.418828
+        }
+      },
+      "GLI": {
+        "vneid": {
+          "th_n": 2148,
+          "th_n1": 1521,
+          "n1_pct": 0.412229
+        },
+        "myviettel": {
+          "th_n": 2862,
+          "th_n1": 2776,
+          "n1_pct": 0.03098
+        },
+        "mbccs": {
+          "th_n": 9352,
+          "th_n1": 7136,
+          "n1_pct": 0.310538
+        }
+      },
+      "HCM": {
+        "vneid": {
+          "th_n": 14065,
+          "th_n1": 10661,
+          "n1_pct": 0.319295
+        },
+        "myviettel": {
+          "th_n": 15659,
+          "th_n1": 18990,
+          "n1_pct": -0.175408
+        },
+        "mbccs": {
+          "th_n": 20253,
+          "th_n1": 12902,
+          "n1_pct": 0.569757
+        }
+      },
+      "HNI": {
+        "vneid": {
+          "th_n": 16989,
+          "th_n1": 11268,
+          "n1_pct": 0.507721
+        },
+        "myviettel": {
+          "th_n": 19858,
+          "th_n1": 22804,
+          "n1_pct": -0.129188
+        },
+        "mbccs": {
+          "th_n": 24580,
+          "th_n1": 15928,
+          "n1_pct": 0.543194
+        }
+      },
+      "HPG": {
+        "vneid": {
+          "th_n": 3302,
+          "th_n1": 2581,
+          "n1_pct": 0.279349
+        },
+        "myviettel": {
+          "th_n": 4339,
+          "th_n1": 5203,
+          "n1_pct": -0.166058
+        },
+        "mbccs": {
+          "th_n": 8380,
+          "th_n1": 6739,
+          "n1_pct": 0.243508
+        }
+      },
+      "HTH": {
+        "vneid": {
+          "th_n": 550,
+          "th_n1": 397,
+          "n1_pct": 0.38539
+        },
+        "myviettel": {
+          "th_n": 1174,
+          "th_n1": 1274,
+          "n1_pct": -0.078493
+        },
+        "mbccs": {
+          "th_n": 4422,
+          "th_n1": 3752,
+          "n1_pct": 0.178571
+        }
+      },
+      "HUE": {
+        "vneid": {
+          "th_n": 498,
+          "th_n1": 368,
+          "n1_pct": 0.353261
+        },
+        "myviettel": {
+          "th_n": 1252,
+          "th_n1": 1253,
+          "n1_pct": -0.000798
+        },
+        "mbccs": {
+          "th_n": 2528,
+          "th_n1": 2485,
+          "n1_pct": 0.017304
+        }
+      },
+      "HYN": {
+        "vneid": {
+          "th_n": 2893,
+          "th_n1": 2206,
+          "n1_pct": 0.311423
+        },
+        "myviettel": {
+          "th_n": 3614,
+          "th_n1": 4289,
+          "n1_pct": -0.157379
+        },
+        "mbccs": {
+          "th_n": 8312,
+          "th_n1": 7385,
+          "n1_pct": 0.125525
+        }
+      },
+      "KHA": {
+        "vneid": {
+          "th_n": 1168,
+          "th_n1": 762,
+          "n1_pct": 0.532808
+        },
+        "myviettel": {
+          "th_n": 2155,
+          "th_n1": 1922,
+          "n1_pct": 0.121228
+        },
+        "mbccs": {
+          "th_n": 4487,
+          "th_n1": 2492,
+          "n1_pct": 0.800562
+        }
+      },
+      "LCI": {
+        "vneid": {
+          "th_n": 1374,
+          "th_n1": 975,
+          "n1_pct": 0.409231
+        },
+        "myviettel": {
+          "th_n": 2283,
+          "th_n1": 2072,
+          "n1_pct": 0.101834
+        },
+        "mbccs": {
+          "th_n": 4949,
+          "th_n1": 3174,
+          "n1_pct": 0.559231
+        }
+      },
+      "LCU": {
+        "vneid": {
+          "th_n": 341,
+          "th_n1": 220,
+          "n1_pct": 0.55
+        },
+        "myviettel": {
+          "th_n": 807,
+          "th_n1": 581,
+          "n1_pct": 0.388985
+        },
+        "mbccs": {
+          "th_n": 1584,
+          "th_n1": 1108,
+          "n1_pct": 0.429603
+        }
+      },
+      "LDG": {
+        "vneid": {
+          "th_n": 2809,
+          "th_n1": 2134,
+          "n1_pct": 0.316307
+        },
+        "myviettel": {
+          "th_n": 4556,
+          "th_n1": 4002,
+          "n1_pct": 0.138431
+        },
+        "mbccs": {
+          "th_n": 10796,
+          "th_n1": 7474,
+          "n1_pct": 0.444474
+        }
+      },
+      "LSN": {
+        "vneid": {
+          "th_n": 734,
+          "th_n1": 539,
+          "n1_pct": 0.361781
+        },
+        "myviettel": {
+          "th_n": 1730,
+          "th_n1": 1465,
+          "n1_pct": 0.180887
+        },
+        "mbccs": {
+          "th_n": 4084,
+          "th_n1": 2666,
+          "n1_pct": 0.531883
+        }
+      },
+      "NAN": {
+        "vneid": {
+          "th_n": 1738,
+          "th_n1": 1267,
+          "n1_pct": 0.371744
+        },
+        "myviettel": {
+          "th_n": 4829,
+          "th_n1": 4322,
+          "n1_pct": 0.117307
+        },
+        "mbccs": {
+          "th_n": 10278,
+          "th_n1": 7399,
+          "n1_pct": 0.389107
+        }
+      },
+      "NBH": {
+        "vneid": {
+          "th_n": 2632,
+          "th_n1": 2053,
+          "n1_pct": 0.282026
+        },
+        "myviettel": {
+          "th_n": 4032,
+          "th_n1": 4735,
+          "n1_pct": -0.148469
+        },
+        "mbccs": {
+          "th_n": 9922,
+          "th_n1": 7031,
+          "n1_pct": 0.411179
+        }
+      },
+      "PTO": {
+        "vneid": {
+          "th_n": 3888,
+          "th_n1": 3184,
+          "n1_pct": 0.221106
+        },
+        "myviettel": {
+          "th_n": 7163,
+          "th_n1": 8033,
+          "n1_pct": -0.108303
+        },
+        "mbccs": {
+          "th_n": 12855,
+          "th_n1": 10351,
+          "n1_pct": 0.241909
+        }
+      },
+      "QNH": {
+        "vneid": {
+          "th_n": 1643,
+          "th_n1": 1228,
+          "n1_pct": 0.337948
+        },
+        "myviettel": {
+          "th_n": 2015,
+          "th_n1": 1948,
+          "n1_pct": 0.034394
+        },
+        "mbccs": {
+          "th_n": 3890,
+          "th_n1": 2227,
+          "n1_pct": 0.746744
+        }
+      },
+      "QNI": {
+        "vneid": {
+          "th_n": 1074,
+          "th_n1": 743,
+          "n1_pct": 0.445491
+        },
+        "myviettel": {
+          "th_n": 1402,
+          "th_n1": 1400,
+          "n1_pct": 0.001429
+        },
+        "mbccs": {
+          "th_n": 4945,
+          "th_n1": 4221,
+          "n1_pct": 0.171523
+        }
+      },
+      "QTI": {
+        "vneid": {
+          "th_n": 638,
+          "th_n1": 474,
+          "n1_pct": 0.345992
+        },
+        "myviettel": {
+          "th_n": 1043,
+          "th_n1": 963,
+          "n1_pct": 0.083074
+        },
+        "mbccs": {
+          "th_n": 4059,
+          "th_n1": 2265,
+          "n1_pct": 0.792053
+        }
+      },
+      "SLA": {
+        "vneid": {
+          "th_n": 1021,
+          "th_n1": 766,
+          "n1_pct": 0.332898
+        },
+        "myviettel": {
+          "th_n": 2046,
+          "th_n1": 1623,
+          "n1_pct": 0.260628
+        },
+        "mbccs": {
+          "th_n": 4522,
+          "th_n1": 2890,
+          "n1_pct": 0.564706
+        }
+      },
+      "THA": {
+        "vneid": {
+          "th_n": 2558,
+          "th_n1": 1920,
+          "n1_pct": 0.332292
+        },
+        "myviettel": {
+          "th_n": 3602,
+          "th_n1": 3816,
+          "n1_pct": -0.05608
+        },
+        "mbccs": {
+          "th_n": 9997,
+          "th_n1": 8222,
+          "n1_pct": 0.215884
+        }
+      },
+      "TNH": {
+        "vneid": {
+          "th_n": 2660,
+          "th_n1": 2093,
+          "n1_pct": 0.270903
+        },
+        "myviettel": {
+          "th_n": 2933,
+          "th_n1": 3548,
+          "n1_pct": -0.173337
+        },
+        "mbccs": {
+          "th_n": 8495,
+          "th_n1": 7858,
+          "n1_pct": 0.081064
+        }
+      },
+      "TNN": {
+        "vneid": {
+          "th_n": 1965,
+          "th_n1": 1565,
+          "n1_pct": 0.255591
+        },
+        "myviettel": {
+          "th_n": 2921,
+          "th_n1": 3253,
+          "n1_pct": -0.10206
+        },
+        "mbccs": {
+          "th_n": 4624,
+          "th_n1": 2874,
+          "n1_pct": 0.608907
+        }
+      },
+      "TQG": {
+        "vneid": {
+          "th_n": 1417,
+          "th_n1": 1054,
+          "n1_pct": 0.344402
+        },
+        "myviettel": {
+          "th_n": 3022,
+          "th_n1": 2528,
+          "n1_pct": 0.195411
+        },
+        "mbccs": {
+          "th_n": 6290,
+          "th_n1": 4951,
+          "n1_pct": 0.27045
+        }
+      },
+      "V064": {
+        "vneid": {
+          "th_n": 0,
+          "th_n1": 0,
+          "n1_pct": null
+        },
+        "myviettel": {
+          "th_n": 0,
+          "th_n1": 0,
+          "n1_pct": null
+        },
+        "mbccs": {
+          "th_n": 0,
+          "th_n1": 0,
+          "n1_pct": null
+        }
+      },
+      "VLG": {
+        "vneid": {
+          "th_n": 1915,
+          "th_n1": 1396,
+          "n1_pct": 0.371777
+        },
+        "myviettel": {
+          "th_n": 3271,
+          "th_n1": 3026,
+          "n1_pct": 0.080965
+        },
+        "mbccs": {
+          "th_n": 10366,
+          "th_n1": 7654,
+          "n1_pct": 0.354325
+        }
+      },
+      "nan": {
+        "vneid": {
+          "th_n": 6395,
+          "th_n1": 4033,
+          "n1_pct": 0.585668
+        },
+        "myviettel": {
+          "th_n": 0,
+          "th_n1": 2,
+          "n1_pct": -1.0
+        },
+        "mbccs": {
+          "th_n": 1,
+          "th_n1": 0,
+          "n1_pct": null
+        }
+      }
     }
   },
   "t1": {
@@ -16,664 +653,815 @@
       {
         "province": "PTO",
         "dau_ky": 646657,
-        "kh_den_ngay": 41720,
-        "luy_ke": 34613,
-        "online": 15534,
-        "offline": 19079,
-        "pct_th": 0.82965,
-        "pct_online": 0.448791,
-        "pct_offline": 0.551209,
-        "kh_thang4": 612044,
-        "pct_th_dau_ky": 0.053526,
-        "can_xac_thuc": 612044,
+        "kh_den_ngay": 83440,
+        "luy_ke": 86771,
+        "online": 30729,
+        "offline": 42285,
+        "pct_th": 1.039921,
+        "pct_online": 0.354139,
+        "pct_offline": 0.487317,
+        "pct_vneid": 0.158544,
+        "pct_myviettel": 0.354139,
+        "pct_mbccs": 0.487317,
+        "kh_thang4": 559886,
+        "pct_th_dau_ky": 0.134184,
+        "can_xac_thuc": 559886,
         "rank": 1
       },
       {
         "province": "HTH",
         "dau_ky": 169515,
-        "kh_den_ngay": 10936,
-        "luy_ke": 8635,
-        "online": 2363,
-        "offline": 6272,
-        "pct_th": 0.789594,
-        "pct_online": 0.273654,
-        "pct_offline": 0.726346,
-        "kh_thang4": 160880,
-        "pct_th_dau_ky": 0.050939,
-        "can_xac_thuc": 160880,
+        "kh_den_ngay": 21873,
+        "luy_ke": 21078,
+        "online": 4811,
+        "offline": 14446,
+        "pct_th": 0.963654,
+        "pct_online": 0.228247,
+        "pct_offline": 0.685359,
+        "pct_vneid": 0.086393,
+        "pct_myviettel": 0.228247,
+        "pct_mbccs": 0.685359,
+        "kh_thang4": 148437,
+        "pct_th_dau_ky": 0.124343,
+        "can_xac_thuc": 148437,
         "rank": 2
-      },
-      {
-        "province": "HUE",
-        "dau_ky": 146404,
-        "kh_den_ngay": 9445,
-        "luy_ke": 7362,
-        "online": 2608,
-        "offline": 4754,
-        "pct_th": 0.77946,
-        "pct_online": 0.354252,
-        "pct_offline": 0.645748,
-        "kh_thang4": 139042,
-        "pct_th_dau_ky": 0.050286,
-        "can_xac_thuc": 139042,
-        "rank": 3
-      },
-      {
-        "province": "NAN",
-        "dau_ky": 521821,
-        "kh_den_ngay": 33666,
-        "luy_ke": 25005,
-        "online": 9090,
-        "offline": 15915,
-        "pct_th": 0.742737,
-        "pct_online": 0.363527,
-        "pct_offline": 0.636473,
-        "kh_thang4": 496816,
-        "pct_th_dau_ky": 0.047919,
-        "can_xac_thuc": 496816,
-        "rank": 4
-      },
-      {
-        "province": "HYN",
-        "dau_ky": 457672,
-        "kh_den_ngay": 29527,
-        "luy_ke": 21152,
-        "online": 8342,
-        "offline": 12810,
-        "pct_th": 0.716361,
-        "pct_online": 0.394384,
-        "pct_offline": 0.605616,
-        "kh_thang4": 436520,
-        "pct_th_dau_ky": 0.046217,
-        "can_xac_thuc": 436520,
-        "rank": 5
-      },
-      {
-        "province": "NBH",
-        "dau_ky": 482518,
-        "kh_den_ngay": 31130,
-        "luy_ke": 22281,
-        "online": 9415,
-        "offline": 12866,
-        "pct_th": 0.71574,
-        "pct_online": 0.422557,
-        "pct_offline": 0.577443,
-        "kh_thang4": 460237,
-        "pct_th_dau_ky": 0.046177,
-        "can_xac_thuc": 460237,
-        "rank": 6
-      },
-      {
-        "province": "THA",
-        "dau_ky": 527218,
-        "kh_den_ngay": 34014,
-        "luy_ke": 23284,
-        "online": 7594,
-        "offline": 15690,
-        "pct_th": 0.684542,
-        "pct_online": 0.326147,
-        "pct_offline": 0.673853,
-        "kh_thang4": 503934,
-        "pct_th_dau_ky": 0.044164,
-        "can_xac_thuc": 503934,
-        "rank": 7
-      },
-      {
-        "province": "BNH",
-        "dau_ky": 651353,
-        "kh_den_ngay": 42023,
-        "luy_ke": 27897,
-        "online": 15090,
-        "offline": 12807,
-        "pct_th": 0.663851,
-        "pct_online": 0.540918,
-        "pct_offline": 0.459082,
-        "kh_thang4": 623456,
-        "pct_th_dau_ky": 0.042829,
-        "can_xac_thuc": 623456,
-        "rank": 8
-      },
-      {
-        "province": "LSN",
-        "dau_ky": 198987,
-        "kh_den_ngay": 12838,
-        "luy_ke": 8427,
-        "online": 2918,
-        "offline": 5509,
-        "pct_th": 0.656411,
-        "pct_online": 0.346268,
-        "pct_offline": 0.653732,
-        "kh_thang4": 190560,
-        "pct_th_dau_ky": 0.04235,
-        "can_xac_thuc": 190560,
-        "rank": 9
-      },
-      {
-        "province": "TQG",
-        "dau_ky": 335302,
-        "kh_den_ngay": 21632,
-        "luy_ke": 14044,
-        "online": 4754,
-        "offline": 9290,
-        "pct_th": 0.649223,
-        "pct_online": 0.338508,
-        "pct_offline": 0.661492,
-        "kh_thang4": 321258,
-        "pct_th_dau_ky": 0.041885,
-        "can_xac_thuc": 321258,
-        "rank": 10
       },
       {
         "province": "HNI",
         "dau_ky": 1666581,
-        "kh_den_ngay": 107521,
-        "luy_ke": 69650,
-        "online": 41557,
-        "offline": 28093,
-        "pct_th": 0.64778,
-        "pct_online": 0.596655,
-        "pct_offline": 0.403345,
-        "kh_thang4": 1596931,
-        "pct_th_dau_ky": 0.041792,
-        "can_xac_thuc": 1596931,
-        "rank": 11
+        "kh_den_ngay": 215043,
+        "luy_ke": 205688,
+        "online": 84218,
+        "offline": 68596,
+        "pct_th": 0.956497,
+        "pct_online": 0.409445,
+        "pct_offline": 0.333495,
+        "pct_vneid": 0.257059,
+        "pct_myviettel": 0.409445,
+        "pct_mbccs": 0.333495,
+        "kh_thang4": 1460893,
+        "pct_th_dau_ky": 0.123419,
+        "can_xac_thuc": 1460893,
+        "rank": 3
+      },
+      {
+        "province": "HYN",
+        "dau_ky": 457672,
+        "kh_den_ngay": 59054,
+        "luy_ke": 54932,
+        "online": 16244,
+        "offline": 28506,
+        "pct_th": 0.930199,
+        "pct_online": 0.295711,
+        "pct_offline": 0.518932,
+        "pct_vneid": 0.185356,
+        "pct_myviettel": 0.295711,
+        "pct_mbccs": 0.518932,
+        "kh_thang4": 402740,
+        "pct_th_dau_ky": 0.120025,
+        "can_xac_thuc": 402740,
+        "rank": 4
+      },
+      {
+        "province": "NBH",
+        "dau_ky": 482518,
+        "kh_den_ngay": 62260,
+        "luy_ke": 57325,
+        "online": 18180,
+        "offline": 29819,
+        "pct_th": 0.920736,
+        "pct_online": 0.317139,
+        "pct_offline": 0.520174,
+        "pct_vneid": 0.162686,
+        "pct_myviettel": 0.317139,
+        "pct_mbccs": 0.520174,
+        "kh_thang4": 425193,
+        "pct_th_dau_ky": 0.118804,
+        "can_xac_thuc": 425193,
+        "rank": 5
+      },
+      {
+        "province": "BNH",
+        "dau_ky": 651353,
+        "kh_den_ngay": 84045,
+        "luy_ke": 74255,
+        "online": 30776,
+        "offline": 29937,
+        "pct_th": 0.883515,
+        "pct_online": 0.414464,
+        "pct_offline": 0.403165,
+        "pct_vneid": 0.182372,
+        "pct_myviettel": 0.414464,
+        "pct_mbccs": 0.403165,
+        "kh_thang4": 577098,
+        "pct_th_dau_ky": 0.114001,
+        "can_xac_thuc": 577098,
+        "rank": 6
+      },
+      {
+        "province": "HUE",
+        "dau_ky": 146404,
+        "kh_den_ngay": 18891,
+        "luy_ke": 16611,
+        "online": 5113,
+        "offline": 9767,
+        "pct_th": 0.879308,
+        "pct_online": 0.307808,
+        "pct_offline": 0.587984,
+        "pct_vneid": 0.104208,
+        "pct_myviettel": 0.307808,
+        "pct_mbccs": 0.587984,
+        "kh_thang4": 129793,
+        "pct_th_dau_ky": 0.11346,
+        "can_xac_thuc": 129793,
+        "rank": 7
+      },
+      {
+        "province": "NAN",
+        "dau_ky": 521821,
+        "kh_den_ngay": 67332,
+        "luy_ke": 57706,
+        "online": 18241,
+        "offline": 33591,
+        "pct_th": 0.857037,
+        "pct_online": 0.316102,
+        "pct_offline": 0.582106,
+        "pct_vneid": 0.101792,
+        "pct_myviettel": 0.316102,
+        "pct_mbccs": 0.582106,
+        "kh_thang4": 464115,
+        "pct_th_dau_ky": 0.110586,
+        "can_xac_thuc": 464115,
+        "rank": 8
+      },
+      {
+        "province": "THA",
+        "dau_ky": 527218,
+        "kh_den_ngay": 68028,
+        "luy_ke": 57577,
+        "online": 15011,
+        "offline": 33908,
+        "pct_th": 0.846372,
+        "pct_online": 0.260712,
+        "pct_offline": 0.588916,
+        "pct_vneid": 0.150373,
+        "pct_myviettel": 0.260712,
+        "pct_mbccs": 0.588916,
+        "kh_thang4": 469641,
+        "pct_th_dau_ky": 0.109209,
+        "can_xac_thuc": 469641,
+        "rank": 9
       },
       {
         "province": "HPG",
         "dau_ky": 542622,
-        "kh_den_ngay": 35008,
-        "luy_ke": 21764,
-        "online": 9614,
-        "offline": 12150,
-        "pct_th": 0.621686,
-        "pct_online": 0.441739,
-        "pct_offline": 0.558261,
-        "kh_thang4": 520858,
-        "pct_th_dau_ky": 0.040109,
-        "can_xac_thuc": 520858,
+        "kh_den_ngay": 70016,
+        "luy_ke": 57734,
+        "online": 19156,
+        "offline": 27266,
+        "pct_th": 0.824583,
+        "pct_online": 0.331798,
+        "pct_offline": 0.472269,
+        "pct_vneid": 0.195933,
+        "pct_myviettel": 0.331798,
+        "pct_mbccs": 0.472269,
+        "kh_thang4": 484888,
+        "pct_th_dau_ky": 0.106398,
+        "can_xac_thuc": 484888,
+        "rank": 10
+      },
+      {
+        "province": "QNH",
+        "dau_ky": 212159,
+        "kh_den_ngay": 27375,
+        "luy_ke": 22541,
+        "online": 7364,
+        "offline": 9894,
+        "pct_th": 0.823416,
+        "pct_online": 0.326694,
+        "pct_offline": 0.438933,
+        "pct_vneid": 0.234373,
+        "pct_myviettel": 0.326694,
+        "pct_mbccs": 0.438933,
+        "kh_thang4": 189618,
+        "pct_th_dau_ky": 0.106246,
+        "can_xac_thuc": 189618,
+        "rank": 11
+      },
+      {
+        "province": "TQG",
+        "dau_ky": 335302,
+        "kh_den_ngay": 43265,
+        "luy_ke": 35560,
+        "online": 10301,
+        "offline": 20529,
+        "pct_th": 0.821911,
+        "pct_online": 0.289679,
+        "pct_offline": 0.577306,
+        "pct_vneid": 0.133015,
+        "pct_myviettel": 0.289679,
+        "pct_mbccs": 0.577306,
+        "kh_thang4": 299742,
+        "pct_th_dau_ky": 0.106054,
+        "can_xac_thuc": 299742,
         "rank": 12
       },
       {
-        "province": "LCU",
-        "dau_ky": 86275,
-        "kh_den_ngay": 5566,
-        "luy_ke": 3283,
-        "online": 1070,
-        "offline": 2213,
-        "pct_th": 0.589831,
-        "pct_online": 0.325921,
-        "pct_offline": 0.674079,
-        "kh_thang4": 82992,
-        "pct_th_dau_ky": 0.038053,
-        "can_xac_thuc": 82992,
+        "province": "LSN",
+        "dau_ky": 198987,
+        "kh_den_ngay": 25676,
+        "luy_ke": 20840,
+        "online": 6113,
+        "offline": 12258,
+        "pct_th": 0.811653,
+        "pct_online": 0.29333,
+        "pct_offline": 0.588196,
+        "pct_vneid": 0.118474,
+        "pct_myviettel": 0.29333,
+        "pct_mbccs": 0.588196,
+        "kh_thang4": 178147,
+        "pct_th_dau_ky": 0.10473,
+        "can_xac_thuc": 178147,
         "rank": 13
       },
       {
         "province": "TNN",
         "dau_ky": 305264,
-        "kh_den_ngay": 19694,
-        "luy_ke": 11415,
-        "online": 6126,
-        "offline": 5289,
-        "pct_th": 0.579618,
-        "pct_online": 0.536662,
-        "pct_offline": 0.463338,
-        "kh_thang4": 293849,
-        "pct_th_dau_ky": 0.037394,
-        "can_xac_thuc": 293849,
+        "kh_den_ngay": 39389,
+        "luy_ke": 31776,
+        "online": 12300,
+        "offline": 12787,
+        "pct_th": 0.806723,
+        "pct_online": 0.387085,
+        "pct_offline": 0.402411,
+        "pct_vneid": 0.210505,
+        "pct_myviettel": 0.387085,
+        "pct_mbccs": 0.402411,
+        "kh_thang4": 273488,
+        "pct_th_dau_ky": 0.104094,
+        "can_xac_thuc": 273488,
         "rank": 14
-      },
-      {
-        "province": "DNG",
-        "dau_ky": 337882,
-        "kh_den_ngay": 21799,
-        "luy_ke": 12261,
-        "online": 5270,
-        "offline": 6991,
-        "pct_th": 0.562457,
-        "pct_online": 0.429818,
-        "pct_offline": 0.570182,
-        "kh_thang4": 325621,
-        "pct_th_dau_ky": 0.036288,
-        "can_xac_thuc": 325621,
-        "rank": 15
-      },
-      {
-        "province": "CTO",
-        "dau_ky": 461857,
-        "kh_den_ngay": 29797,
-        "luy_ke": 15852,
-        "online": 5157,
-        "offline": 10695,
-        "pct_th": 0.532,
-        "pct_online": 0.325322,
-        "pct_offline": 0.674678,
-        "kh_thang4": 446005,
-        "pct_th_dau_ky": 0.034322,
-        "can_xac_thuc": 446005,
-        "rank": 16
       },
       {
         "province": "QTI",
         "dau_ky": 165708,
-        "kh_den_ngay": 10691,
-        "luy_ke": 5614,
-        "online": 1790,
-        "offline": 3824,
-        "pct_th": 0.525115,
-        "pct_online": 0.318846,
-        "pct_offline": 0.681154,
-        "kh_thang4": 160094,
-        "pct_th_dau_ky": 0.033879,
-        "can_xac_thuc": 160094,
-        "rank": 17
+        "kh_den_ngay": 21382,
+        "luy_ke": 15989,
+        "online": 3796,
+        "offline": 10148,
+        "pct_th": 0.747779,
+        "pct_online": 0.237413,
+        "pct_offline": 0.634686,
+        "pct_vneid": 0.1279,
+        "pct_myviettel": 0.237413,
+        "pct_mbccs": 0.634686,
+        "kh_thang4": 149719,
+        "pct_th_dau_ky": 0.096489,
+        "can_xac_thuc": 149719,
+        "rank": 15
       },
       {
-        "province": "QNH",
-        "dau_ky": 212159,
-        "kh_den_ngay": 13688,
-        "luy_ke": 7178,
-        "online": 3401,
-        "offline": 3777,
-        "pct_th": 0.524401,
-        "pct_online": 0.473809,
-        "pct_offline": 0.526191,
-        "kh_thang4": 204981,
-        "pct_th_dau_ky": 0.033833,
-        "can_xac_thuc": 204981,
-        "rank": 18
-      },
-      {
-        "province": "GLI",
-        "dau_ky": 583907,
-        "kh_den_ngay": 37671,
-        "luy_ke": 19544,
-        "online": 5566,
-        "offline": 13978,
-        "pct_th": 0.518808,
-        "pct_online": 0.284793,
-        "pct_offline": 0.715207,
-        "kh_thang4": 564363,
-        "pct_th_dau_ky": 0.033471,
-        "can_xac_thuc": 564363,
-        "rank": 19
+        "province": "LCU",
+        "dau_ky": 86275,
+        "kh_den_ngay": 11132,
+        "luy_ke": 8308,
+        "online": 2458,
+        "offline": 4905,
+        "pct_th": 0.746317,
+        "pct_online": 0.295859,
+        "pct_offline": 0.590395,
+        "pct_vneid": 0.113746,
+        "pct_myviettel": 0.295859,
+        "pct_mbccs": 0.590395,
+        "kh_thang4": 77967,
+        "pct_th_dau_ky": 0.096297,
+        "can_xac_thuc": 77967,
+        "rank": 16
       },
       {
         "province": "LCI",
         "dau_ky": 279116,
-        "kh_den_ngay": 18007,
-        "luy_ke": 9217,
-        "online": 3967,
-        "offline": 5250,
-        "pct_th": 0.511857,
-        "pct_online": 0.4304,
-        "pct_offline": 0.5696,
-        "kh_thang4": 269899,
-        "pct_th_dau_ky": 0.033022,
-        "can_xac_thuc": 269899,
-        "rank": 20
+        "kh_den_ngay": 36015,
+        "luy_ke": 26071,
+        "online": 8320,
+        "offline": 13373,
+        "pct_th": 0.723893,
+        "pct_online": 0.319129,
+        "pct_offline": 0.512945,
+        "pct_vneid": 0.167926,
+        "pct_myviettel": 0.319129,
+        "pct_mbccs": 0.512945,
+        "kh_thang4": 253045,
+        "pct_th_dau_ky": 0.093406,
+        "can_xac_thuc": 253045,
+        "rank": 17
+      },
+      {
+        "province": "DNG",
+        "dau_ky": 337882,
+        "kh_den_ngay": 43598,
+        "luy_ke": 31221,
+        "online": 10637,
+        "offline": 15694,
+        "pct_th": 0.716111,
+        "pct_online": 0.3407,
+        "pct_offline": 0.502674,
+        "pct_vneid": 0.156625,
+        "pct_myviettel": 0.3407,
+        "pct_mbccs": 0.502674,
+        "kh_thang4": 306661,
+        "pct_th_dau_ky": 0.092402,
+        "can_xac_thuc": 306661,
+        "rank": 18
+      },
+      {
+        "province": "CTO",
+        "dau_ky": 461857,
+        "kh_den_ngay": 59594,
+        "luy_ke": 42104,
+        "online": 11081,
+        "offline": 25080,
+        "pct_th": 0.706514,
+        "pct_online": 0.263182,
+        "pct_offline": 0.595668,
+        "pct_vneid": 0.14115,
+        "pct_myviettel": 0.263182,
+        "pct_mbccs": 0.595668,
+        "kh_thang4": 419753,
+        "pct_th_dau_ky": 0.091162,
+        "can_xac_thuc": 419753,
+        "rank": 19
       },
       {
         "province": "TNH",
         "dau_ky": 548129,
-        "kh_den_ngay": 35363,
-        "luy_ke": 17701,
-        "online": 6153,
-        "offline": 11548,
-        "pct_th": 0.500551,
-        "pct_online": 0.347607,
-        "pct_offline": 0.652393,
-        "kh_thang4": 530428,
-        "pct_th_dau_ky": 0.032293,
-        "can_xac_thuc": 530428,
+        "kh_den_ngay": 70726,
+        "luy_ke": 49828,
+        "online": 12634,
+        "offline": 27901,
+        "pct_th": 0.704522,
+        "pct_online": 0.253552,
+        "pct_offline": 0.559946,
+        "pct_vneid": 0.186502,
+        "pct_myviettel": 0.253552,
+        "pct_mbccs": 0.559946,
+        "kh_thang4": 498301,
+        "pct_th_dau_ky": 0.090906,
+        "can_xac_thuc": 498301,
+        "rank": 20
+      },
+      {
+        "province": "HCM",
+        "dau_ky": 1891346,
+        "kh_den_ngay": 244045,
+        "luy_ke": 167671,
+        "online": 68606,
+        "offline": 52762,
+        "pct_th": 0.68705,
+        "pct_online": 0.40917,
+        "pct_offline": 0.314676,
+        "pct_vneid": 0.276154,
+        "pct_myviettel": 0.40917,
+        "pct_mbccs": 0.314676,
+        "kh_thang4": 1723675,
+        "pct_th_dau_ky": 0.088652,
+        "can_xac_thuc": 1723675,
         "rank": 21
       },
       {
         "province": "SLA",
         "dau_ky": 262126,
-        "kh_den_ngay": 16911,
-        "luy_ke": 8387,
-        "online": 2984,
-        "offline": 5403,
-        "pct_th": 0.495949,
-        "pct_online": 0.355789,
-        "pct_offline": 0.644211,
-        "kh_thang4": 253739,
-        "pct_th_dau_ky": 0.031996,
-        "can_xac_thuc": 253739,
+        "kh_den_ngay": 33823,
+        "luy_ke": 22678,
+        "online": 6653,
+        "offline": 12815,
+        "pct_th": 0.67049,
+        "pct_online": 0.293368,
+        "pct_offline": 0.565085,
+        "pct_vneid": 0.141547,
+        "pct_myviettel": 0.293368,
+        "pct_mbccs": 0.565085,
+        "kh_thang4": 239448,
+        "pct_th_dau_ky": 0.086516,
+        "can_xac_thuc": 239448,
         "rank": 22
       },
       {
-        "province": "QNI",
-        "dau_ky": 299056,
-        "kh_den_ngay": 19294,
-        "luy_ke": 9007,
-        "online": 2566,
-        "offline": 6441,
-        "pct_th": 0.466829,
-        "pct_online": 0.28489,
-        "pct_offline": 0.71511,
-        "kh_thang4": 290049,
-        "pct_th_dau_ky": 0.030118,
-        "can_xac_thuc": 290049,
+        "province": "VLG",
+        "dau_ky": 571628,
+        "kh_den_ngay": 73758,
+        "luy_ke": 47864,
+        "online": 12144,
+        "offline": 29185,
+        "pct_th": 0.648933,
+        "pct_online": 0.253719,
+        "pct_offline": 0.609748,
+        "pct_vneid": 0.136533,
+        "pct_myviettel": 0.253719,
+        "pct_mbccs": 0.609748,
+        "kh_thang4": 523764,
+        "pct_th_dau_ky": 0.083733,
+        "can_xac_thuc": 523764,
         "rank": 23
+      },
+      {
+        "province": "GLI",
+        "dau_ky": 583907,
+        "kh_den_ngay": 75343,
+        "luy_ke": 48671,
+        "online": 11204,
+        "offline": 30465,
+        "pct_th": 0.645992,
+        "pct_online": 0.230199,
+        "pct_offline": 0.625937,
+        "pct_vneid": 0.143864,
+        "pct_myviettel": 0.230199,
+        "pct_mbccs": 0.625937,
+        "kh_thang4": 535236,
+        "pct_th_dau_ky": 0.083354,
+        "can_xac_thuc": 535236,
+        "rank": 24
+      },
+      {
+        "province": "LDG",
+        "dau_ky": 651874,
+        "kh_den_ngay": 84113,
+        "luy_ke": 54331,
+        "online": 16133,
+        "offline": 28877,
+        "pct_th": 0.645929,
+        "pct_online": 0.296939,
+        "pct_offline": 0.531501,
+        "pct_vneid": 0.17156,
+        "pct_myviettel": 0.296939,
+        "pct_mbccs": 0.531501,
+        "kh_thang4": 597543,
+        "pct_th_dau_ky": 0.083346,
+        "can_xac_thuc": 597543,
+        "rank": 25
       },
       {
         "province": "CBG",
         "dau_ky": 92606,
-        "kh_den_ngay": 5975,
-        "luy_ke": 2778,
-        "online": 998,
-        "offline": 1780,
-        "pct_th": 0.464937,
-        "pct_online": 0.359251,
-        "pct_offline": 0.640749,
-        "kh_thang4": 89828,
-        "pct_th_dau_ky": 0.029998,
-        "can_xac_thuc": 89828,
-        "rank": 24
-      },
-      {
-        "province": "CMU",
-        "dau_ky": 159420,
-        "kh_den_ngay": 10285,
-        "luy_ke": 4751,
-        "online": 1863,
-        "offline": 2888,
-        "pct_th": 0.461935,
-        "pct_online": 0.392128,
-        "pct_offline": 0.607872,
-        "kh_thang4": 154669,
-        "pct_th_dau_ky": 0.029802,
-        "can_xac_thuc": 154669,
-        "rank": 25
-      },
-      {
-        "province": "VLG",
-        "dau_ky": 571628,
-        "kh_den_ngay": 36879,
-        "luy_ke": 17013,
-        "online": 5847,
-        "offline": 11166,
-        "pct_th": 0.461319,
-        "pct_online": 0.343678,
-        "pct_offline": 0.656322,
-        "kh_thang4": 554615,
-        "pct_th_dau_ky": 0.029762,
-        "can_xac_thuc": 554615,
+        "kh_den_ngay": 11949,
+        "luy_ke": 7630,
+        "online": 2173,
+        "offline": 4441,
+        "pct_th": 0.638547,
+        "pct_online": 0.284797,
+        "pct_offline": 0.582045,
+        "pct_vneid": 0.133159,
+        "pct_myviettel": 0.284797,
+        "pct_mbccs": 0.582045,
+        "kh_thang4": 84976,
+        "pct_th_dau_ky": 0.082392,
+        "can_xac_thuc": 84976,
         "rank": 26
       },
       {
         "province": "DTP",
         "dau_ky": 551176,
-        "kh_den_ngay": 35560,
-        "luy_ke": 16364,
-        "online": 6132,
-        "offline": 10232,
-        "pct_th": 0.46018,
-        "pct_online": 0.374725,
-        "pct_offline": 0.625275,
-        "kh_thang4": 534812,
-        "pct_th_dau_ky": 0.029689,
-        "can_xac_thuc": 534812,
+        "kh_den_ngay": 71120,
+        "luy_ke": 45181,
+        "online": 12627,
+        "offline": 25339,
+        "pct_th": 0.635278,
+        "pct_online": 0.279476,
+        "pct_offline": 0.560833,
+        "pct_vneid": 0.159691,
+        "pct_myviettel": 0.279476,
+        "pct_mbccs": 0.560833,
+        "kh_thang4": 505995,
+        "pct_th_dau_ky": 0.081972,
+        "can_xac_thuc": 505995,
         "rank": 27
       },
       {
-        "province": "KHA",
-        "dau_ky": 296764,
-        "kh_den_ngay": 19146,
-        "luy_ke": 8655,
-        "online": 3741,
-        "offline": 4914,
-        "pct_th": 0.452053,
-        "pct_online": 0.432236,
-        "pct_offline": 0.567764,
-        "kh_thang4": 288109,
-        "pct_th_dau_ky": 0.029165,
-        "can_xac_thuc": 288109,
+        "province": "QNI",
+        "dau_ky": 299056,
+        "kh_den_ngay": 38588,
+        "luy_ke": 24317,
+        "online": 5368,
+        "offline": 15606,
+        "pct_th": 0.63017,
+        "pct_online": 0.220751,
+        "pct_offline": 0.641773,
+        "pct_vneid": 0.137476,
+        "pct_myviettel": 0.220751,
+        "pct_mbccs": 0.641773,
+        "kh_thang4": 274739,
+        "pct_th_dau_ky": 0.081313,
+        "can_xac_thuc": 274739,
         "rank": 28
-      },
-      {
-        "province": "AGG",
-        "dau_ky": 609173,
-        "kh_den_ngay": 39301,
-        "luy_ke": 17450,
-        "online": 5866,
-        "offline": 11584,
-        "pct_th": 0.444009,
-        "pct_online": 0.33616,
-        "pct_offline": 0.66384,
-        "kh_thang4": 591723,
-        "pct_th_dau_ky": 0.028645,
-        "can_xac_thuc": 591723,
-        "rank": 29
-      },
-      {
-        "province": "HCM",
-        "dau_ky": 1891346,
-        "kh_den_ngay": 122022,
-        "luy_ke": 53565,
-        "online": 33958,
-        "offline": 19607,
-        "pct_th": 0.438978,
-        "pct_online": 0.633959,
-        "pct_offline": 0.366041,
-        "kh_thang4": 1837781,
-        "pct_th_dau_ky": 0.028321,
-        "can_xac_thuc": 1837781,
-        "rank": 30
-      },
-      {
-        "province": "LDG",
-        "dau_ky": 651874,
-        "kh_den_ngay": 42056,
-        "luy_ke": 18183,
-        "online": 7575,
-        "offline": 10608,
-        "pct_th": 0.432352,
-        "pct_online": 0.416598,
-        "pct_offline": 0.583402,
-        "kh_thang4": 633691,
-        "pct_th_dau_ky": 0.027893,
-        "can_xac_thuc": 633691,
-        "rank": 31
       },
       {
         "province": "DNI",
         "dau_ky": 752366,
-        "kh_den_ngay": 48540,
-        "luy_ke": 19797,
-        "online": 10250,
-        "offline": 9547,
-        "pct_th": 0.407849,
-        "pct_online": 0.517755,
-        "pct_offline": 0.482245,
-        "kh_thang4": 732569,
-        "pct_th_dau_ky": 0.026313,
-        "can_xac_thuc": 732569,
+        "kh_den_ngay": 97079,
+        "luy_ke": 61061,
+        "online": 20540,
+        "offline": 25508,
+        "pct_th": 0.628983,
+        "pct_online": 0.336385,
+        "pct_offline": 0.417746,
+        "pct_vneid": 0.245869,
+        "pct_myviettel": 0.336385,
+        "pct_mbccs": 0.417746,
+        "kh_thang4": 691305,
+        "pct_th_dau_ky": 0.081159,
+        "can_xac_thuc": 691305,
+        "rank": 29
+      },
+      {
+        "province": "CMU",
+        "dau_ky": 159420,
+        "kh_den_ngay": 20570,
+        "luy_ke": 12851,
+        "online": 4045,
+        "offline": 6815,
+        "pct_th": 0.624745,
+        "pct_online": 0.314761,
+        "pct_offline": 0.530309,
+        "pct_vneid": 0.15493,
+        "pct_myviettel": 0.314761,
+        "pct_mbccs": 0.530309,
+        "kh_thang4": 146569,
+        "pct_th_dau_ky": 0.080611,
+        "can_xac_thuc": 146569,
+        "rank": 30
+      },
+      {
+        "province": "AGG",
+        "dau_ky": 609173,
+        "kh_den_ngay": 78603,
+        "luy_ke": 48022,
+        "online": 12967,
+        "offline": 29142,
+        "pct_th": 0.610944,
+        "pct_online": 0.270022,
+        "pct_offline": 0.606847,
+        "pct_vneid": 0.123131,
+        "pct_myviettel": 0.270022,
+        "pct_mbccs": 0.606847,
+        "kh_thang4": 561151,
+        "pct_th_dau_ky": 0.078831,
+        "can_xac_thuc": 561151,
+        "rank": 31
+      },
+      {
+        "province": "KHA",
+        "dau_ky": 296764,
+        "kh_den_ngay": 38292,
+        "luy_ke": 23357,
+        "online": 7818,
+        "offline": 11893,
+        "pct_th": 0.609971,
+        "pct_online": 0.334718,
+        "pct_offline": 0.509184,
+        "pct_vneid": 0.156099,
+        "pct_myviettel": 0.334718,
+        "pct_mbccs": 0.509184,
+        "kh_thang4": 273407,
+        "pct_th_dau_ky": 0.078706,
+        "can_xac_thuc": 273407,
         "rank": 32
       },
       {
         "province": "DLK",
         "dau_ky": 455868,
-        "kh_den_ngay": 29411,
-        "luy_ke": 11499,
-        "online": 4464,
-        "offline": 7035,
-        "pct_th": 0.390976,
-        "pct_online": 0.388208,
-        "pct_offline": 0.611792,
-        "kh_thang4": 444369,
-        "pct_th_dau_ky": 0.025224,
-        "can_xac_thuc": 444369,
+        "kh_den_ngay": 58822,
+        "luy_ke": 34305,
+        "online": 9358,
+        "offline": 19135,
+        "pct_th": 0.5832,
+        "pct_online": 0.272788,
+        "pct_offline": 0.55779,
+        "pct_vneid": 0.169421,
+        "pct_myviettel": 0.272788,
+        "pct_mbccs": 0.55779,
+        "kh_thang4": 421563,
+        "pct_th_dau_ky": 0.075252,
+        "can_xac_thuc": 421563,
         "rank": 33
       },
       {
         "province": "DBN",
         "dau_ky": 79651,
-        "kh_den_ngay": 5139,
-        "luy_ke": 1408,
-        "online": 439,
-        "offline": 969,
-        "pct_th": 0.273983,
-        "pct_online": 0.31179,
-        "pct_offline": 0.68821,
-        "kh_thang4": 78243,
-        "pct_th_dau_ky": 0.017677,
-        "can_xac_thuc": 78243,
+        "kh_den_ngay": 10278,
+        "luy_ke": 4563,
+        "online": 1009,
+        "offline": 2658,
+        "pct_th": 0.443958,
+        "pct_online": 0.221126,
+        "pct_offline": 0.582512,
+        "pct_vneid": 0.196362,
+        "pct_myviettel": 0.221126,
+        "pct_mbccs": 0.582512,
+        "kh_thang4": 75088,
+        "pct_th_dau_ky": 0.057287,
+        "can_xac_thuc": 75088,
         "rank": 34
       }
     ],
-    "dat_kh": [],
+    "dat_kh": [
+      {
+        "province": "PTO",
+        "dau_ky": 646657,
+        "kh_den_ngay": 83440,
+        "luy_ke": 86771,
+        "online": 30729,
+        "offline": 42285,
+        "pct_th": 1.039921,
+        "pct_online": 0.354139,
+        "pct_offline": 0.487317,
+        "pct_vneid": 0.158544,
+        "pct_myviettel": 0.354139,
+        "pct_mbccs": 0.487317,
+        "kh_thang4": 559886,
+        "pct_th_dau_ky": 0.134184,
+        "can_xac_thuc": 559886,
+        "rank": 1
+      }
+    ],
     "thap_nhat": [
       {
         "province": "DBN",
         "dau_ky": 79651,
-        "kh_den_ngay": 5139,
-        "luy_ke": 1408,
-        "online": 439,
-        "offline": 969,
-        "pct_th": 0.273983,
-        "pct_online": 0.31179,
-        "pct_offline": 0.68821,
-        "kh_thang4": 78243,
-        "pct_th_dau_ky": 0.017677,
-        "can_xac_thuc": 78243,
+        "kh_den_ngay": 10278,
+        "luy_ke": 4563,
+        "online": 1009,
+        "offline": 2658,
+        "pct_th": 0.443958,
+        "pct_online": 0.221126,
+        "pct_offline": 0.582512,
+        "pct_vneid": 0.196362,
+        "pct_myviettel": 0.221126,
+        "pct_mbccs": 0.582512,
+        "kh_thang4": 75088,
+        "pct_th_dau_ky": 0.057287,
+        "can_xac_thuc": 75088,
         "rank": 34
       },
       {
         "province": "DLK",
         "dau_ky": 455868,
-        "kh_den_ngay": 29411,
-        "luy_ke": 11499,
-        "online": 4464,
-        "offline": 7035,
-        "pct_th": 0.390976,
-        "pct_online": 0.388208,
-        "pct_offline": 0.611792,
-        "kh_thang4": 444369,
-        "pct_th_dau_ky": 0.025224,
-        "can_xac_thuc": 444369,
+        "kh_den_ngay": 58822,
+        "luy_ke": 34305,
+        "online": 9358,
+        "offline": 19135,
+        "pct_th": 0.5832,
+        "pct_online": 0.272788,
+        "pct_offline": 0.55779,
+        "pct_vneid": 0.169421,
+        "pct_myviettel": 0.272788,
+        "pct_mbccs": 0.55779,
+        "kh_thang4": 421563,
+        "pct_th_dau_ky": 0.075252,
+        "can_xac_thuc": 421563,
         "rank": 33
-      },
-      {
-        "province": "DNI",
-        "dau_ky": 752366,
-        "kh_den_ngay": 48540,
-        "luy_ke": 19797,
-        "online": 10250,
-        "offline": 9547,
-        "pct_th": 0.407849,
-        "pct_online": 0.517755,
-        "pct_offline": 0.482245,
-        "kh_thang4": 732569,
-        "pct_th_dau_ky": 0.026313,
-        "can_xac_thuc": 732569,
-        "rank": 32
-      },
-      {
-        "province": "LDG",
-        "dau_ky": 651874,
-        "kh_den_ngay": 42056,
-        "luy_ke": 18183,
-        "online": 7575,
-        "offline": 10608,
-        "pct_th": 0.432352,
-        "pct_online": 0.416598,
-        "pct_offline": 0.583402,
-        "kh_thang4": 633691,
-        "pct_th_dau_ky": 0.027893,
-        "can_xac_thuc": 633691,
-        "rank": 31
-      },
-      {
-        "province": "HCM",
-        "dau_ky": 1891346,
-        "kh_den_ngay": 122022,
-        "luy_ke": 53565,
-        "online": 33958,
-        "offline": 19607,
-        "pct_th": 0.438978,
-        "pct_online": 0.633959,
-        "pct_offline": 0.366041,
-        "kh_thang4": 1837781,
-        "pct_th_dau_ky": 0.028321,
-        "can_xac_thuc": 1837781,
-        "rank": 30
-      },
-      {
-        "province": "AGG",
-        "dau_ky": 609173,
-        "kh_den_ngay": 39301,
-        "luy_ke": 17450,
-        "online": 5866,
-        "offline": 11584,
-        "pct_th": 0.444009,
-        "pct_online": 0.33616,
-        "pct_offline": 0.66384,
-        "kh_thang4": 591723,
-        "pct_th_dau_ky": 0.028645,
-        "can_xac_thuc": 591723,
-        "rank": 29
       },
       {
         "province": "KHA",
         "dau_ky": 296764,
-        "kh_den_ngay": 19146,
-        "luy_ke": 8655,
-        "online": 3741,
-        "offline": 4914,
-        "pct_th": 0.452053,
-        "pct_online": 0.432236,
-        "pct_offline": 0.567764,
-        "kh_thang4": 288109,
-        "pct_th_dau_ky": 0.029165,
-        "can_xac_thuc": 288109,
+        "kh_den_ngay": 38292,
+        "luy_ke": 23357,
+        "online": 7818,
+        "offline": 11893,
+        "pct_th": 0.609971,
+        "pct_online": 0.334718,
+        "pct_offline": 0.509184,
+        "pct_vneid": 0.156099,
+        "pct_myviettel": 0.334718,
+        "pct_mbccs": 0.509184,
+        "kh_thang4": 273407,
+        "pct_th_dau_ky": 0.078706,
+        "can_xac_thuc": 273407,
+        "rank": 32
+      },
+      {
+        "province": "AGG",
+        "dau_ky": 609173,
+        "kh_den_ngay": 78603,
+        "luy_ke": 48022,
+        "online": 12967,
+        "offline": 29142,
+        "pct_th": 0.610944,
+        "pct_online": 0.270022,
+        "pct_offline": 0.606847,
+        "pct_vneid": 0.123131,
+        "pct_myviettel": 0.270022,
+        "pct_mbccs": 0.606847,
+        "kh_thang4": 561151,
+        "pct_th_dau_ky": 0.078831,
+        "can_xac_thuc": 561151,
+        "rank": 31
+      },
+      {
+        "province": "CMU",
+        "dau_ky": 159420,
+        "kh_den_ngay": 20570,
+        "luy_ke": 12851,
+        "online": 4045,
+        "offline": 6815,
+        "pct_th": 0.624745,
+        "pct_online": 0.314761,
+        "pct_offline": 0.530309,
+        "pct_vneid": 0.15493,
+        "pct_myviettel": 0.314761,
+        "pct_mbccs": 0.530309,
+        "kh_thang4": 146569,
+        "pct_th_dau_ky": 0.080611,
+        "can_xac_thuc": 146569,
+        "rank": 30
+      },
+      {
+        "province": "DNI",
+        "dau_ky": 752366,
+        "kh_den_ngay": 97079,
+        "luy_ke": 61061,
+        "online": 20540,
+        "offline": 25508,
+        "pct_th": 0.628983,
+        "pct_online": 0.336385,
+        "pct_offline": 0.417746,
+        "pct_vneid": 0.245869,
+        "pct_myviettel": 0.336385,
+        "pct_mbccs": 0.417746,
+        "kh_thang4": 691305,
+        "pct_th_dau_ky": 0.081159,
+        "can_xac_thuc": 691305,
+        "rank": 29
+      },
+      {
+        "province": "QNI",
+        "dau_ky": 299056,
+        "kh_den_ngay": 38588,
+        "luy_ke": 24317,
+        "online": 5368,
+        "offline": 15606,
+        "pct_th": 0.63017,
+        "pct_online": 0.220751,
+        "pct_offline": 0.641773,
+        "pct_vneid": 0.137476,
+        "pct_myviettel": 0.220751,
+        "pct_mbccs": 0.641773,
+        "kh_thang4": 274739,
+        "pct_th_dau_ky": 0.081313,
+        "can_xac_thuc": 274739,
         "rank": 28
       },
       {
         "province": "DTP",
         "dau_ky": 551176,
-        "kh_den_ngay": 35560,
-        "luy_ke": 16364,
-        "online": 6132,
-        "offline": 10232,
-        "pct_th": 0.46018,
-        "pct_online": 0.374725,
-        "pct_offline": 0.625275,
-        "kh_thang4": 534812,
-        "pct_th_dau_ky": 0.029689,
-        "can_xac_thuc": 534812,
+        "kh_den_ngay": 71120,
+        "luy_ke": 45181,
+        "online": 12627,
+        "offline": 25339,
+        "pct_th": 0.635278,
+        "pct_online": 0.279476,
+        "pct_offline": 0.560833,
+        "pct_vneid": 0.159691,
+        "pct_myviettel": 0.279476,
+        "pct_mbccs": 0.560833,
+        "kh_thang4": 505995,
+        "pct_th_dau_ky": 0.081972,
+        "can_xac_thuc": 505995,
         "rank": 27
       },
       {
-        "province": "VLG",
-        "dau_ky": 571628,
-        "kh_den_ngay": 36879,
-        "luy_ke": 17013,
-        "online": 5847,
-        "offline": 11166,
-        "pct_th": 0.461319,
-        "pct_online": 0.343678,
-        "pct_offline": 0.656322,
-        "kh_thang4": 554615,
-        "pct_th_dau_ky": 0.029762,
-        "can_xac_thuc": 554615,
+        "province": "CBG",
+        "dau_ky": 92606,
+        "kh_den_ngay": 11949,
+        "luy_ke": 7630,
+        "online": 2173,
+        "offline": 4441,
+        "pct_th": 0.638547,
+        "pct_online": 0.284797,
+        "pct_offline": 0.582045,
+        "pct_vneid": 0.133159,
+        "pct_myviettel": 0.284797,
+        "pct_mbccs": 0.582045,
+        "kh_thang4": 84976,
+        "pct_th_dau_ky": 0.082392,
+        "can_xac_thuc": 84976,
         "rank": 26
       },
       {
-        "province": "CMU",
-        "dau_ky": 159420,
-        "kh_den_ngay": 10285,
-        "luy_ke": 4751,
-        "online": 1863,
-        "offline": 2888,
-        "pct_th": 0.461935,
-        "pct_online": 0.392128,
-        "pct_offline": 0.607872,
-        "kh_thang4": 154669,
-        "pct_th_dau_ky": 0.029802,
-        "can_xac_thuc": 154669,
+        "province": "LDG",
+        "dau_ky": 651874,
+        "kh_den_ngay": 84113,
+        "luy_ke": 54331,
+        "online": 16133,
+        "offline": 28877,
+        "pct_th": 0.645929,
+        "pct_online": 0.296939,
+        "pct_offline": 0.531501,
+        "pct_vneid": 0.17156,
+        "pct_myviettel": 0.296939,
+        "pct_mbccs": 0.531501,
+        "kh_thang4": 597543,
+        "pct_th_dau_ky": 0.083346,
+        "can_xac_thuc": 597543,
         "rank": 25
       }
     ]
@@ -681,572 +1469,765 @@
   "trend": {
     "labels": [
       "1/5",
-      "2/5"
+      "2/5",
+      "3/5",
+      "4/5"
     ],
     "provinces": [
       {
         "code": "DBN",
         "rank_t1": 34,
-        "pct_th": 0.273983,
+        "pct_th": 0.443958,
         "total": [
           673,
-          735
+          735,
+          860,
+          1399
         ],
         "offline": [
           381,
-          412
+          412,
+          486,
+          886
         ]
       },
       {
         "code": "DLK",
         "rank_t1": 33,
-        "pct_th": 0.390976,
+        "pct_th": 0.5832,
         "total": [
           5011,
-          6488
+          6488,
+          7220,
+          9774
         ],
         "offline": [
           2628,
-          3748
-        ]
-      },
-      {
-        "code": "DNI",
-        "rank_t1": 32,
-        "pct_th": 0.407849,
-        "total": [
-          8194,
-          11603
-        ],
-        "offline": [
-          3284,
-          5373
-        ]
-      },
-      {
-        "code": "LDG",
-        "rank_t1": 31,
-        "pct_th": 0.432352,
-        "total": [
-          7752,
-          10431
-        ],
-        "offline": [
-          4508,
-          6440
-        ]
-      },
-      {
-        "code": "HCM",
-        "rank_t1": 30,
-        "pct_th": 0.438978,
-        "total": [
-          23635,
-          29930
-        ],
-        "offline": [
-          6567,
-          10360
-        ]
-      },
-      {
-        "code": "AGG",
-        "rank_t1": 29,
-        "pct_th": 0.444009,
-        "total": [
-          7489,
-          9961
-        ],
-        "offline": [
-          3079,
-          4491
+          3748,
+          4044,
+          6298
         ]
       },
       {
         "code": "KHA",
-        "rank_t1": 28,
-        "pct_th": 0.452053,
+        "rank_t1": 32,
+        "pct_th": 0.609971,
         "total": [
           3510,
-          5145
+          5145,
+          4414,
+          6642
         ],
         "offline": [
           1706,
-          2871
+          2871,
+          2291,
+          4174
+        ]
+      },
+      {
+        "code": "AGG",
+        "rank_t1": 31,
+        "pct_th": 0.610944,
+        "total": [
+          7489,
+          9961,
+          10841,
+          13818
+        ],
+        "offline": [
+          3079,
+          4491,
+          4624,
+          7516
+        ]
+      },
+      {
+        "code": "CMU",
+        "rank_t1": 30,
+        "pct_th": 0.624745,
+        "total": [
+          2097,
+          2654,
+          2315,
+          3794
+        ],
+        "offline": [
+          698,
+          864,
+          716,
+          1683
+        ]
+      },
+      {
+        "code": "DNI",
+        "rank_t1": 29,
+        "pct_th": 0.628983,
+        "total": [
+          8193,
+          11600,
+          12400,
+          13855
+        ],
+        "offline": [
+          3284,
+          5372,
+          5432,
+          7594
+        ]
+      },
+      {
+        "code": "QNI",
+        "rank_t1": 28,
+        "pct_th": 0.63017,
+        "total": [
+          3400,
+          5606,
+          5621,
+          6347
+        ],
+        "offline": [
+          1733,
+          2999,
+          2593,
+          3718
         ]
       },
       {
         "code": "DTP",
         "rank_t1": 27,
-        "pct_th": 0.46018,
+        "pct_th": 0.635278,
         "total": [
-          6787,
-          9577
+          6786,
+          9577,
+          9455,
+          12148
         ],
         "offline": [
-          3125,
-          4830
-        ]
-      },
-      {
-        "code": "VLG",
-        "rank_t1": 26,
-        "pct_th": 0.461319,
-        "total": [
-          6854,
-          10159
-        ],
-        "offline": [
-          2946,
-          4753
-        ]
-      },
-      {
-        "code": "CMU",
-        "rank_t1": 25,
-        "pct_th": 0.461935,
-        "total": [
-          2097,
-          2654
-        ],
-        "offline": [
-          698,
-          864
-        ]
-      }
-    ],
-    "national": [
-      257890,
-      317147
-    ],
-    "all_provinces": [
-      {
-        "code": "AGG",
-        "rank_t1": 29,
-        "pct_th": 0.444009,
-        "total": [
-          7489,
-          9961
-        ],
-        "offline": [
-          3079,
-          4491
-        ]
-      },
-      {
-        "code": "BNH",
-        "rank_t1": 8,
-        "pct_th": 0.663851,
-        "total": [
-          12739,
-          15158
-        ],
-        "offline": [
-          5003,
-          6535
+          3124,
+          4830,
+          4487,
+          7058
         ]
       },
       {
         "code": "CBG",
-        "rank_t1": 24,
-        "pct_th": 0.464937,
+        "rank_t1": 26,
+        "pct_th": 0.638547,
         "total": [
           1200,
-          1578
+          1578,
+          1329,
+          2507
         ],
         "offline": [
           642,
-          928
+          928,
+          757,
+          1532
+        ]
+      },
+      {
+        "code": "LDG",
+        "rank_t1": 25,
+        "pct_th": 0.645929,
+        "total": [
+          7751,
+          10431,
+          11476,
+          15352
+        ],
+        "offline": [
+          4508,
+          6440,
+          7078,
+          10368
+        ]
+      }
+    ],
+    "national": [
+      257869,
+      317133,
+      322258,
+      386203
+    ],
+    "all_provinces": [
+      {
+        "code": "AGG",
+        "rank_t1": 31,
+        "pct_th": 0.610944,
+        "total": [
+          7489,
+          9961,
+          10841,
+          13818
+        ],
+        "offline": [
+          3079,
+          4491,
+          4624,
+          7516
+        ]
+      },
+      {
+        "code": "BNH",
+        "rank_t1": 6,
+        "pct_th": 0.883515,
+        "total": [
+          12739,
+          15158,
+          15741,
+          17075
+        ],
+        "offline": [
+          5003,
+          6535,
+          6281,
+          8714
+        ]
+      },
+      {
+        "code": "CBG",
+        "rank_t1": 26,
+        "pct_th": 0.638547,
+        "total": [
+          1200,
+          1578,
+          1329,
+          2507
+        ],
+        "offline": [
+          642,
+          928,
+          757,
+          1532
         ]
       },
       {
         "code": "CMU",
-        "rank_t1": 25,
-        "pct_th": 0.461935,
+        "rank_t1": 30,
+        "pct_th": 0.624745,
         "total": [
           2097,
-          2654
+          2654,
+          2315,
+          3794
         ],
         "offline": [
           698,
-          864
+          864,
+          716,
+          1683
         ]
       },
       {
         "code": "CTO",
-        "rank_t1": 16,
-        "pct_th": 0.532,
+        "rank_t1": 19,
+        "pct_th": 0.706514,
         "total": [
           6702,
-          9150
+          9150,
+          8699,
+          11610
         ],
         "offline": [
           2430,
-          3627
+          3627,
+          3348,
+          5627
         ]
       },
       {
         "code": "DBN",
         "rank_t1": 34,
-        "pct_th": 0.273983,
+        "pct_th": 0.443958,
         "total": [
           673,
-          735
+          735,
+          860,
+          1399
         ],
         "offline": [
           381,
-          412
+          412,
+          486,
+          886
         ]
       },
       {
         "code": "DLK",
         "rank_t1": 33,
-        "pct_th": 0.390976,
+        "pct_th": 0.5832,
         "total": [
           5011,
-          6488
+          6488,
+          7220,
+          9774
         ],
         "offline": [
           2628,
-          3748
+          3748,
+          4044,
+          6298
         ]
       },
       {
         "code": "DNG",
-        "rank_t1": 15,
-        "pct_th": 0.562457,
+        "rank_t1": 18,
+        "pct_th": 0.716111,
         "total": [
           5702,
-          6559
+          6559,
+          6386,
+          7684
         ],
         "offline": [
           2482,
-          3209
+          3209,
+          2903,
+          4378
         ]
       },
       {
         "code": "DNI",
-        "rank_t1": 32,
-        "pct_th": 0.407849,
+        "rank_t1": 29,
+        "pct_th": 0.628983,
         "total": [
-          8194,
-          11603
+          8193,
+          11600,
+          12400,
+          13855
         ],
         "offline": [
           3284,
-          5373
+          5372,
+          5432,
+          7594
         ]
       },
       {
         "code": "DTP",
         "rank_t1": 27,
-        "pct_th": 0.46018,
+        "pct_th": 0.635278,
         "total": [
-          6787,
-          9577
+          6786,
+          9577,
+          9455,
+          12148
         ],
         "offline": [
-          3125,
-          4830
+          3124,
+          4830,
+          4487,
+          7058
         ]
       },
       {
         "code": "GLI",
-        "rank_t1": 19,
-        "pct_th": 0.518808,
+        "rank_t1": 24,
+        "pct_th": 0.645992,
         "total": [
           9638,
-          9906
+          9905,
+          9912,
+          12214
         ],
         "offline": [
           5338,
-          5557
+          5556,
+          5407,
+          7737
         ]
       },
       {
         "code": "HCM",
-        "rank_t1": 30,
-        "pct_th": 0.438978,
+        "rank_t1": 21,
+        "pct_th": 0.68705,
         "total": [
           23635,
-          29930
+          29929,
+          31892,
+          35912
         ],
         "offline": [
           6567,
-          10360
+          10360,
+          10177,
+          15497
         ]
       },
       {
         "code": "HNI",
-        "rank_t1": 11,
-        "pct_th": 0.64778,
+        "rank_t1": 3,
+        "pct_th": 0.956497,
         "total": [
-          31153,
-          38497
+          31150,
+          38494,
+          38732,
+          44438
         ],
         "offline": [
-          7747,
-          11577
+          7746,
+          11575,
+          10118,
+          17282
         ]
       },
       {
         "code": "HPG",
-        "rank_t1": 12,
-        "pct_th": 0.621686,
+        "rank_t1": 10,
+        "pct_th": 0.824583,
         "total": [
-          9925,
-          11839
+          9923,
+          11838,
+          11942,
+          12719
         ],
         "offline": [
-          2835,
-          3831
+          2834,
+          3830,
+          3644,
+          5770
         ]
       },
       {
         "code": "HTH",
         "rank_t1": 2,
-        "pct_th": 0.789594,
+        "pct_th": 0.963654,
         "total": [
           4108,
-          4527
+          4527,
+          5026,
+          5596
         ],
         "offline": [
           1809,
-          2010
+          2010,
+          2289,
+          3341
         ]
       },
       {
         "code": "HUE",
-        "rank_t1": 3,
-        "pct_th": 0.77946,
+        "rank_t1": 7,
+        "pct_th": 0.879308,
         "total": [
           3494,
-          3868
+          3868,
+          3738,
+          3780
         ],
         "offline": [
           1504,
-          1714
+          1714,
+          1534,
+          2042
         ]
       },
       {
         "code": "HYN",
-        "rank_t1": 5,
-        "pct_th": 0.716361,
+        "rank_t1": 4,
+        "pct_th": 0.930199,
         "total": [
-          10071,
-          11081
+          10069,
+          11081,
+          11674,
+          11926
         ],
         "offline": [
           3174,
-          3798
+          3798,
+          3846,
+          5926
         ]
       },
       {
         "code": "KHA",
-        "rank_t1": 28,
-        "pct_th": 0.452053,
+        "rank_t1": 32,
+        "pct_th": 0.609971,
         "total": [
           3510,
-          5145
+          5145,
+          4414,
+          6642
         ],
         "offline": [
           1706,
-          2871
+          2871,
+          2291,
+          4174
         ]
       },
       {
         "code": "LCI",
-        "rank_t1": 20,
-        "pct_th": 0.511857,
+        "rank_t1": 17,
+        "pct_th": 0.723893,
         "total": [
-          4008,
-          5209
+          4006,
+          5209,
+          5246,
+          7232
         ],
         "offline": [
-          2192,
-          3053
+          2191,
+          3053,
+          3025,
+          4662
         ]
       },
       {
         "code": "LCU",
-        "rank_t1": 13,
-        "pct_th": 0.589831,
+        "rank_t1": 16,
+        "pct_th": 0.746317,
         "total": [
           1793,
-          1490
+          1490,
+          1689,
+          2391
         ],
         "offline": [
           1025,
-          868
+          868,
+          1032,
+          1441
         ]
       },
       {
         "code": "LDG",
-        "rank_t1": 31,
-        "pct_th": 0.432352,
+        "rank_t1": 25,
+        "pct_th": 0.645929,
         "total": [
-          7752,
-          10431
+          7751,
+          10431,
+          11476,
+          15352
         ],
         "offline": [
           4508,
-          6440
+          6440,
+          7078,
+          10368
         ]
       },
       {
         "code": "LSN",
-        "rank_t1": 9,
-        "pct_th": 0.656411,
+        "rank_t1": 13,
+        "pct_th": 0.811653,
         "total": [
           3942,
-          4485
+          4484,
+          4131,
+          5814
         ],
         "offline": [
           2187,
-          2604
+          2603,
+          2322,
+          3850
         ]
       },
       {
         "code": "NBH",
-        "rank_t1": 6,
-        "pct_th": 0.71574,
+        "rank_t1": 5,
+        "pct_th": 0.920736,
         "total": [
-          10494,
-          11787
+          10492,
+          11787,
+          11766,
+          13954
         ],
         "offline": [
-          3230,
-          3944
+          3228,
+          3944,
+          3617,
+          6557
         ]
       },
       {
         "code": "PTO",
         "rank_t1": 1,
-        "pct_th": 0.82965,
+        "pct_th": 1.039921,
         "total": [
-          16632,
-          17981
+          16631,
+          17981,
+          18384,
+          20018
         ],
         "offline": [
           7474,
-          8546
+          8546,
+          8308,
+          11592
         ]
       },
       {
         "code": "QNH",
-        "rank_t1": 18,
-        "pct_th": 0.524401,
+        "rank_t1": 11,
+        "pct_th": 0.823416,
         "total": [
           3320,
-          3858
+          3858,
+          4175,
+          5905
         ],
         "offline": [
           1189,
-          1395
+          1395,
+          1451,
+          2913
         ]
       },
       {
         "code": "QNI",
-        "rank_t1": 23,
-        "pct_th": 0.466829,
+        "rank_t1": 28,
+        "pct_th": 0.63017,
         "total": [
           3400,
-          5607
+          5606,
+          5621,
+          6347
         ],
         "offline": [
           1733,
-          3000
+          2999,
+          2593,
+          3718
         ]
       },
       {
         "code": "QTI",
-        "rank_t1": 17,
-        "pct_th": 0.525115,
+        "rank_t1": 15,
+        "pct_th": 0.747779,
         "total": [
           2396,
-          3218
+          3218,
+          3228,
+          5102
         ],
         "offline": [
           856,
-          1251
+          1251,
+          1263,
+          2749
         ]
       },
       {
         "code": "SLA",
         "rank_t1": 22,
-        "pct_th": 0.495949,
+        "pct_th": 0.67049,
         "total": [
           4011,
-          4376
+          4376,
+          4513,
+          6568
         ],
         "offline": [
           2335,
-          2652
+          2652,
+          2638,
+          4373
         ]
       },
       {
         "code": "THA",
-        "rank_t1": 7,
-        "pct_th": 0.684542,
+        "rank_t1": 9,
+        "pct_th": 0.846372,
         "total": [
-          10295,
-          12989
+          10293,
+          12989,
+          12038,
+          13599
         ],
         "offline": [
           4111,
-          5306
+          5306,
+          4861,
+          7630
         ]
       },
       {
         "code": "TNH",
-        "rank_t1": 21,
-        "pct_th": 0.500551,
+        "rank_t1": 20,
+        "pct_th": 0.704522,
         "total": [
           7515,
-          10186
+          10186,
+          11406,
+          11428
         ],
         "offline": [
           2965,
-          4431
+          4431,
+          4599,
+          5649
         ]
       },
       {
         "code": "TNN",
         "rank_t1": 14,
-        "pct_th": 0.579618,
+        "pct_th": 0.806723,
         "total": [
           5176,
-          6239
+          6239,
+          6127,
+          7545
         ],
         "offline": [
           2673,
-          3458
+          3458,
+          3121,
+          4695
         ]
       },
       {
         "code": "TQG",
-        "rank_t1": 10,
-        "pct_th": 0.649223,
+        "rank_t1": 12,
+        "pct_th": 0.821911,
         "total": [
-          6451,
-          7593
+          6448,
+          7591,
+          7479,
+          9312
         ],
         "offline": [
           3631,
-          4410
+          4410,
+          4063,
+          5855
+        ]
+      },
+      {
+        "code": "V064",
+        "rank_t1": "-",
+        "pct_th": 0,
+        "total": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "offline": [
+          0,
+          0,
+          0,
+          0
         ]
       },
       {
         "code": "VLG",
-        "rank_t1": 26,
-        "pct_th": 0.461319,
+        "rank_t1": 23,
+        "pct_th": 0.648933,
         "total": [
-          6854,
-          10159
+          6853,
+          10159,
+          10680,
+          13637
         ],
         "offline": [
           2946,
-          4753
+          4753,
+          4744,
+          7613
         ]
       }
     ]

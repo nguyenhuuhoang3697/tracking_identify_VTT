@@ -159,46 +159,30 @@
     .card-bar-fill { height: 100%; border-radius: 2px; background: rgba(255,255,255,.45); }
     .offline-subcards {
       display: grid;
-      gap: 8px;
-      margin-top: 2px;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-top: 8px;
       grid-column: 1 / -1;
       grid-row: 5;
     }
     .offline-child-card {
       border-radius: 10px;
-      padding: 8px 8px;
+      padding: 8px 10px;
       border: 1px solid rgba(255,255,255,.18);
       background: rgba(255,255,255,.10);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap: 6px;
+      gap: 8px;
     }
-    .offline-child-card .child-label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: .2px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.96);
-    }
-    .offline-child-card .child-value {
-      font-size: 18px;
-      font-weight: 900;
-      line-height: 1;
-      color: #fff;
-      white-space: nowrap;
-    }
-    .offline-child-card .child-value-small {
-      font-size: 13px;
-      font-weight: 800;
-      line-height: 1.1;
-      color: #fff;
-    }
-    .offline-child-card > .child-left { flex: 0 0 68px; width: 68px; }
-    .offline-child-card .child-label { font-size: 11px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase; color: rgba(255,255,255,.96); line-height: 1.2; white-space: normal; word-break: break-word; }
-    .offline-child-card > .child-right { flex: 1 1 0; text-align: right; min-width: 0; }
-    .offline-child-card .child-sub { font-size: 10px; font-weight: 600; color: rgba(255,255,255,.86); margin-top: 1px; white-space: nowrap; }
+    .offline-child-card .child-label { font-size: 12px; font-weight: 800; letter-spacing: .4px; text-transform: uppercase; color: rgba(255,255,255,.90); flex: 0 0 80px; line-height: 1.3; }
+    .offline-child-card .child-value { font-size: 20px; font-weight: 900; line-height: 1; color: #fff; white-space: nowrap; }
+    .offline-child-card .child-sub { font-size: 10px; font-weight: 600; color: rgba(255,255,255,.78); margin-top: 3px; line-height: 1.5; }
+    .child-n1-badge { display:inline-block; font-size:11px; font-weight:700; border-radius:4px; padding:1px 6px; margin-left:4px; background:rgba(255,255,255,.18); color:#fff; white-space:nowrap; }
+    .child-n1-badge.up   { background:rgba(52,211,153,.28); color:#6ee7b7; }
+    .child-n1-badge.down { background:rgba(248,113,113,.28); color:#fca5a5; }
     /* ─── CHART GRID ─── */
     .chart-grid {
       display: grid;
@@ -308,7 +292,7 @@
     }
     tbody tr { border-top: none; transition: background .12s; }
     tbody tr:hover { background: rgba(255,77,109,.04); }
-    tbody td { padding: 6px 9px; vertical-align: middle; }
+    tbody td { padding: 4px 9px; vertical-align: middle; }
     /* Tighten vertical spacing for OFFLINE table rows */
     #t2 table td, #t2 table th { padding: 4px 7px; }
     tr.sep { border-top: none; }
@@ -433,6 +417,10 @@
     }
     #t1 tbody td:nth-child(6) .pct-green { color: #16a34a; font-weight: 800; }
     #t1 tbody td:nth-child(6) .pct-red { color: #dc2626; font-weight: 800; }
+    /* Cell-level %TH coloring for t1 */
+    .td-pct-over  { background: #c6efce; color: #276221; font-weight: 900; border-radius: 4px; padding: 2px 6px; display: inline-block; }
+    .td-pct-warn  { background: #ffeb9c; color: #9c6500; font-weight: 800; border-radius: 4px; padding: 2px 6px; display: inline-block; }
+    .td-pct-low   { background: #ffc7ce; color: #9c0006; font-weight: 900; border-radius: 4px; padding: 2px 6px; display: inline-block; }
     /* Row highlight for OFFLINE table */
     .row-pink td { background: #ffe4e6; }
     .row-green-hl td { background: #dcfce7; }
@@ -483,12 +471,36 @@
         <div class="card-label">C&#7847;n x&#225;c th&#7921;c</div>
         <div class="card-rightnote">
           <div>Đầu kỳ: <span class="rightmid" id="total-card-dau-ky"></span></div>
-          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 1/5: <strong id="total-card-th-19">-977K</strong></div>
+          <div class="card-subnote">TH L&#361;y k&#7871; t&#7915; 1/5: <strong id="total-card-th-19">757K</strong></div>
           <div>Còn phải TH:</div>
           <div><span class="rightbig" id="total-card-con-phai-th">27.8tr</span></div>
         </div>
-        <div class="card-bar"><div class="card-bar-fill" style="width:43%"></div></div>
-      </div>
+        <div class="offline-subcards">
+          <div class="offline-child-card" id="ch-vneid">
+            <div class="child-label">VNeID</div>
+            <div style="text-align:right">
+              <div class="child-value" id="ch-vneid-lk">—</div>
+              <div class="child-sub">TH n-1: <span id="ch-vneid-thn1">—</span></div>
+              <div class="child-sub">So n-1: <span id="ch-vneid-n1">—</span> &nbsp;|&nbsp; Tỉ trọng: <span id="ch-vneid-tt">—</span></div>
+            </div>
+          </div>
+          <div class="offline-child-card" id="ch-myvt">
+            <div class="child-label">My Viettel</div>
+            <div style="text-align:right">
+              <div class="child-value" id="ch-myvt-lk">—</div>
+              <div class="child-sub">TH n-1: <span id="ch-myvt-thn1">—</span></div>
+              <div class="child-sub">So n-1: <span id="ch-myvt-n1">—</span> &nbsp;|&nbsp; Tỉ trọng: <span id="ch-myvt-tt">—</span></div>
+            </div>
+          </div>
+          <div class="offline-child-card" id="ch-mbccs">
+            <div class="child-label">MBCCS</div>
+            <div style="text-align:right">
+              <div class="child-value" id="ch-mbccs-lk">—</div>
+              <div class="child-sub">TH n-1: <span id="ch-mbccs-thn1">—</span></div>
+              <div class="child-sub">So n-1: <span id="ch-mbccs-n1">—</span> &nbsp;|&nbsp; Tỉ trọng: <span id="ch-mbccs-tt">—</span></div>
+            </div>
+          </div>
+        </div>
 
     </aside>
 
@@ -511,28 +523,26 @@
           <table>
             <thead>
               <tr class="offline-title-row">
-                <th colspan="11">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO T&#7892;NG <span style="color:#e11d48"></span></th>
+                <th colspan="10">K&#7870;T QU&#7842; T&#7914; D&#7918; LI&#7878;U GIAO</th>
               </tr>
               <tr class="offline-group-row">
                 <th rowspan="2" style="text-align:center;vertical-align:middle">TT</th>
                 <th rowspan="2" style="vertical-align:middle">T&#7880;NH</th>
-                <th rowspan="2">&#272;&#7846;U K&#7922;<span class="group-note">(T&#7893;ng c&#7847;n x&#225;c th&#7921;c)</span></th>
-                <th colspan="3">TH&#7920;C HI&#7878;N LŨY K&#7870;</th>
-                <th colspan="2">K&#202;NH TH&#7920;C HI&#7878;N</th>
-                <th rowspan="2">KH Th&#225;ng 4<span class="group-note">(c&#242;n ph&#7843;i TH)</span></th>
-                <th colspan="2">So sánh &#273;&#7847;u k&#7923; giao</th>
+                <th rowspan="2">KH giao<span class="group-note">(T&#7893;ng c&#7847;n x&#225;c th&#7921;c)</span></th>
+                <th colspan="3">TH&#7920;C HI&#7878;N L&#360;Y K&#7870;</th>
+                <th colspan="3">K&#202;NH TH&#7920;C HI&#7878;N</th>
+                <th rowspan="2">C&#242;n ph&#7843;i<br>th&#7921;c hi&#7879;n</th>
               </tr>
               <tr class="offline-subhead-row">
-                <th>KH &#273;&#7871;n ng&#224;y<span class="sub-note">(LK t&#7915; 1/5)</span></th>
-                <th>L&#361;y k&#7871;<span class="sub-note">(t&#7915; 1/5)</span></th>
+                <th>KH l&#361;y k&#7871; &#273;&#7871;n ng&#224;y</th>
+                <th>TH l&#361;y k&#7871;</th>
                 <th>%TH KH &#273;&#7871;n ng&#224;y</th>
-                <th>%ONLINE</th>
-                <th>%OFFLINE</th>
-                <th>%TH &#931; &#272;&#7847;u k&#7923;</th>
-                <th>&#931; C&#7847;n x&#225;c th&#7921;c<span class="sub-note">(c&#242;n l&#7841;i)</span></th>
+                <th>VNeID</th>
+                <th>My Viettel</th>
+                <th>MBCCS</th>
               </tr>
             </thead>
-            <tbody id="t1-tbody"><tr><td colspan="11" style="text-align:center;padding:18px;color:var(--muted)">Đang tải dữ liệu…</td></tr></tbody>
+            <tbody id="t1-tbody"><tr><td colspan="10" style="text-align:center;padding:18px;color:var(--muted)">Đang tải dữ liệu…</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -710,53 +720,47 @@ function updateSummaryByProvince(code) {
     return;
   }
 
-  var byProvince = data.summary && data.summary.by_province;
-  var pSummary = byProvince && byProvince[code];
-  if (!pSummary) return;
+  // Look up province row from t1.all_rows
+  var row = findProvinceRow(data.t1 && data.t1.all_rows, code);
+  if (!row) return;
 
-  var totalCard = pSummary.total_card;
-  if (totalCard) {
-    var totalDauKy = document.getElementById('total-card-dau-ky');
-    var totalTh18 = document.getElementById('total-card-th-18');
-    var totalTh19 = document.getElementById('total-card-th-19');
-    var totalCon = document.getElementById('total-card-con-phai-th');
-    if (totalDauKy) totalDauKy.textContent = fmtCompact(totalCard.dau_ky);
-    if (totalTh18) totalTh18.textContent = '-' + fmtCompact(totalCard.th_1_4_18_4);
-    if (totalTh19) totalTh19.textContent = '-' + fmtCompact(totalCard.th_luy_ke_tu_19_4);
-    if (totalCon) totalCon.textContent = fmtCompact(totalCard.con_phai_th);
-  }
+  // Update main card
+  var dauKy = document.getElementById('total-card-dau-ky');
+  var th19  = document.getElementById('total-card-th-19');
+  var conPhaiTh = document.getElementById('total-card-con-phai-th');
+  if (dauKy)    dauKy.textContent    = fmtCompact(row.dau_ky);
+  if (th19)     th19.textContent     = fmtCompact(row.luy_ke);
+  if (conPhaiTh) conPhaiTh.textContent = fmtCompact(row.can_xac_thuc);
 
-  var offlineCard = pSummary.offline_card;
-  if (offlineCard) {
-    var offDauKy = document.getElementById('offline-card-dau-ky');
-    var offTh18 = document.getElementById('offline-card-th-18');
-    var offTh19 = document.getElementById('offline-card-th-19');
-    var offCon = document.getElementById('offline-card-con-phai-th');
-    if (offDauKy) offDauKy.textContent = fmtCompact(offlineCard.dau_ky);
-    if (offTh18) offTh18.textContent = '-' + fmtCompact(offlineCard.th_1_4_18_4);
-    if (offTh19) offTh19.textContent = '-' + fmtCompact(offlineCard.th_luy_ke_tu_19_4);
-    if (offCon) offCon.textContent = fmtCompact(offlineCard.con_phai_th);
+  // Update channel sub-cards using province-specific channel daily data
+  var lk = row.luy_ke || 0;
+  var ccProv = data.summary && data.summary.channel_cards_by_province && data.summary.channel_cards_by_province[code];
 
-    var cmt9 = offlineCard.children && offlineCard.children.cmt9;
-    if (cmt9) {
-      var cmtDauKy = document.getElementById('offline-cmt-dau-ky');
-      var cmtThLuyKe = document.getElementById('offline-cmt-th-luy-ke');
-      var cmtConPhaiTh = document.getElementById('offline-cmt-con-phai-th');
-      if (cmtDauKy) cmtDauKy.textContent = fmtCompact(cmt9.dau_ky);
-      if (cmtThLuyKe) cmtThLuyKe.textContent = '-' + fmtCompact(cmt9.th_luy_ke);
-      if (cmtConPhaiTh) cmtConPhaiTh.textContent = fmtCompact(cmt9.con_phai_th);
+  function fillCh(key, lkId, thn1Id, n1Id, ttId) {
+    var pctKey = 'pct_' + key;
+    var pct = row[pctKey] || 0;
+    var abs = Math.round(pct * lk);
+    var d = ccProv && ccProv[key];
+    var lkEl   = document.getElementById(lkId);
+    var thn1El = document.getElementById(thn1Id);
+    var n1El   = document.getElementById(n1Id);
+    var ttEl   = document.getElementById(ttId);
+    if (lkEl)   lkEl.textContent = fmtCompact(abs);
+    if (thn1El) thn1El.textContent = d ? fmtCompact(d.th_n1) : '—';
+    if (n1El) {
+      if (!d || d.n1_pct === null || d.n1_pct === undefined) {
+        n1El.innerHTML = '<span class="child-n1-badge">—</span>';
+      } else {
+        var pStr = (d.n1_pct >= 0 ? '+' : '') + (d.n1_pct * 100).toFixed(1) + '%';
+        var cls = d.n1_pct >= 0 ? 'up' : 'down';
+        n1El.innerHTML = '<span class="child-n1-badge ' + cls + '">' + pStr + '</span>';
+      }
     }
-
-    var yeuThe = offlineCard.children && offlineCard.children.yeu_the;
-    if (yeuThe) {
-      var yeuTheDauKy = document.getElementById('offline-yeu-the-dau-ky');
-      var yeuTheThLuyKe = document.getElementById('offline-yeu-the-th-luy-ke');
-      var yeuTheConPhaiTh = document.getElementById('offline-yeu-the-con-phai-th');
-      if (yeuTheDauKy) yeuTheDauKy.textContent = fmtCompact(yeuThe.dau_ky);
-      if (yeuTheThLuyKe) yeuTheThLuyKe.textContent = '-' + fmtCompact(yeuThe.th_luy_ke);
-      if (yeuTheConPhaiTh) yeuTheConPhaiTh.textContent = fmtCompact(yeuThe.con_phai_th);
-    }
+    if (ttEl)   ttEl.textContent = (pct * 100).toFixed(1) + '%';
   }
+  fillCh('vneid',     'ch-vneid-lk',  'ch-vneid-thn1',  'ch-vneid-n1',  'ch-vneid-tt');
+  fillCh('myviettel', 'ch-myvt-lk',   'ch-myvt-thn1',   'ch-myvt-n1',   'ch-myvt-tt');
+  fillCh('mbccs',     'ch-mbccs-lk',  'ch-mbccs-thn1',  'ch-mbccs-n1',  'ch-mbccs-tt');
 }
 
 function makeChart(id, data, labels) {
@@ -865,7 +869,7 @@ function renderTrend(data) {
   // Build province cards
   var grid = document.getElementById('trend-grid');
   if (!grid) return;
-  var total = data.t2 ? data.t2.total_provinces : trend.provinces.length;
+  var total = data.t1 ? data.t1.total_provinces : trend.provinces.length;
   var html = '';
   trend.provinces.forEach(function(p) {
     var yesterdayGrowth = fmtYesterdayGrowth(p.total);
@@ -873,7 +877,7 @@ function renderTrend(data) {
       '<div class="chart-card-title"><span class="chart-card-title-left">' + p.code +
         ' <span class="chart-card-growth">' + yesterdayGrowth + '</span></span>' +
         ' <span class="chart-card-pct">' + (p.pct_th * 100).toFixed(1) + '%</span></div>' +
-      '<div class="chart-card-sub">Xếp hạng ' + p.rank_t2 + '/' + total + ' (Offline)</div>' +
+      '<div class="chart-card-sub">Xếp hạng ' + p.rank_t1 + '/' + total + ' (Cảnh báo)</div>' +
       '<canvas id="chart-' + p.code.toLowerCase() + '" height="160"></canvas>' +
       '</div>';
   });
@@ -895,10 +899,10 @@ function fmtCompact(n) {
   var abs = Math.abs(Number(n) || 0);
   var sign = (Number(n) || 0) < 0 ? '-' : '';
   if (abs >= 1000000) {
-    return sign + (abs / 1000000).toFixed(1).replace(/\.0$/, '') + 'tr';
+    return sign + (abs / 1000000).toFixed(2).replace(/\.00$/, '') + 'tr';
   }
   if (abs >= 1000) {
-    return sign + Math.round(abs / 1000) + 'K';
+    return sign + (abs / 1000).toFixed(2).replace(/\.00$/, '') + 'K';
   }
   return sign + Math.round(abs);
 }
@@ -930,9 +934,36 @@ function renderSummary(data) {
     var conPhaiTh = document.getElementById('total-card-con-phai-th');
 
     if (dauKy) dauKy.textContent = fmtCompact(totalCard.dau_ky);
-    if (th18) th18.textContent = '-' + fmtCompact(totalCard.th_1_4_18_4);
-    if (th19) th19.textContent = '-' + fmtCompact(totalCard.th_luy_ke_tu_19_4);
+    if (th18) th18.textContent = fmtCompact(totalCard.th_1_4_18_4);
+    if (th19) th19.textContent = fmtCompact(totalCard.th_luy_ke_tu_19_4);
     if (conPhaiTh) conPhaiTh.textContent = fmtCompact(totalCard.con_phai_th);
+  }
+
+  // ── Channel sub-cards: VNeID / My Viettel / MBCCS ──────────────────────
+  var cc = data.summary && data.summary.channel_cards;
+  if (cc) {
+    function fillChannelCard(key, lkId, thn1Id, n1Id, ttId) {
+      var c = cc[key]; if (!c) return;
+      var lkEl   = document.getElementById(lkId);
+      var thn1El = document.getElementById(thn1Id);
+      var n1El   = document.getElementById(n1Id);
+      var ttEl   = document.getElementById(ttId);
+      if (lkEl)   lkEl.textContent = fmtCompact(c.luy_ke);
+      if (thn1El) thn1El.textContent = fmtCompact(c.th_n1);
+      if (n1El) {
+        if (c.n1_pct === null || c.n1_pct === undefined) {
+          n1El.innerHTML = '<span class="child-n1-badge">—</span>';
+        } else {
+          var pStr = (c.n1_pct >= 0 ? '+' : '') + (c.n1_pct * 100).toFixed(1) + '%';
+          var cls  = c.n1_pct >= 0 ? 'up' : 'down';
+          n1El.innerHTML = '<span class="child-n1-badge ' + cls + '">' + pStr + '</span>';
+        }
+      }
+      if (ttEl) ttEl.textContent = (c.ti_trong * 100).toFixed(1) + '%';
+    }
+    fillChannelCard('vneid',    'ch-vneid-lk', 'ch-vneid-thn1', 'ch-vneid-n1', 'ch-vneid-tt');
+    fillChannelCard('myviettel','ch-myvt-lk',  'ch-myvt-thn1',  'ch-myvt-n1',  'ch-myvt-tt');
+    fillChannelCard('mbccs',    'ch-mbccs-lk', 'ch-mbccs-thn1', 'ch-mbccs-n1', 'ch-mbccs-tt');
   }
 
   var offlineCard = data.summary && data.summary.offline_card;
@@ -982,18 +1013,27 @@ function pctRedClass(idx) {
                'pct-red-6','pct-red-7','pct-red-8','pct-red-9','pct-red-10'];
   return cls[Math.min(idx, cls.length - 1)];
 }
+function pctThClass(pct) {
+  if (pct >= 1.0) return 'td-pct-over';
+  if (pct < 0.65) return 'td-pct-low';
+  if (pct < 0.85) return 'td-pct-warn';
+  return '';
+}
 function buildT1Row(r, pctClass) {
+  var pctCls = pctThClass(r.pct_th);
+  var pctCell = pctCls
+    ? '<span class="' + pctCls + '">' + fmtPct(r.pct_th) + '</span>'
+    : '<span class="' + pctClass + '">' + fmtPct(r.pct_th) + '</span>';
   return '<tr>' +
     '<td class="td-c">' + r.rank + '</td>' +
     '<td class="td-code">' + r.province + '</td>' +
     '<td class="td-r">' + fmtNum(r.dau_ky) + '</td>' +
     '<td class="td-r">' + fmtNum(r.kh_den_ngay) + '</td>' +
     '<td class="td-r"><strong>' + fmtNum(r.luy_ke) + '</strong></td>' +
-    '<td class="td-c"><span class="' + pctClass + '">' + fmtPct(r.pct_th) + '</span></td>' +
-    '<td class="td-c">' + fmtPct(r.pct_online) + '</td>' +
-    '<td class="td-c">' + fmtPct(r.pct_offline) + '</td>' +
-    '<td class="td-r">' + fmtKhThang4(r.kh_thang4) + '</td>' +
-    '<td class="td-c">' + fmtPct(r.pct_th_dau_ky) + '</td>' +
+    '<td class="td-c">' + pctCell + '</td>' +
+    '<td class="td-c">' + (r.pct_vneid != null ? fmtPct(r.pct_vneid) : '–') + '</td>' +
+    '<td class="td-c">' + (r.pct_myviettel != null ? fmtPct(r.pct_myviettel) : '–') + '</td>' +
+    '<td class="td-c">' + (r.pct_mbccs != null ? fmtPct(r.pct_mbccs) : '–') + '</td>' +
     '<td class="td-r">' + fmtNum(r.can_xac_thuc) + '</td>' +
     '</tr>';
 }
@@ -1007,11 +1047,11 @@ function renderT1(data) {
   if (selected !== 'ALL') {
     const allRows = t1.all_rows || [];
     const row = findProvinceRow(allRows, selected);
-    html += '<tr class="sect-red"><td colspan="11">TỈNH ĐANG LỌC</td></tr>';
+    html += '<tr class="sect-red"><td colspan="10">TỈNH ĐANG LỌC</td></tr>';
     if (row) {
       html += buildT1Row(row, 'pct-red-5');
     } else {
-      html += '<tr><td colspan="11" style="text-align:center;padding:10px;color:var(--muted)">Không có dữ liệu cho tỉnh ' + selected + '</td></tr>';
+      html += '<tr><td colspan="10" style="text-align:center;padding:10px;color:var(--muted)">Không có dữ liệu cho tỉnh ' + selected + '</td></tr>';
     }
     tbody.innerHTML = html;
     var subSel = document.querySelector('#t1 .table-sub');
@@ -1019,18 +1059,18 @@ function renderT1(data) {
     return;
   }
 
-  // Header: TOP 10 TỈNH THỰC HIỆN CAO NHẤT
-  html += '<tr class="sect-green"><td colspan="11">10 TỈNH THỰC HIỆN CAO NHẤT</td></tr>';
-  var top10 = (t1.all_rows || []).slice(0, 10);
+  // Section: 10 TỈNH THỰC HIỆN TỐT NHẤT (top 10 %TH cao nhất)
+  var top10 = (t1.all_rows || []).slice().sort(function(a,b){ return b.pct_th - a.pct_th; }).slice(0, 10);
+  html += '<tr class="sect-green"><td colspan="10">10 T&#7880;NH TH&#7920;C HI&#7878;N T&#7888;T NH&#7844;T</td></tr>';
   if (top10.length === 0) {
-    html += '<tr><td colspan="11" style="text-align:center;padding:10px;color:var(--muted)">Chưa có dữ liệu</td></tr>';
+    html += '<tr><td colspan="10" style="text-align:center;padding:10px;color:var(--muted)">Chưa có dữ liệu</td></tr>';
   } else {
     top10.forEach(function(r, idx) {
       html += buildT1Row(r, pctGreenClass(idx));
     });
   }
-  // Header: 10 TỈNH THỰC HIỆN THẤP NHẤT
-  html += '<tr class="sect-red"><td colspan="11">10 TỈNH THỰC HIỆN THẤP NHẤT</td></tr>';
+  // Section: 10 TỈNH CẢNH BÁO
+  html += '<tr class="sect-red"><td colspan="10">10 T&#7880;NH C&#7842;NH B&#193;O</td></tr>';
   t1.thap_nhat.forEach(function(r, idx) {
     html += buildT1Row(r, pctRedClass(idx));
   });
@@ -1148,7 +1188,7 @@ function renderT4Province(code) {
   // Update sub text
   if (sub) {
     sub.textContent = trend.labels[0] + ' – ' + trend.labels[trend.labels.length - 1]
-      + ' · ' + (p.rank_t2 !== '-' ? 'Xếp hạng Offline: ' + p.rank_t2 + '/' + trend.all_provinces.length : 'Không có trong bảng Offline')
+      + ' · ' + (p.rank_t1 !== '-' ? 'Xếp hạng: ' + p.rank_t1 + '/' + trend.all_provinces.length : 'Không có trong bảng')
       + ' · %TH: ' + (p.pct_th * 100).toFixed(1) + '%';
   }
 
