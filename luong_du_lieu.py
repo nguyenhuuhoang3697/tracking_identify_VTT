@@ -321,6 +321,7 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
 
     all_dates = sorted(grp["prd_id"].dropna().unique())
     labels = [f"{d.day}/{d.month}" for d in all_dates]
+    num_days = len(all_dates)
     national_series = [
         int(national_grp.loc[d, "national_total"]) if d in national_grp.index else 0
         for d in all_dates
@@ -328,21 +329,27 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
 
     # 10 worst provinces
     province_list = []
+    rank_map = {r["province"]: r for r in (all_t1_rows or [])}
     for r in t1_worst:
         p = r["province"]
         p_df = grp[grp["province_code_home"] == p].set_index("prd_id")
         total_series = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         offline_series = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
+        kh_per_day = 0
+        if p in rank_map:
+            kh_den_ngay = rank_map[p].get("kh_den_ngay", 0)
+            kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
+        kh_series = [kh_per_day] * len(all_dates)
         province_list.append({
             "code": p,
             "rank_t1": r["rank"],
             "pct_th": r["pct_th"],
             "total": total_series,
             "offline": offline_series,
+            "kh": kh_series,
         })
 
     # All provinces for t4 filter view
-    rank_map = {r["province"]: r for r in (all_t1_rows or [])}
     all_province_codes = sorted(p for p in grp["province_code_home"].dropna().unique() if p.lower() != "nan")
     all_province_list = []
     for p in all_province_codes:
@@ -350,12 +357,18 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
         total_series = [int(p_df.loc[d, "total"]) if d in p_df.index else 0 for d in all_dates]
         offline_series = [int(p_df.loc[d, "offline"]) if d in p_df.index else 0 for d in all_dates]
         r = rank_map.get(p, {})
+        kh_per_day = 0
+        if p in rank_map:
+            kh_den_ngay = rank_map[p].get("kh_den_ngay", 0)
+            kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
+        kh_series = [kh_per_day] * len(all_dates)
         all_province_list.append({
             "code": p,
             "rank_t1": r.get("rank", "-"),
             "pct_th": r.get("pct_th", 0),
             "total": total_series,
             "offline": offline_series,
+            "kh": kh_series,
         })
 
     return {

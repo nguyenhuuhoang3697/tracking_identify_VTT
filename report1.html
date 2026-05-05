@@ -769,12 +769,30 @@ function makeChart(id, data, labels) {
       labels: labels,
       datasets: [
         {
-          type: 'bar',
-          label: 'Offline',
-          data: data.offline,
-          backgroundColor: 'rgba(255,77,109,0.55)',
-          borderRadius: 4,
+          type: 'line',
+          label: 'KH ngày',
+          data: data.kh,
+          borderColor: 'rgba(59,130,246,0.3)',
+          backgroundColor: 'rgba(59,130,246,0.12)',
+          borderWidth: 1.5,
+          pointRadius: 2,
+          pointBackgroundColor: 'rgba(59,130,246,0.5)',
+          pointBorderColor: 'rgba(59,130,246,0)',
+          tension: 0.35,
+          fill: true,
           order: 2,
+          yAxisID: 'y',
+          datalabels: { display: false }
+        },
+        {
+          type: 'bar',
+          label: 'TH ngày',
+          data: data.total,
+          backgroundColor: 'rgba(239,68,68,0.7)',
+          borderColor: 'rgba(220,38,38,0.8)',
+          borderWidth: 0.5,
+          borderRadius: 3,
+          order: 1,
           yAxisID: 'y',
           datalabels: {
             anchor: 'center',
@@ -783,29 +801,6 @@ function makeChart(id, data, labels) {
             font: { size: 8, family: 'Inter', weight: '700' },
             formatter: function(v) { return fmtK(v); },
             offset: 0,
-            padding: 0
-          }
-        },
-        {
-          type: 'line',
-          label: 'Tổng',
-          data: data.total,
-          borderColor: '#111827',
-          backgroundColor: 'rgba(17,24,39,0.08)',
-          borderWidth: 2,
-          pointRadius: 3,
-          pointBackgroundColor: '#111827',
-          tension: 0.35,
-          fill: false,
-          order: 1,
-          yAxisID: 'y',
-          datalabels: {
-            anchor: 'end',
-            align: 'top',
-            color: '#111827',
-            font: { size: 8, family: 'Inter', weight: '600' },
-            formatter: function(v) { return fmtK(v); },
-            offset: 3,
             padding: 0
           }
         }
@@ -848,7 +843,7 @@ function initCharts() {
   var trend = window._trendData;
   if (!trend) return;
   trend.provinces.forEach(function(p) {
-    makeChart(p.code.toLowerCase(), { total: p.total, offline: p.offline, national: trend.national }, trend.labels);
+    makeChart(p.code.toLowerCase(), { total: p.total, kh: p.kh, offline: p.offline, national: trend.national }, trend.labels);
   });
 }
 
@@ -860,7 +855,7 @@ function renderTrend(data) {
   var sub = document.querySelector('#t3 .table-sub');
   if (sub && trend.labels && trend.labels.length > 0) {
     sub.textContent = 'Từ ' + trend.labels[0] + ' – ' + trend.labels[trend.labels.length - 1]
-      + ' \u00b7 \u25aa Bar = Offline \u00b7 \u2500 Line = Tổng';
+      + ' \u00b7 \u25aa Bar = TH ngày \u00b7 \u2500 Area = KH ngày';
   }
   // Update title
   var title = document.querySelector('#t3 .table-title');
@@ -1206,20 +1201,19 @@ function renderT4Province(code) {
       labels: trend.labels,
       datasets: [
         {
-          type: 'bar', label: 'Offline', data: p.offline,
-          backgroundColor: 'rgba(255,77,109,0.55)', borderRadius: 4, order: 2, yAxisID: 'y',
+          type: 'line', label: 'KH ngày', data: p.kh,
+          borderColor: 'rgba(59,130,246,0.3)', backgroundColor: 'rgba(59,130,246,0.12)',
+          borderWidth: 1.5, pointRadius: 2, pointBackgroundColor: 'rgba(59,130,246,0.5)', pointBorderColor: 'rgba(59,130,246,0)',
+          tension: 0.35, fill: true, order: 2, yAxisID: 'y',
+          datalabels: { display: false }
+        },
+        {
+          type: 'bar', label: 'TH ngày', data: p.total,
+          backgroundColor: 'rgba(239,68,68,0.7)', borderColor: 'rgba(220,38,38,0.8)', borderWidth: 0.5,
+          borderRadius: 3, order: 1, yAxisID: 'y',
           datalabels: { anchor: 'center', align: 'center', color: '#fff',
             font: { size: 10, family: 'Inter', weight: '700' },
             formatter: fmtK, padding: 0 }
-        },
-        {
-          type: 'line', label: 'Tổng', data: p.total,
-          borderColor: '#111827', backgroundColor: 'rgba(17,24,39,0.08)',
-          borderWidth: 2, pointRadius: 4, pointBackgroundColor: '#111827',
-          tension: 0.35, fill: false, order: 1, yAxisID: 'y',
-          datalabels: { anchor: 'end', align: 'top', color: '#111827',
-            font: { size: 10, family: 'Inter', weight: '600' },
-            formatter: function(v, ctx) { return fmtTotalLabelWithGrowth(ctx); }, offset: 4, padding: 0 }
         }
       ]
     },
