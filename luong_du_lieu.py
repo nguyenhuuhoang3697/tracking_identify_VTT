@@ -361,11 +361,9 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
             cumul_total.append(int(running_total))
             cumul_offline.append(int(running_offline))
         
-        kh_per_day = 0
-        if p in rank_map:
-            kh_den_ngay = rank_map[p].get("kh_den_ngay", 0)
-            kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
-        kh_series = [kh_per_day] * len(all_dates)
+        # KH = full period cumulative target (flat reference line)
+        kh_target = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
+        kh_series = [kh_target] * len(all_dates)
         
         province_list.append({
             "code": p,
@@ -395,11 +393,9 @@ def build_trend_data(xac_thuc_path: str, trend_from_date: str, t1_worst: list[di
             cumul_total.append(int(running_total))
             cumul_offline.append(int(running_offline))
         
-        kh_per_day = 0
-        if p in rank_map:
-            kh_den_ngay = rank_map[p].get("kh_den_ngay", 0)
-            kh_per_day = int(round(kh_den_ngay / num_days)) if num_days > 0 else 0
-        kh_series = [kh_per_day] * len(all_dates)
+        # KH = full period cumulative target (flat reference line)
+        kh_target = int(rank_map.get(p, {}).get("kh_den_ngay", 0))
+        kh_series = [kh_target] * len(all_dates)
         
         p_info = rank_map.get(p, {})
         all_province_list.append({
